@@ -1,0 +1,56 @@
+.card-comentarios-page-comentarios{
+    background-color: white;
+    height: 650px !important;
+    padding-top: 20px;
+}
+
+.item-classificador{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+
+}
+.item-classificador .item{
+    align-items: center;
+    justify-content: space-around;
+    text-justify: center;
+    text-align: center;
+    color: grey !important;
+    
+
+  
+}
+
+
+.MuiSelect-selectMenu{
+    font-size: 9px !important;
+}
+
+.item-classificador .item .MuiTypography-root{
+    font-size: 0.7vw;
+}
+
+.item-classificador-2{
+    margin-top: 20px !important;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+
+
+.item-classificador-2 .item .MuiButtonBase-root{
+margin: 10px;
+}
+
+.PrivateSwitchBase-root-19{
+    padding: 0 !important;
+}
+.item-classificador .item{
+    margin-top: 10px !important;
+}
+
+.barra_abas{
+    margin-top: 0px;
+}

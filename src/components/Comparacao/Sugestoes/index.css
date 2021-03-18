@@ -1,0 +1,16 @@
+.card-sugestoes{
+   
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+.card-sugestoes .row-cards{
+    margin-top: 10px;
+    justify-content: space-around;
+    display: flex;
+}
+.row-cards .item{
+    height: 200px !important;
+
+    width: 250px;
+}

@@ -1,0 +1,73 @@
+.filter{
+    width: 100%;
+    height: 70px;
+    background-color: #7954a3 !important;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center !important;
+    align-self: center;
+    align-items: center;
+    border-radius: 10px;
+
+
+}
+
+.intervalo{
+    width: 700px;
+    height: 40px;
+    background-color:white !important;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center !important;
+    align-self: center;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.FilterTitle{
+    width: 85% !important;
+    padding: 0px !important;
+    color: white;
+}
+.FilterTitle .MuiTypography-root{
+    font-size: 15pt;
+}
+
+.Button-Group-Filter{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+.MuiOutlinedInput-input{
+    padding: 9.5px 30px !important;
+}
+
+
+.MuiTextField-root{
+    width: 200px !important;
+}
+.MuiInputLabel-formControl{
+    top: -7px !important;
+}
+
+.filtroordemcomentarios{
+    margin-right: 20px !important;
+}
+
+.picker-input{
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.IconEnterCalendar{
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+.MuiPickersToolbar-toolbar{
+    background-color: #7954a3 !important;
+}
+.filter  .MuiButton-root {
+    background-color: white;
+    color: #616161;
+}
+

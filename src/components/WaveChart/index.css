@@ -1,0 +1,38 @@
+.LineChart{
+    background-color: white;
+}
+
+.card{
+    background-color: white;
+    width: 100% !important;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgb(56, 56, 56);
+    height: 315px;
+}
+
+.legenda{
+    padding: 5px;
+}
+.cardIcon{
+    color: #7954a3;
+}
+.responsiveGraph{
+    margin-top: 0px;
+}
+
+.recharts-text{
+    font-size: 16px;
+    fill: mediumaquamarine;
+    font-weight: bolder;
+}
+.recharts-legend-item-text{
+    font-size: 17px;
+}
+
+
+.tituloCard{
+    font-size: 18px !important;
+    padding: 5px;
+}

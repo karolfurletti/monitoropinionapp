@@ -1,0 +1,16 @@
+.TextoInsidePie{
+font-weight: bold;
+}
+#id_unico .recharts-wrapper{
+    margin-left:auto !important;
+    margin-right: auto!important;
+}
+#id_unico{
+    height: 350px!important;
+}
+
+
+
+#id_unico .recharts-default-legend{
+margin-bottom: 10% !important;
+}

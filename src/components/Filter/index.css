@@ -1,0 +1,35 @@
+.filter{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center !important;
+    align-self: center;
+    align-items: center;
+
+}
+
+.FilterTitle{
+    width: 70%;
+    padding: 10px;
+}
+.FilterTitle .MuiTypography-root{
+    font-size: 15pt;
+}
+
+.Button-Group-Filter{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+.MuiOutlinedInput-input{
+    padding: 9.5px 30px !important;
+}
+
+.MuiInputLabel-formControl{
+    top: -7px !important;
+}
+
+.filtroordemcomentarios{
+    margin-right: 20px !important;
+}

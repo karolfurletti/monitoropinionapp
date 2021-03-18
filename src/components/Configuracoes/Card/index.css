@@ -1,0 +1,23 @@
+.card-configuracoes{
+    width: 100%;
+    min-height: 500px;
+    background-color:white;
+}
+
+.card-configuracoes .titulo{
+    align-items: center;
+    height: 60px;
+    display: flex;
+}
+
+.card-configuracoes .icon{
+ color: #7954a3 !important;
+ font-size: 30px !important;
+ margin: 10px;
+
+}
+
+.card-configuracoes .titulo-pagina{
+    font-weight: bold;
+}
+

@@ -1,0 +1,36 @@
+.name .plataforma::first-letter{
+        text-transform:capitalize;
+}
+
+.PrincipaisPlataformas{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        overflow: auto;
+    }
+    .PositiveIcon{
+        color: #01a561;
+        
+    }
+    .NegativeIcon{
+        color: #ff6767;
+    }
+    .PrincipaisPlataformas .name{
+        overflow: hidden;
+        width: 200px;
+        height: 20px;
+    }
+    .MuiBadge-root .number{
+     font-size: 18px;
+     font-weight: bolder;
+     padding: 0px;
+    }
+    .MuiBadge-root .teor{
+        padding: 0px;
+        margin-left: 5px;
+        margin-right: 20px;
+       }
+    
+    .coluna_dados{
+    display:flex;
+       }

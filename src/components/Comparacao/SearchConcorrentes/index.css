@@ -1,0 +1,19 @@
+.autocomplete{
+    width: 100% !important;
+    padding: 10px;
+}
+
+.MuiFormControl-fullWidth{
+    width: 100% !important;
+    
+}
+.card-autocomplete{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.MuiInput-root{
+    text-transform: uppercase !important;
+}

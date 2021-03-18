@@ -1,0 +1,30 @@
+
+.tab-component{
+    height: 440px !important;
+    width: 100%;
+    overflow: auto;
+}
+
+.tab-1-icon{
+    color: green !important;
+
+}
+
+.tab-2-icon{
+    color: red !important;
+}
+
+
+.MuiBox-root{
+    padding: 0 !important;
+}
+
+.filtro_data{
+    position: absolute;
+    right: 0px;
+    top: 10px   
+}
+.tab_att{
+    height: 50px;
+
+}

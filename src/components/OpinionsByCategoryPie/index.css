@@ -1,0 +1,42 @@
+.RowPies{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.PieItem{
+  width: 80px;
+  
+  margin-top: 135px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.CardOpinionsByCategoryPie{
+    background-color: white;
+    width: 100% !important;
+    padding-top: 10px;
+    min-width: 400px;
+border-radius: 10px !important;
+
+    color: #616161;
+    height: 350px;
+}
+
+.LabelInsidePie{
+    font-size: 20px;
+}
+.labelPieItem{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #616161;
+    margin-top: 10px;
+   
+}
+
+.labelPieItem::first-letter{
+    text-transform: capitalize;
+}

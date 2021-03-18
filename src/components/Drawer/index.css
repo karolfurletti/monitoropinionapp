@@ -1,0 +1,30 @@
+.LogoImg {
+display: flex;
+margin: 0 auto;
+width: 40%;
+}
+.MuiDrawer-paperAnchorLeft{
+        background-color: #7954a3 !important;
+        color: white !important;
+}
+
+.MuiDrawer-paperAnchorLeft svg{
+    color: white !important;
+}
+.MuiAppBar-colorPrimary{
+    background-color:white!important;
+    color: grey !important;
+}
+
+.menu-item-draw{
+    font-size: 10px !important;
+    font-weight: bolder !important;
+    color: grey !important;
+}
+
+.menu-item-draw-titulo{
+    font-size: 10px !important;
+    font-weight: bolder !important;
+    color: grey !important;
+    font-size: 12px !important;
+}

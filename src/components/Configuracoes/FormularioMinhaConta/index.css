@@ -1,0 +1,45 @@
+
+.FormularioMinhaConta  {
+
+padding: 5px;
+}
+
+.FormularioMinhaConta .input {
+display: flex;
+    padding: 5px;
+    }
+.FormularioMinhaConta .row{
+    display: flex;
+    padding: 10px;
+ 
+    align-items: center;
+    width: 100%;
+}
+
+.FormularioMinhaConta .label{
+    min-width: 500px;
+    align-items: center;
+    
+   
+}
+
+.FormularioMinhaConta .label p{
+    font-size: 14px !important;
+    color: grey;
+    font-weight: bold;
+    margin-left: 20px;
+ 
+}
+
+.FormularioMinhaConta .input input{
+   
+font-weight: bold !important;
+    font-size: 14px !important;
+    color: #7954a3 !important
+  }
+
+
+
+  .secondary {
+    background-color: #d8d8d8 !important; 
+}

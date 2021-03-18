@@ -1,0 +1,5125 @@
+[
+  {
+    "id": "1",
+    "plataforma": "googlereviews",
+    "author": "larinhavercosa222",
+    "titulo": "Jantar ",
+    "descricao": "Comida maravilhosa, lugar do verdadeiro chiclete de camarão. O garçom Éric Lima nos atendeu muito bem, pretendemos voltar assim que possível.",
+    "data": "2019-07-26",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida maravilhosa, lugar do verdadeiro chiclete de camarão."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "O garçom Éric Lima nos atendeu muito bem, pretendemos voltar assim que possível."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "plataforma": "facebook",
+    "author": "Pano P",
+    "titulo": "Uma boa experiência.",
+    "descricao": "Comida boa, drinks legais e um ambiente bem aconchegante. Provamos muitas coisas e tudo nos agradou. Principalmente um pato servido em um dos pratos da casa, sensacional!",
+    "data": "2014-09-16",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida boa, drinks legais e um ambiente bem aconchegante."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Provamos muitas coisas e tudo nos agradou."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Principalmente um pato servido em um dos pratos da casa, sensacional!"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "plataforma": "tripadvisor",
+    "author": "Magma100",
+    "titulo": "Otimo self service",
+    "descricao": "Excelente pra ir com a família! Ótima Comida, ambiente agradável, bom atendimento e estacionamento. Vale a pena conhecer",
+    "data": "2019-06-04",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Excelente pra ir com a família!"
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Ótima Comida, ambiente agradável, bom atendimento e estacionamento."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "plataforma": "instagram",
+    "author": "Yurie M",
+    "titulo": "O sorvete mais tradicional do estado",
+    "descricao": "Tomo sorvete na Visabor faz mais de 30 anos. Sabores de frutas ou artificiais. Casquinha crocante e ambiente simples. Preços muito bons. Recomendo",
+    "data": "2016-03-15",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Sabores de frutas ou artificiais."
+      },
+      {
+        "category": "ambiente",
+        "teor": "negative",
+        "sentenca": "Casquinha crocante e ambiente simples."
+      },
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Preços muito bons."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "plataforma": "instagram",
+    "author": "Debora_C85",
+    "titulo": "Melhor hamburger!",
+    "descricao": "O melhor hamburger que já comi! Excelente atendimento, a comida estava ótima. O restaurante é bem pequeno, mas agradável e divertido.",
+    "data": "2015-04-28",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O melhor hamburger que já comi!"
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Excelente atendimento, a comida estava ótima."
+      },
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "O restaurante é bem pequeno, mas agradável e divertido."
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "plataforma": "googlereviews",
+    "author": "Monique C",
+    "titulo": "Um achado maravilhoso!",
+    "descricao": "O restaurante é novo, super acolhedor e charmoso com um ótimo atendimento. As porções são generosas, saborosíssimas e com preço justo. Boa variedade de vinhos. Super recomendo o espaguete de frutos do mar, bolonhesa, carbonara e o risoto. O tiramisu também é fantástico.  Todas as vezes fui com meu namorado, mas é um excelente ambiente para levar a família ou amigos.",
+    "data": "2017-05-07",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "O restaurante é novo, super acolhedor e charmoso com um ótimo atendimento."
+      },
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "As porções são generosas, saborosíssimas e com preço justo."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Boa variedade de vinhos."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Super recomendo o espaguete de frutos do mar, bolonhesa, carbonara e o risoto."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O tiramisu também é fantástico."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Todas as vezes fui com meu namorado, mas é um excelente ambiente para levar a família ou amigos."
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "plataforma": "twitter",
+    "author": "ChrisWings",
+    "titulo": "Saboroso",
+    "descricao": "Fomos num sábado, ambiente elegante, equipe gentil e simpática. Comemos um curry bem gostoso, mas o filé não era filé. A sobremesa (wonton de abacaxi com geléia de pimenta e sorvete) estava ótima.",
+    "data": "2016-10-24",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Fomos num sábado, ambiente elegante, equipe gentil e simpática."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Comemos um curry bem gostoso, mas o filé não era filé."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A sobremesa (wonton de abacaxi com geléia de pimenta e sorvete) estava ótima."
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "plataforma": "twitter",
+    "author": "lucianasoares18",
+    "titulo": "Bom trabalho",
+    "descricao": "Comida ótima e com bom atediamento e com muita coisa boas e da para levar a esposa e a namorada e familia pois as porções de comidas são boas!Muito obrigado",
+    "data": "2016-04-04",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida ótima e com bom atediamento e com muita coisa boas e da para levar a esposa e a namorada e familia pois as porções de comidas são boas!"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "plataforma": "twitter",
+    "author": "Andrezza O",
+    "titulo": "Maravilhoso!",
+    "descricao": "Ambiente agradável, preço totalmente acessível, e adoro o cardápio de lá! Sem falar no atendimento maravilhoso! Voltarei sempre 😘",
+    "data": "2018-10-05",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Ambiente agradável, preço totalmente acessível, e adoro o cardápio de lá!"
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Sem falar no atendimento maravilhoso!"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "plataforma": "web",
+    "author": "Leonardo R",
+    "titulo": "Mais tradicional de BH",
+    "descricao": "A pizzaria é a mais tradicional de Belo Horizonte. São várias opções. Além das pizzas também tem um excepicional parmeggiana, delicioso e suculento",
+    "data": "2016-08-01",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A pizzaria é a mais tradicional de Belo Horizonte."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Além das pizzas também tem um excepicional parmeggiana, delicioso e suculento"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "plataforma": "facebook",
+    "author": "Israele H",
+    "titulo": "Bom lugar Porém Injusto ",
+    "descricao": "Estive com minha família essa tarde pela primeira vez me deparei com um cenário lindo e aconchegante. Comprei 1 kg de camarão GRANDE, olhei bem o rapaz pesando e escolhendo meu camarão. A decepção veio na hora que sentei na barraca e pedi pra fritar (não quero citar o nome) O camarão chegou muito saboroso mas os camarões grandes( veio na parte de cima) Quando fomos comer os de dentro tinha apenas camarões minúsculos e murchos (velhos) Como se estivessem trocado uma boa parte. Até aí tudo bem, quando o camarão acabou percebi que tinha umas 20 cabeças sem o corpo como se fosse restos... Chamei o garçom disfarçadamente e ele simplesmente se fez que não escultou e foi atender outra mesa. Me senti uma trouxa mesmo. Enfim, peço que prestem atenção, o lugar é ótimo. Eu amei, voltarei sim, mas pra comer um peixe, porque camarão só compro pra levar e fritar na minha casa. ",
+    "data": "2016-10-12",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Estive com minha família essa tarde pela primeira vez me deparei com um cenário lindo e aconchegante."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Comprei 1 kg de camarão GRANDE, olhei bem o rapaz pesando e escolhendo meu camarão."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A decepção veio na hora que sentei na barraca e pedi pra fritar (não quero citar o nome) O camarão chegou muito saboroso mas os camarões grandes( veio na parte de cima) Quando fomos comer os de dentro tinha apenas camarões minúsculos e murchos (velhos) Como se estivessem trocado uma boa parte."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Até aí tudo bem, quando o camarão acabou percebi que tinha umas 20 cabeças sem o corpo como se fosse restos... Chamei o garçom disfarçadamente e ele simplesmente se fez que não escultou e foi atender outra mesa."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Me senti uma trouxa mesmo."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Eu amei, voltarei sim, mas pra comer um peixe, porque camarão só compro pra levar e fritar na minha casa."
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "plataforma": "tripadvisor",
+    "author": "Rjbrio",
+    "titulo": "Correto",
+    "descricao": "Fui ao La Bocca depois de ler tantos comentários elogiosos e empolgados. Antes de tudo quero dizer que não entendo o porquê de alguns criticarem tanto a localização.  É uma rua calma, residencial, cujas casinhas lembram bastante os subúrbios cariocas. Uma graça! Agora falarei da comida. Pedi o tão elogiado gnocchi de banana da terra com ragu de ossobuco. A primeira garfada é deliciosa, mas, aos poucos, torna-se enjoativo dada a ausência de nuances, texturas e camadas de sabores. O molho de ossobuco peca pelo excesso de sal. No geral, um prato correto, mas nada esplendoroso. Ressalto, entretanto, que é um oásis comer uma massa fabricada na casa nesse Rio de Janeiro povoado de massas de salgadinho de terceira congeladas disfarçadas de gnocchi.",
+    "data": "2018-06-07",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Fui ao La Bocca depois de ler tantos comentários elogiosos e empolgados."
+      },
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Antes de tudo quero dizer que não entendo o porquê de alguns criticarem tanto a localização."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "É uma rua calma, residencial, cujas casinhas lembram bastante os subúrbios cariocas."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Pedi o tão elogiado gnocchi de banana da terra com ragu de ossobuco."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A primeira garfada é deliciosa, mas, aos poucos, torna-se enjoativo dada a ausência de nuances, texturas e camadas de sabores."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "No geral, um prato correto, mas nada esplendoroso."
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "plataforma": "googlereviews",
+    "author": "TeresaAlbano",
+    "titulo": "SHENG CHI, O MELHOR EM QUALIDADE E SABOR!!!",
+    "descricao": "Excelente restaurante!A diversidade do self servisse de altíssimo bom gosto e sabores inigualáveis!O único restaurante q posso consumir sushi e saschimi com total segurança alimentar!Sou fá numero um e super indico!",
+    "data": "2016-05-19",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Excelente restaurante!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A diversidade do self servisse de altíssimo bom gosto e sabores inigualáveis!"
+      },
+      {
+        "category": "geral",
+        "teor": "negative",
+        "sentenca": "O único restaurante q posso consumir sushi e saschimi com total segurança alimentar!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Sou fá numero um e super indico!"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "plataforma": "instagram",
+    "author": "turistabomkiso",
+    "titulo": "vale a pena!",
+    "descricao": "gostei tanto da comida como do atendimento, o preço é bom e o local é razoável, não tenho do que reclamar, recomendo",
+    "data": "2015-11-30",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "gostei tanto da comida como do atendimento, o preço é bom e o local é razoável, não tenho do que reclamar, recomendo"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "plataforma": "tripadvisor",
+    "author": "Roberta S",
+    "titulo": "Buffet diversificado e gostoso: ambiente barulhento",
+    "descricao": "Um dos melhores restaurantes com buffet vegetariano com opções de grelhados no centro de Porto Alegre. As opções são variadas e muito bem-feitas. Sopas, sobremesas e refrescos incluídos no preço. Custo-benefício muito bom!",
+    "data": "2019-08-27",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "As opções são variadas e muito bem-feitas."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Custo-benefício muito bom!"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "plataforma": "web",
+    "author": "CarineSM",
+    "titulo": "O Melhor",
+    "descricao": "Tudo é bom! O chef Juarez é ótimo e um amor. Ótimo atendimento. Ótima apresentação dos pratos. Comida maravilhosa. Sobremesas incríveis. Preço bom. Sem dúvidas o meu preferido. ",
+    "data": "2013-12-15",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Tudo é bom!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O chef Juarez é ótimo e um amor."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Ótimo atendimento."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Ótima apresentação dos pratos."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida maravilhosa."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Sobremesas incríveis."
+      },
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Preço bom."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Sem dúvidas o meu preferido."
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "plataforma": "facebook",
+    "author": "603marisas",
+    "titulo": "Um Buffet Bacana!!!!",
+    "descricao": "A Família DR LASER esteve no sábado para um almoço informal... Um Grelhado bem preparado e um Buffet bem variado com um preço ok, fazem do local uma boa opção para um almoço rápido de final de semana. ",
+    "data": "2016-07-17",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "A Família DR LASER esteve no sábado para um almoço informal... Um Grelhado bem preparado e um Buffet bem variado com um preço ok, fazem do local uma boa opção para um almoço rápido de final de semana."
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "plataforma": "facebook",
+    "author": "Ricardo V",
+    "titulo": "Indescritível",
+    "descricao": "Indescritível, eu nunca havia comido tapioca e resolvi experimentar justamente em Natal-RN, comi em alguns lugares, mas de longe esse foi o melhor. O único lugar que em nossa estadia fizemos questão de repetir, mesmo sabendo que poderíamos perder outra atração, mas valeu o risco de perder uma nova atração, pois este lugar é simplesmente maravilhoso. Vá preparado, pois a porção é bem servida e a sobremesa imensa! Experimentamos algumas, mas a melhor foi a de Carne de Sol com Nata! ! !",
+    "data": "2013-01-28",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Indescritível, eu nunca havia comido tapioca e resolvi experimentar justamente em Natal-RN, comi em alguns lugares, mas de longe esse foi o melhor."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O único lugar que em nossa estadia fizemos questão de repetir, mesmo sabendo que poderíamos perder outra atração, mas valeu o risco de perder uma nova atração, pois este lugar é simplesmente maravilhoso."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Vá preparado, pois a porção é bem servida e a sobremesa imensa!"
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Experimentamos algumas, mas a melhor foi a de Carne de Sol com Nata!"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "plataforma": "instagram",
+    "author": "IsabelaMJ",
+    "titulo": "Esperava mais...",
+    "descricao": "Tinha visto as críticas e realmente esperava mais. Atendimento foi bacana e tudo bem fresquinho, mas não foi o melhor ceviche que já comi. Bem gourmetizado. A porção bem pequena. ",
+    "data": "2016-08-20",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Tinha visto as críticas e realmente esperava mais."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Atendimento foi bacana e tudo bem fresquinho, mas não foi o melhor ceviche que já comi."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "A porção bem pequena."
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "plataforma": "tripadvisor",
+    "author": "Andreense",
+    "titulo": "Restaurante elegante",
+    "descricao": "Esse restaurante está situado na avenida Conde, de fácil acesso a quem está pelo centro e imediações. Mistura pratos contemporâneos com uma tendência aos da península ibérica. Experimente as entradas, por exemplo o ragu. Excelente pedida também é o  mediterrâneo . Garçons atenciosos e ambiente acolhedor nos deixa um gosto de quero- mais. Vale a visita.",
+    "data": "2013-07-28",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Esse restaurante está situado na avenida Conde, de fácil acesso a quem está pelo centro e imediações."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Excelente pedida também é o  mediterrâneo ."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Garçons atenciosos e ambiente acolhedor nos deixa um gosto de quero- mais."
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "plataforma": "googlereviews",
+    "author": "Barbara_Bruno",
+    "titulo": "Ótima estrutura!",
+    "descricao": "Localizado um pouco distante do centro, é um lugar tranquilo e com ótima estrutura (mesas e cadeiras muito boas e confortáveis).O cardápio é um pouco fraco pelo porte do restaurante.. não há muita variedade de porções.É ótimo por não ficar muito cheio, e o mar a frente é muito tranquilo.Serviço mediano.",
+    "data": "2014-08-08",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Localizado um pouco distante do centro, é um lugar tranquilo e com ótima estrutura (mesas e cadeiras muito boas e confortáveis)."
+      },
+      {
+        "category": "geral",
+        "teor": "negative",
+        "sentenca": "O cardápio é um pouco fraco pelo porte do restaurante.. não há muita variedade de porções."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "É ótimo por não ficar muito cheio, e o mar a frente é muito tranquilo."
+      },
+      {
+        "category": "servico",
+        "teor": "negative",
+        "sentenca": "Serviço mediano."
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "plataforma": "googlereviews",
+    "author": "JVRivas",
+    "titulo": "Bom bonito e barato !!",
+    "descricao": "Almocei com amigos neste local e realmente tenho que comentar, comida deliciosa, chope bem tirado, atendimento excelente, não há o que reclamar, local para famílias, casais e turma de amigos.",
+    "data": "2016-03-18",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Almocei com amigos neste local e realmente tenho que comentar, comida deliciosa, chope bem tirado, atendimento excelente, não há o que reclamar, local para famílias, casais e turma de amigos."
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "plataforma": "instagram",
+    "author": "titabandeira",
+    "titulo": "Lugar bonito, preços salgados e atendimento razoável",
+    "descricao": "O lugar é bem bonito e possui cervejas de outros países, mas os preços são bem salgados e o atendimento não foi dos melhores.",
+    "data": "2015-01-27",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "O lugar é bem bonito e possui cervejas de outros países, mas os preços são bem salgados e o atendimento não foi dos melhores."
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "plataforma": "web",
+    "author": "patricia s",
+    "titulo": "Decepção",
+    "descricao": "O bar estava lotado, até aí sem problemas, afinal era dia 30 de dezembro.A questão maior foi, o promoter muito grosseiro, uma total desorganização quanto a liberação das mesas e o ar condicionado estava longe de funcionar, as portas abertas sem o equipamento de cortina de vento, só piorou tudo.Tentar pedir bebidas no bar também não adiantou, os garçons ficam todos localizados num único lugar do balcão, é preciso ficar acenando a comanda ou ficar espremido na ponta em que eles estão atendendo.O minimo que esperamos de um bar de frente para a praia é funcionar muito bem no verão.A avaliação fica muito comprometida, não consegui beber nem comer nada.",
+    "data": "2017-01-02",
+    "rating": "1",
+    "teor": "negative",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O bar estava lotado, até aí sem problemas, afinal era dia 30 de dezembro."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "A questão maior foi, o promoter muito grosseiro, uma total desorganização quanto a liberação das mesas e o ar condicionado estava longe de funcionar, as portas abertas sem o equipamento de cortina de vento, só piorou tudo."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O minimo que esperamos de um bar de frente para a praia é funcionar muito bem no verão."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "A avaliação fica muito comprometida, não consegui beber nem comer nada."
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "plataforma": "instagram",
+    "author": "Thayanzera",
+    "titulo": "Pedida certa para sanduíches",
+    "descricao": "O loopfood é um dos melhores sanduíches de Curitiba. Leve, gostoso e bem temperado, não tem erro quando se está com fome. A pedida é comer junto com um suco, não tem como dizer nao.",
+    "data": "2018-12-27",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O loopfood é um dos melhores sanduíches de Curitiba."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Leve, gostoso e bem temperado, não tem erro quando se está com fome."
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "plataforma": "yelp",
+    "author": "Bangerdaze",
+    "titulo": "Muito bom",
+    "descricao": "Bom atendimento preço justo comida muito boa muito agradável  o local a noite tem um povo bonito super recomendo",
+    "data": "2016-08-31",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Bom atendimento preço justo comida muito boa muito agradável  o local a noite tem um povo bonito super recomendo"
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "plataforma": "yelp",
+    "author": "Maylane M",
+    "titulo": "O meu queridinho! ",
+    "descricao": "O casa de Tereza eh pra mim o melhor em Salvador! A começar pela localização, no mais boêmio bairro soteropolitano, em uma casa antiga, com decoração rústica, acompanhada do som de um piano de cauda, que tão bem harmoniza com o primor do cardápio elaborado. Vai além de uma experiência gastronômico. \"Ver, ouvir, sentir\"...A culinária Bahiana sob um toque sensível e ousado fazem deste restaurante excepcional.",
+    "data": "2015-12-30",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O casa de Tereza eh pra mim o melhor em Salvador!"
+      },
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "A começar pela localização, no mais boêmio bairro soteropolitano, em uma casa antiga, com decoração rústica, acompanhada do som de um piano de cauda, que tão bem harmoniza com o primor do cardápio elaborado."
+      },
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "\"Ver, ouvir, sentir\"...\nA culinária Bahiana sob um toque sensível e ousado fazem deste restaurante excepcional."
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "plataforma": "yelp",
+    "author": "eriquinha_pavan",
+    "titulo": "Uma experiência",
+    "descricao": "A apresentação do restaurante é uma atração a parte, todo decorado com temas nordestinos! As tapiocas são deliciosas, enormes, oferece também cuzcuz, saladas, sucos e batidas. Muito bom!",
+    "data": "2013-09-12",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "As tapiocas são deliciosas, enormes, oferece também cuzcuz, saladas, sucos e batidas."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Muito bom!"
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "plataforma": "yelp",
+    "author": "16pedrot",
+    "titulo": "Comprei prato executivo de filé mignon e foi servido coxão duro",
+    "descricao": "A pior coisa que pode acontecer em um restaurante é você ser enganado. Escolhi o prato filé mignon ao molho madeira e quando chegou o prato havia apenas uma pequena fatia de uma carne muito dura, que pelo que entendo, tratava-se de coxão duro. Não devia ter nem 50 gramas, era uma fatia pequena e fina. Lamentável a atitude do restaurante, que já foi bom.",
+    "data": "2016-10-02",
+    "rating": "1",
+    "teor": "negative",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "negative",
+        "sentenca": "A pior coisa que pode acontecer em um restaurante é você ser enganado."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Escolhi o prato filé mignon ao molho madeira e quando chegou o prato havia apenas uma pequena fatia de uma carne muito dura, que pelo que entendo, tratava-se de coxão duro."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Não devia ter nem 50 gramas, era uma fatia pequena e fina."
+      },
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Lamentável a atitude do restaurante, que já foi bom."
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "plataforma": "yelp",
+    "author": "MoonMing",
+    "titulo": "Comida vegetariana a vontade a preço fixo",
+    "descricao": "Restaurante vegetariano de preço único com direito a repetir a vontade comida e sucos, mas senti-me cheio logo no primeiro prato e suco. Aceita cartão de crédito. Faltam pratos com tempero mais leve, apresentação mais colorida e aroma menos enjoativo. Ficar sem comer carne não é fácil, se os pratos vegetarianos não forem saborosos fica difícil voltar.",
+    "data": "2017-06-08",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Restaurante vegetariano de preço único com direito a repetir a vontade comida e sucos, mas senti-me cheio logo no primeiro prato e suco."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Faltam pratos com tempero mais leve, apresentação mais colorida e aroma menos enjoativo."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Ficar sem comer carne não é fácil, se os pratos vegetarianos não forem saborosos fica difícil voltar."
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "plataforma": "tripadvisor",
+    "author": "carlos antonio C",
+    "titulo": "Carne de sol imperdível",
+    "descricao": "Lugar com comida típica e especializado em carne de sol, que vem acompanhada por feijão de corda, macaxeira, pirão de leite,....Umprato dá para dois e sobrou, no nosso caso.Preço justo e atendimento excelente.Serve também carne de bode.",
+    "data": "2016-11-10",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Lugar com comida típica e especializado em carne de sol, que vem acompanhada por feijão de corda, macaxeira, pirão de leite,....Umprato dá para dois e sobrou, no nosso caso.Preço justo e atendimento excelente.Serve também carne de bode."
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "plataforma": "instagram",
+    "author": "José Roberto Lô... L",
+    "titulo": "Carne  do  Sol   número 1  de   Aracaju.....  !!!",
+    "descricao": "Almoçei  em  janeiro  deste  ano  !  Prato  principal  é  à  Carne  do  Sol à  Potiguar,  sendo  está  carne  muito  macia  e  acompanha : Macaxeira  cozida, Paçoca, Manteigade  garrafa, Farofa, Feijão  de  corda..... !",
+    "data": "2015-07-05",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Prato  principal  é  à  Carne  do  Sol à  Potiguar,  sendo  está  carne  muito  macia  e  acompanha : Macaxeira  cozida, Paçoca, Manteiga\nde  garrafa, Farofa, Feijão  de  corda..... !"
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "plataforma": "web",
+    "author": "gilsugere",
+    "titulo": "ResTaurAnte  com MúSica",
+    "descricao": "É um bom restaurante que, para ótimo, faltam mais variedades. Dentro do hotel está e a todos é oferecido um cantor talentoso, que canta bem.",
+    "data": "2017-08-26",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "É um bom restaurante que, para ótimo, faltam mais variedades."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Dentro do hotel está e a todos é oferecido um cantor talentoso, que canta bem."
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "plataforma": "twitter",
+    "author": "Tanizia C",
+    "titulo": "Melhor atendimento ",
+    "descricao": "Já conhecia a casa, como sempre Comida maravilhosa, ambiente, música tudo perfeito, mas o atendimento do Francisco (Chico)..... the best, o melhorrrrrr, cerveja e espumante gelada e sempre incansável. Parabéns pelo melhor garçom.",
+    "data": "2017-12-14",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Já conhecia a casa, como sempre Comida maravilhosa, ambiente, música tudo perfeito, mas o atendimento do Francisco (Chico)..... the best, o melhorrrrrr, cerveja e espumante gelada e sempre incansável."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Parabéns pelo melhor garçom."
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "plataforma": "web",
+    "author": "WillKM",
+    "titulo": "Bom almoço",
+    "descricao": "O cardápio vem sendo reformado há anos, dando menos foco aos wraps e crepes. No almoço há bons grelhados a um preço compatível. Comida muito saborosa. Os sucos são ótimos!",
+    "data": "2016-07-25",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "No almoço há bons grelhados a um preço compatível."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida muito saborosa."
+      },
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "Os sucos são ótimos!"
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "plataforma": "facebook",
+    "author": "Ricardo S",
+    "titulo": "Comida deliciosa!!!",
+    "descricao": "A localização do restaurante já vale a pena...Fica dentro do Mangal das Garças - local q adoramos!! Fomos muito bem atendidos mas achamos caro pelo q fornece....Apresenta pratos típicos com sabores peculiares no esquema self-service com preço fixo!!! ",
+    "data": "2016-06-12",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Fomos muito bem atendidos mas achamos caro pelo q fornece....Apresenta pratos típicos com sabores peculiares no esquema self-service com preço fixo!!"
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "!"
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "plataforma": "facebook",
+    "author": "Leandro R",
+    "titulo": "Lugar muitíssimo agradável, mas preço salgado.",
+    "descricao": "O lugar é delicioso para uma cerveja em um dia de sol principalmente. A comida é boa assim como o atendimento. Mas prepare o bolso, pois é fácil da conta ultrapassar 100 reais por pessoa.",
+    "data": "2015-07-02",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "O lugar é delicioso para uma cerveja em um dia de sol principalmente."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "A comida é boa assim como o atendimento."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Mas prepare o bolso, pois é fácil da conta ultrapassar 100 reais por pessoa."
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "plataforma": "googlereviews",
+    "author": "Patricia Pereir... D",
+    "titulo": "comida regional",
+    "descricao": "Um restaurante perfeito para quem busca comida regional.Um lugar muito tipo da terra.Bom para você ir com a familia amigos.Comida muito gostosa.",
+    "data": "2015-06-26",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Um restaurante perfeito para quem busca comida regional.Um lugar muito tipo da terra.Bom para você ir com a familia amigos.Comida muito gostosa."
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "plataforma": "web",
+    "author": "carlosmp",
+    "titulo": "Boa pizza",
+    "descricao": "Local agradável e relativamente despojado. Serviço atencioso mas não excelente. Carta de bebidas razoável, faltam algumas boas marcas de cerveja. Pizza bem feita, mas não deliciosa. Em resumo, o local é bom mas não é excelente. O Rio de Janeiro anda carente.",
+    "data": "2018-05-27",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Local agradável e relativamente despojado."
+      },
+      {
+        "category": "servico",
+        "teor": "negative",
+        "sentenca": "Serviço atencioso mas não excelente."
+      },
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "Carta de bebidas razoável, faltam algumas boas marcas de cerveja."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Pizza bem feita, mas não deliciosa."
+      },
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Em resumo, o local é bom mas não é excelente."
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "plataforma": "yelp",
+    "author": "ANGELA P",
+    "titulo": "Restaurante",
+    "descricao": "Um restaurante com sabores e variedades sem igual. Pratos excelentes e com um atendimento muito bom.",
+    "data": "2013-10-04",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Um restaurante com sabores e variedades sem igual."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Pratos excelentes e com um atendimento muito bom."
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "plataforma": "tripadvisor",
+    "author": "anjinho l",
+    "titulo": "Melhor hambúrguer de Recife",
+    "descricao": "Hambúrguer maravilhoso com ingredientes de primeira Atendimento excelente E ambiente limpo e aconchegante.",
+    "data": "2019-06-25",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Hambúrguer maravilhoso com ingredientes de primeira \nAtendimento excelente \nE ambiente limpo e aconchegante."
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "plataforma": "tripadvisor",
+    "author": "Marcia R",
+    "titulo": "Gosto de nada",
+    "descricao": "O saúde da Nilo Peçanha já foi melhor e mais limpo. Pedi um sanduíche natural de frango e veio um amontoado de folhas com frango desfiado e um molho indecifrável amarelo, sem gosto e se desmontando todo.  Acho que nunca limparam vidros nem fizeram  manutenção no deck, largado. Pena.",
+    "data": "2015-01-11",
+    "rating": "2",
+    "teor": "negative",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O saúde da Nilo Peçanha já foi melhor e mais limpo."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Pedi um sanduíche natural de frango e veio um amontoado de folhas com frango desfiado e um molho indecifrável amarelo, sem gosto e se desmontando todo."
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "plataforma": "facebook",
+    "author": "Bruna E",
+    "titulo": "Bom",
+    "descricao": "Lanches rapidos e acessiveis, uma boa pedida para o final de semana com amigos ou crianças. Bom cardapio e atendimento",
+    "data": "2015-08-09",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Lanches rapidos e acessiveis, uma boa pedida para o final de semana com amigos ou crianças."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Bom cardapio e atendimento"
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "plataforma": "instagram",
+    "author": "andersons310",
+    "titulo": "Surpreendente",
+    "descricao": "Local muito agradável , comida excelente , atendimento impecável ... o local realmente me surpreendeu ... parabéns",
+    "data": "2019-08-13",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Local muito agradável , comida excelente , atendimento impecável ... o local realmente me surpreendeu ... parabéns"
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "plataforma": "facebook",
+    "author": "347alexandreh",
+    "titulo": "Espetáculo ",
+    "descricao": "Comida muito boa e com preço justo. Não deixem de comer a coxinha.Venham preparado para uma pequena fila de espera, não mais que meia hora ",
+    "data": "2016-04-16",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida muito boa e com preço justo."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Venham preparado para uma pequena fila de espera, não mais que meia hora"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "plataforma": "instagram",
+    "author": "azanzotti",
+    "titulo": "Almoço ",
+    "descricao": "Muito bom atendimento. Serviço padrão. Comida muito bem servida. Qualidade ótima. Ambiente agradável.  Som em volume baixo.",
+    "data": "2016-04-04",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Muito bom atendimento."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida muito bem servida."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Ambiente agradável."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Som em volume baixo."
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "plataforma": "twitter",
+    "author": "Dianamolive",
+    "titulo": "Ótima",
+    "descricao": "A Cantina di Napoli é uma excelente opção de culinária italiana em Fortaleza, com um ótimo atendimento, boa carta de vinhos e um cardápio típico italiano, além de cozinha contemporânea. Não esqueça de provar o spaghetti de frutos do mar...",
+    "data": "2016-01-15",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "A Cantina di Napoli é uma excelente opção de culinária italiana em Fortaleza, com um ótimo atendimento, boa carta de vinhos e um cardápio típico italiano, além de cozinha contemporânea."
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "plataforma": "yelp",
+    "author": "Luciani G",
+    "titulo": "Geppos",
+    "descricao": "Ambiente agradável, com música boa e atendimento nota 10. Parabéns a garçonete Iraci, muito atenciosa! ",
+    "data": "2017-06-20",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Ambiente agradável, com música boa e atendimento nota 10."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Parabéns a garçonete Iraci, muito atenciosa!"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "plataforma": "facebook",
+    "author": "ANNAISA B",
+    "titulo": "Uma boa pedida para um HH ou jantar com amigos",
+    "descricao": "Espaços e com 3 ambientes diferentes, as bebidas são ótimas, as opções de aperitivos e comidas do cardápio são fatas e agradam a todos e os preços são justos.Às vezes o serviço deixa um pouco à desejar, mas para que não é muito exigente pode até nem perceber a demora.",
+    "data": "2014-12-30",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Espaços e com 3 ambientes diferentes, as bebidas são ótimas, as opções de aperitivos e comidas do cardápio são fatas e agradam a todos e os preços são justos."
+      },
+      {
+        "category": "servico",
+        "teor": "negative",
+        "sentenca": "Às vezes o serviço deixa um pouco à desejar, mas para que não é muito exigente pode até nem perceber a demora."
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "plataforma": "instagram",
+    "author": "Lilica358",
+    "titulo": "Atendimento simpático e boa comida",
+    "descricao": "O salão é grande e as mesas acomodam grupos. Na entrada uma prateleira com vinhos que você pode escolher e pedir na mesa. As entradas são excelentes, porém, pequenas. A massa com molhor bourgnion é deliciosa!",
+    "data": "2015-08-03",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O salão é grande e as mesas acomodam grupos."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "As entradas são excelentes, porém, pequenas."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A massa com molhor bourgnion é deliciosa!"
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "plataforma": "facebook",
+    "author": "DeniseSantos",
+    "titulo": "Bom demais!!!",
+    "descricao": "Amo os sanduíches do McDonald´s especialmente o Big Mac e hoje experimentei o Super Big Mac no Shopping Recife, feito com três hambúrgueres e ficou ainda mais gostoso, super delicioso...amei!   Também gosto muito dos sorvetes!  Resumindo...sou fã!  rs",
+    "data": "2015-06-23",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Amo os sanduíches do McDonald´s especialmente o Big Mac e hoje experimentei o Super Big Mac no Shopping Recife, feito com três hambúrgueres e ficou ainda mais gostoso, super delicioso...amei!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Também gosto muito dos sorvetes!"
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "rs"
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "plataforma": "googlereviews",
+    "author": "Samuel A",
+    "titulo": "Que delícia de hamburguer!",
+    "descricao": "Espalho em toda parte da capital paranaense, o Restaurante Madero é uma hamburgueria especialista em hambúrgueres e steaks.",
+    "data": "2016-03-12",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": []
+  },
+  {
+    "id": "53",
+    "plataforma": "yelp",
+    "author": "Iara S",
+    "titulo": "Carne",
+    "descricao": "Self-service, localizado próximo à grandes empresas. O valor do kg é bem barato e as carnes são boas.",
+    "data": "2015-05-05",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Self-service, localizado próximo à grandes empresas."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "O valor do kg é bem barato e as carnes são boas."
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "plataforma": "web",
+    "author": "tabatahespanholr",
+    "titulo": "Maravilhoso! ",
+    "descricao": "Lugar lindo e super aconchegante! Música excelente. Ótimo atendimento, garçons super atenciosos! Mesa de antepastos com muitas opções! Preço justifica a qualidade! ",
+    "data": "2019-07-27",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Lugar lindo e super aconchegante!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Música excelente."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Ótimo atendimento, garçons super atenciosos!"
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "plataforma": "yelp",
+    "author": "Laura M",
+    "titulo": "Ótima",
+    "descricao": "Eu achei a pastelaria muito boa. Um pastel bem grande com bastante recheio. Oferece boa variedade de cervejas também.",
+    "data": "2014-10-31",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Eu achei a pastelaria muito boa."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Um pastel bem grande com bastante recheio."
+      },
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "Oferece boa variedade de cervejas também."
+      }
+    ]
+  },
+  {
+    "id": "56",
+    "plataforma": "instagram",
+    "author": "FlaviaCN",
+    "titulo": "Local agradável!",
+    "descricao": "As instalações do lugar já chamam a atenção: com características italiana, lindo!  O cardápio tem muitas opções de saladas, entradas, pães de fabricação própria, tudo bem fresquinho!.. os cafés são excelentes, servidos não em xicaras, mas em tigelas de cerâmicas, adorei! para quem gosta de experimentar novidades - acompanhamentos nozes, queijos, mel  - e ambiente propositadamente rústico e uma boa pedida. Apesar do preço um pouco temperado, vale a visita!. ",
+    "data": "2015-12-14",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "As instalações do lugar já chamam a atenção: com características italiana, lindo!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O cardápio tem muitas opções de saladas, entradas, pães de fabricação própria, tudo bem fresquinho!.."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "os cafés são excelentes, servidos não em xicaras, mas em tigelas de cerâmicas, adorei!"
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "para quem gosta de experimentar novidades - acompanhamentos nozes, queijos, mel  - e ambiente propositadamente rústico e uma boa pedida."
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "plataforma": "twitter",
+    "author": "333nayarar",
+    "titulo": "Cópia imperfe5",
+    "descricao": "Comida boa, ambiente bom, se comparado ao Camarões Natal RN, deixa a desejar, a começar pelo serviço.",
+    "data": "2018-06-03",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida boa, ambiente bom, se comparado ao Camarões Natal RN, deixa a desejar, a começar pelo serviço."
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "plataforma": "googlereviews",
+    "author": "AngeloDias",
+    "titulo": "Bom.",
+    "descricao": "Ele é muito bom quando tem promoção, pois o preço não é muito acessível, e a comida não condiz com o presso normal.",
+    "data": "2013-09-03",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Ele é muito bom quando tem promoção, pois o preço não é muito acessível, e a comida não condiz com o presso normal."
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "plataforma": "facebook",
+    "author": "Ivo M",
+    "titulo": "Muito bom",
+    "descricao": "Excelente restaurante.Existiam duas unidades quando fui a Maceió: uma próxima a Feira de Artesanato e outra próxima ao Hotel Mercure. Fomos com um casal de amigos aos dois. São ambientes diferentes (o cardápio é igual): próxima a Feira eles possuem um ambiente mais descontraido e jovem com musica ao vivo. Perto do Mercure o salao é fechado e um ambiente com mais famílias. Recomendo o Chiclete de Camarão! Você não irá se arrepender!!!",
+    "data": "2014-07-01",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Excelente restaurante."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Existiam duas unidades quando fui a Maceió: uma próxima a Feira de Artesanato e outra próxima ao Hotel Mercure."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "São ambientes diferentes (o cardápio é igual): próxima a Feira eles possuem um ambiente mais descontraido e jovem com musica ao vivo."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Perto do Mercure o salao é fechado e um ambiente com mais famílias."
+      }
+    ]
+  },
+  {
+    "id": "60",
+    "plataforma": "web",
+    "author": "midiamoura",
+    "titulo": "Muito bom",
+    "descricao": "O Big Néctar é aquele tipo de local que salva sua vida no meio de um dia corrido, que vc está com muita pressa. O atendimento é super rápido, aceitam cartão e tem diversos tipos de salgados, sanduiches e sucos naturais.",
+    "data": "2014-01-09",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "O Big Néctar é aquele tipo de local que salva sua vida no meio de um dia corrido, que vc está com muita pressa."
+      },
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "O atendimento é super rápido, aceitam cartão e tem diversos tipos de salgados, sanduiches e sucos naturais."
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "plataforma": "instagram",
+    "author": "rafamene",
+    "titulo": "Lagosta e porco ",
+    "descricao": "Vou bastante ao Felipe, pra mim a comida portuguesa é a melhor do mundo. Começo pelo bacalhau ou polvo com um vinho branco e termino com um carneiro e vinho tinto. Sobremesa, sempre, rabanada! ",
+    "data": "2017-08-04",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Vou bastante ao Felipe, pra mim a comida portuguesa é a melhor do mundo."
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "plataforma": "web",
+    "author": "Ana Gardenia F",
+    "titulo": "Eric",
+    "descricao": "Eric, é garçom do Coco Bambu Sul. Excelente atendimento, atencioso, simpático e procura agilizar todos os pedidos com rapidez.",
+    "data": "2019-11-29",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Excelente atendimento, atencioso, simpático e procura agilizar todos os pedidos com rapidez."
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "plataforma": "web",
+    "author": "marcelok644",
+    "titulo": "Uma decepção ",
+    "descricao": "Estive com a minha família no Coco Bambu próximo à Beira Mar em Fortaleza e pedi um prato que sempre como em São Paulo e sem excessões vem sempre maravilhoso. Mas nesta visita a filial da Beira Mar me decepcionei muito com o prato. Primeiro a quantidade de Camarões foi extremamente reduzida, e com isso o que veio foi batata palha e arroz que estava seco. Reclamei com o garçom que concordou com a  crítica, e me disse que o Maitre viria até a mesa, o que estou esperando até agora. Resumo, péssimo prato e nenhuma atitude do pessoal da casa.  Lamentável. A conta foi acima de R$ 270,00.",
+    "data": "2018-01-06",
+    "rating": "2",
+    "teor": "negative",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Estive com a minha família no Coco Bambu próximo à Beira Mar em Fortaleza e pedi um prato que sempre como em São Paulo e sem excessões vem sempre maravilhoso."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Mas nesta visita a filial da Beira Mar me decepcionei muito com o prato."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Primeiro a quantidade de Camarões foi extremamente reduzida, e com isso o que veio foi batata palha e arroz que estava seco."
+      },
+      {
+        "category": "servico",
+        "teor": "negative",
+        "sentenca": "Reclamei com o garçom que concordou com a  crítica, e me disse que o Maitre viria até a mesa, o que estou esperando até agora."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Resumo, péssimo prato e nenhuma atitude do pessoal da casa."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Lamentável."
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "plataforma": "web",
+    "author": "lhmantovani",
+    "titulo": "Talvez a melhor da cidade",
+    "descricao": "Talvez aqui seja servida a melhor carne (ou pelo menos custo beneficio) de Porto Alegre. Não se trata do tradicional churrasco gaúcho, mas sim de uma parrilla uruguaia. O ambiente simples, com garçons atenciosos e bem preparados, convida para cortes uruguaios de excelente qualidade. Não deixa de pedir o queijo provolone, imperdível!",
+    "data": "2017-05-04",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Talvez aqui seja servida a melhor carne (ou pelo menos custo beneficio) de Porto Alegre."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Não se trata do tradicional churrasco gaúcho, mas sim de uma parrilla uruguaia."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "O ambiente simples, com garçons atenciosos e bem preparados, convida para cortes uruguaios de excelente qualidade."
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "plataforma": "tripadvisor",
+    "author": "FellipeA41",
+    "titulo": "Deixou a desejar",
+    "descricao": "Esperava mais do atendimento e principalmente da comida...nada de estupendo...normal, satisfatório e na média.",
+    "data": "2016-11-06",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Esperava mais do atendimento e principalmente da comida...nada de estupendo...normal, satisfatório e na média."
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "plataforma": "yelp",
+    "author": "154GiovannaM",
+    "titulo": "Desonesto",
+    "descricao": "Passei a noite de sexta com familia no restaurante, e decidi optar por uma opcao de menu sem ser o buffet uma vez que não ia comer muito. Meu namorado foi no buffet e trouxe arroz, mas disse que não queria comer até o final. Entao experimentei apenas o arroz do buffet dele - uma pratica comum de quando vamos em casal e queremos experimentar a comida do outro. Bom, no final a conta veio como uma porcao de arroz extra (como se eu tivesse \"me aproveitado da situação para comer arroz\") e ainda como se tivessem sido duas porções, com valor acima do indicado no cardápio. Minha decepção foi extrema, pela falta de educacão e preparo do atendimento.",
+    "data": "2016-02-19",
+    "rating": "1",
+    "teor": "negative",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "negative",
+        "sentenca": "Passei a noite de sexta com familia no restaurante, e decidi optar por uma opcao de menu sem ser o buffet uma vez que não ia comer muito."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Entao experimentei apenas o arroz do buffet dele - uma pratica comum de quando vamos em casal e queremos experimentar a comida do outro."
+      },
+      {
+        "category": "servico",
+        "teor": "negative",
+        "sentenca": "Minha decepção foi extrema, pela falta de educacão e preparo do atendimento."
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "plataforma": "facebook",
+    "author": "Vivianagb",
+    "titulo": "Comida boa",
+    "descricao": "O lugar é simples, mas a comida é boa e com preço razoável. É possível encomendar e levar para casa.",
+    "data": "2016-07-15",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "O lugar é simples, mas a comida é boa e com preço razoável."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "É possível encomendar e levar para casa."
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "plataforma": "yelp",
+    "author": "hkarolalmeida",
+    "titulo": "Excelente! ",
+    "descricao": "Fui sabendo que era um dos melhores, então quis tirar a prova! Excelente! Pedi bacalhau e o Pastel de Belém que não deixou a desejar do que comi em Portugal! Somado a um bom vinho e bom papo! Recomendo! ",
+    "data": "2014-04-20",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Fui sabendo que era um dos melhores, então quis tirar a prova!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Excelente!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Somado a um bom vinho e bom papo!"
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "plataforma": "instagram",
+    "author": "Patricialsc",
+    "titulo": "Gostosuras",
+    "descricao": "O melhor lanche para o fim de tarde em Porto Velho. Comida regional e paraense, onde tem a melhor sopa de caranguejo.Sugestão: o bolo tentador é perfeito",
+    "data": "2013-02-24",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O melhor lanche para o fim de tarde em Porto Velho."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida regional e paraense, onde tem a melhor sopa de caranguejo."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Sugestão: o bolo tentador é perfeito"
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "plataforma": "web",
+    "author": "Departure49318",
+    "titulo": "Fica fácil ser saudável com esse cardápio",
+    "descricao": "Um cardápio de ótimas opções naturais e saborosas, bem executadas e com um serviço ótimo. Toda vez que como na Frutaria, fico pensando que tenho que voltar para experimentar outro prato.",
+    "data": "2018-01-31",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Um cardápio de ótimas opções naturais e saborosas, bem executadas e com um serviço ótimo."
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "plataforma": "googlereviews",
+    "author": "Rafaella124",
+    "titulo": "Ótima opção!",
+    "descricao": "O local fica localizado numa Vilela linda em Petrópolis, e tem mesas externas e internas. Fui à noite, o atendimento foi bom e rápido. Pedi um crepe de camarão divino (R$22) e meu marido pediu um filé mignon (R$35). A única coisa que deixou a desejar foi o arroz, completamente sem sal. O resto, adorei! ",
+    "data": "2016-08-16",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "O local fica localizado numa Vilela linda em Petrópolis, e tem mesas externas e internas."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Fui à noite, o atendimento foi bom e rápido."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A única coisa que deixou a desejar foi o arroz, completamente sem sal."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O resto, adorei!"
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "plataforma": "facebook",
+    "author": "ANDREIA G",
+    "titulo": "Ambiente agradável para a melhor cozinha do mundo!",
+    "descricao": "O ambiente é muito agradável, o cardápio muito bom, com alguns pratos bem típicos. A decoração é muito linda, com os quadros na parede de paisagens e o bar com o espelho horizontal na parte de cima. Porém, não é fisicamente como um restaurante italiano. Os restaurantes típicos italianos têm mesas postas (ou semi-postas) tradicionais com cadeiras tradicionais e não têm a configuração de mesas com baias tipo lanchonete americana e nem mesmo as bebidas como chás gelados... Trabalhei ha 10 anos em um Restaurante Italiano na Italia, por isso entendo que essa parte foi um acréscimo comercial do restaurante que não existe na Itália. Mas no geral, é uma experiência muito agradável.",
+    "data": "2017-01-05",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "O ambiente é muito agradável, o cardápio muito bom, com alguns pratos bem típicos."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A decoração é muito linda, com os quadros na parede de paisagens e o bar com o espelho horizontal na parte de cima."
+      },
+      {
+        "category": "geral",
+        "teor": "negative",
+        "sentenca": "Os restaurantes típicos italianos têm mesas postas (ou semi-postas) tradicionais com cadeiras tradicionais e não têm a configuração de mesas com baias tipo lanchonete americana e nem mesmo as bebidas como chás gelados... Trabalhei ha 10 anos em um Restaurante Italiano na Italia, por isso entendo que essa parte foi um acréscimo comercial do restaurante que não existe na Itália."
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "plataforma": "instagram",
+    "author": "ALondino",
+    "titulo": "Boa estrutura e refeições beira mar...",
+    "descricao": "O atendimento foi bom e o prato de peixe frito com pirao muito bom. Recomendo esse lugar assim como a Lopanna.",
+    "data": "2014-09-11",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "O atendimento foi bom e o prato de peixe frito com pirao muito bom."
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "plataforma": "googlereviews",
+    "author": "Marcia R",
+    "titulo": "Comidas típicas do Brasil",
+    "descricao": "Restaurante único. Ali se encontra sabores e ingredientes típicos de outras regiões do Brasil, como pequi e outros. Atendimento feito pela chef e proprietária. Não é barato mas vale conhecer.",
+    "data": "2014-11-12",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Restaurante único."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Ali se encontra sabores e ingredientes típicos de outras regiões do Brasil, como pequi e outros."
+      },
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Não é barato mas vale conhecer."
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "plataforma": "googlereviews",
+    "author": "alyssonferro",
+    "titulo": "Excelente pizza! ",
+    "descricao": "Pizza excelente! Servem somente a alacarte, mas uma pizza grande servem tranquilamente duas pessoas. Localização bem próxima a Av. Boa Viagem. ",
+    "data": "2015-02-13",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Pizza excelente!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Servem somente a alacarte, mas uma pizza grande servem tranquilamente duas pessoas."
+      },
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Localização bem próxima a Av."
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "plataforma": "twitter",
+    "author": "JBatistaJr",
+    "titulo": "Quem acha 'ótimo' é porque quer ver TV, não degustar boa cerveja!",
+    "descricao": "Desculpa aos fãs de chopp Brahma e Cia., mas ali não é nem de longe um bom lugar para degustar boas cervejas. Comecemos pela carta de 'especiais', como o teresinense chama as artesanais e umas duas ou três importadas, como Stella Artois etc. Um local que poderia ter um beer sommelier, além de torneiras de chopp de verdade, como de trigo, Ale, IPA, entre outras opções que em qualquer loja que possui o nome BEER no nome podemos encontrar. Os caras que nos atendem não sabem dos copos para cada estilo; não nos é oferecido algo para harmonizar com o determinado estilo que foi pedido...Enfim, quem gosta de lá é porque quer ver TV ou ser visto num bar de um shopping center de THE...",
+    "data": "2016-11-09",
+    "rating": "2",
+    "teor": "negative",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "Desculpa aos fãs de chopp Brahma e Cia., mas ali não é nem de longe um bom lugar para degustar boas cervejas."
+      },
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Um local que poderia ter um beer sommelier, além de torneiras de chopp de verdade, como de trigo, Ale, IPA, entre outras opções que em qualquer loja que possui o nome BEER no nome podemos encontrar."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Os caras que nos atendem não sabem dos copos para cada estilo; não nos é oferecido algo para harmonizar com o determinado estilo que foi pedido...\nEnfim, quem gosta de lá é porque quer ver TV ou ser visto num bar de um shopping center de THE..."
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "plataforma": "twitter",
+    "author": "Eduardovc",
+    "titulo": "Um dos melhores de Porto Alegre.",
+    "descricao": "Adoro a fuzilli longo da Usina, os molhos são excelente, mas o grande diferencial, realmente é as massas. Infelizmente sempre cheio, sendo difícil conseguir almoçar lá...contudo, dependendo do dia, vale a pena....",
+    "data": "2013-02-08",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Adoro a fuzilli longo da Usina, os molhos são excelente, mas o grande diferencial, realmente é as massas."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Infelizmente sempre cheio, sendo difícil conseguir almoçar lá...contudo, dependendo do dia, vale a pena...."
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "plataforma": "instagram",
+    "author": "Aldaalmeida",
+    "titulo": "Melhor atendimento",
+    "descricao": "O lugar é ótimo e super agradável, eu e meus amigos fomos atendidos super bem pelo o garçom Roberto, SUPER RECOMENDOOOOOO!",
+    "data": "2019-10-30",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "O lugar é ótimo e super agradável, eu e meus amigos fomos atendidos super bem pelo o garçom Roberto, SUPER RECOMENDOOOOOO!"
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "plataforma": "yelp",
+    "author": "Philipe B",
+    "titulo": "Qualidade igual a de Londres",
+    "descricao": "Já tinhamos ido no Jamies Italian de Londres e qualidade do restaurante de São Paulo é a mesma. Excelente atendimento e ótima comida. Recomendo a todos.",
+    "data": "2015-10-20",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Excelente atendimento e ótima comida."
+      }
+    ]
+  },
+  {
+    "id": "80",
+    "plataforma": "facebook",
+    "author": "LGVM",
+    "titulo": "Comida Excelente",
+    "descricao": "Já fui lá no buffet da hora do almoço e no jantar a la carte a noite. Na minha opinião é o melhor jantar de Belém, foi o melhor filhote com crosta de castanha que como na cidade e serve cervejas da amazona beer.",
+    "data": "2014-04-23",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "Na minha opinião é o melhor jantar de Belém, foi o melhor filhote com crosta de castanha que como na cidade e serve cervejas da amazona beer."
+      }
+    ]
+  },
+  {
+    "id": "81",
+    "plataforma": "googlereviews",
+    "author": "nataliabD1968FR",
+    "titulo": "Vale a visita ",
+    "descricao": "Ótimos petiscos e ótico chopp. Comemos a porção de pancetta, porção de pastéis e frango a passarinho. Estava tudo uma delicia, comidinha de boteco honesta, muito bem feita. Não é um lugar muito barato, mas valeu a pena a visita. Voltaremos com certeza. ",
+    "data": "2019-01-22",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Ótimos petiscos e ótico chopp."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Comemos a porção de pancetta, porção de pastéis e frango a passarinho."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Estava tudo uma delicia, comidinha de boteco honesta, muito bem feita."
+      },
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Não é um lugar muito barato, mas valeu a pena a visita."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Voltaremos com certeza."
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "plataforma": "instagram",
+    "author": "Peter L",
+    "titulo": "Buffet meia boca ;atendimento mediano .",
+    "descricao": "Nada de tão interessante a não ser as tapiocas e crepes feitos na hora que são uma maravilha . Mas o restante do buffet de cafe da manhã é mediano e o atendimento tambem; tomara que melhorem nesse aspecto.",
+    "data": "2016-05-04",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Nada de tão interessante a não ser as tapiocas e crepes feitos na hora que são uma maravilha ."
+      },
+      {
+        "category": "servico",
+        "teor": "negative",
+        "sentenca": "Mas o restante do buffet de cafe da manhã é mediano e o atendimento tambem; tomara que melhorem nesse aspecto."
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "plataforma": "instagram",
+    "author": "antoniotM443FE",
+    "titulo": "avaliação",
+    "descricao": "atendimento nota 10 ..garcom atencioso  pratos excelentes muito bem.servidos e atendidos com certeza voltaremos",
+    "data": "2020-03-06",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "atendimento nota 10 ..garcom atencioso  pratos excelentes muito bem.servidos e atendidos com certeza voltaremos"
+      }
+    ]
+  },
+  {
+    "id": "84",
+    "plataforma": "twitter",
+    "author": "MauricioSamia",
+    "titulo": "Boa comida",
+    "descricao": "O lugar é agradável.a comida é boa e o atendimento também, uma excelente experiencia na cidade de Porto Velho para quem gosta de uma boa comida brasileira especialmente a mineira. Vale a pena conhecer e soborear",
+    "data": "2014-10-23",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "O lugar é agradável.a comida é boa e o atendimento também, uma excelente experiencia na cidade de Porto Velho para quem gosta de uma boa comida brasileira especialmente a mineira."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Vale a pena conhecer e soborear"
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "plataforma": "web",
+    "author": "Lorena O",
+    "titulo": "Comum",
+    "descricao": "Serve um bom churrasco, o ambiente é aberto, ventilado mas podia investir mais em atrair o cliente com algum diferencial",
+    "data": "2014-12-15",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Serve um bom churrasco, o ambiente é aberto, ventilado mas podia investir mais em atrair o cliente com algum diferencial"
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "plataforma": "instagram",
+    "author": "SArrelias",
+    "titulo": "Ambiente Familiar e amigo",
+    "descricao": "Otimo atendimento, ambiente confortavel, e comida otima. So precisa de mais segurança. Meus parabens.# Recomendo",
+    "data": "2015-10-28",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Otimo atendimento, ambiente confortavel, e comida otima."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "So precisa de mais segurança."
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "plataforma": "twitter",
+    "author": "Ttribeiro",
+    "titulo": "Agradável ",
+    "descricao": "Comida simples, mas saboroso. Pedimos um filé que foi muito bem servido, prato caro mas que serve até 03 pessoas satisfatoriamente... Empadinha e bolinho de bacalhau deliciosos!",
+    "data": "2016-02-09",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Comida simples, mas saboroso."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Pedimos um filé que foi muito bem servido, prato caro mas que serve até 03 pessoas satisfatoriamente... Empadinha e bolinho de bacalhau deliciosos!"
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "plataforma": "googlereviews",
+    "author": "Welerson_Fonseca",
+    "titulo": "A Melhor Churrascaria de Natal",
+    "descricao": "Trata-se da melhor churrascaria de Natal, com um cardápio de carnes e peixes variado, um atendimento personalizado. Para quem gosta de comida japonesa irá se esbaldar pois o sushi é magnifico. Porém para minha família a picanha nobre foi maravilhosa e o carneiro assado também foi divino. Possui ainda uma seleção de sobremesas incríveis. Recomendo.",
+    "data": "2013-11-27",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Trata-se da melhor churrascaria de Natal, com um cardápio de carnes e peixes variado, um atendimento personalizado."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Para quem gosta de comida japonesa irá se esbaldar pois o sushi é magnifico."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Porém para minha família a picanha nobre foi maravilhosa e o carneiro assado também foi divino."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Possui ainda uma seleção de sobremesas incríveis."
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "plataforma": "tripadvisor",
+    "author": "LeneBelem_PA",
+    "titulo": "Pizzaria",
+    "descricao": "Excelente pizza,massa fina, feita no forno a lenha.Lugar maravilhoso pra quem quer ver e ser visto...bem freqüentado,sempre tem fila de espera.Melhor fazer reserva...Tem uma adega ímpar que vale a pena explorada.",
+    "data": "2012-09-16",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Excelente pizza,massa fina, feita no forno a lenha.Lugar maravilhoso pra quem quer ver e ser visto...bem freqüentado,sempre tem fila de espera.Melhor fazer reserva...Tem uma adega ímpar que vale a pena explorada."
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "plataforma": "instagram",
+    "author": "MereS21",
+    "titulo": " visita inesquecível",
+    "descricao": "Comida sensacional, lugar maravilhoso.Garçon Ítalo super atencioso e educado... parabéns para a casa... ",
+    "data": "2017-08-30",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida sensacional, lugar maravilhoso."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Garçon Ítalo super atencioso e educado... parabéns para a casa..."
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "plataforma": "googlereviews",
+    "author": "Rogério M",
+    "titulo": "Exemplo de churrascaria",
+    "descricao": "Buffet de saladas muito bom, mas as carnes são o ponto alto. Sempre no ponto correto, chegam quente a mesa, muito bem servidas por garçons espcializados no assunto.O atendimento é excelente e o ambiente muito agradável em função das grandes janelas que permitem mais luz externa.",
+    "data": "2012-08-25",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Buffet de saladas muito bom, mas as carnes são o ponto alto."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Sempre no ponto correto, chegam quente a mesa, muito bem servidas por garçons espcializados no assunto."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "O atendimento é excelente e o ambiente muito agradável em função das grandes janelas que permitem mais luz externa."
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "plataforma": "googlereviews",
+    "author": "keillagb",
+    "titulo": "Surpreendente! ",
+    "descricao": "O melhor restaurante de Natal para mim. Ambiente de muito bom gosto, comida impecável. Sem falar na música ao vivo! Sensacional... nosso preferido! ",
+    "data": "2018-01-17",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "O melhor restaurante de Natal para mim."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Ambiente de muito bom gosto, comida impecável."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Sem falar na música ao vivo!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Sensacional... nosso preferido!"
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "plataforma": "web",
+    "author": "kakamarinho",
+    "titulo": "Ótimo atendimento, comida maravilhosa! ",
+    "descricao": "Ótimo atendimento, comida deliciosa! Muito bem servido também, excelente custo-benefício! Obrigada ao garçom William pela presteza! ",
+    "data": "2020-02-02",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Ótimo atendimento, comida deliciosa!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Muito bem servido também, excelente custo-benefício!"
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "plataforma": "twitter",
+    "author": "Ricardobg",
+    "titulo": "Comida e atendimento Baianos",
+    "descricao": "Situado nas alamedas da praça Savassi. Ambiente eclético. Cerveja gelada e bons aperitivos. Garçons realmente baianos, que atendem com simpatia, e toda a \"malemolência\" caracteristica da Bahia. ",
+    "data": "2014-09-18",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "Cerveja gelada e bons aperitivos."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Garçons realmente baianos, que atendem com simpatia, e toda a \"malemolência\" caracteristica da Bahia."
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "plataforma": "facebook",
+    "author": "741raquelc",
+    "titulo": "Apenas incrível!",
+    "descricao": "Uma grata surpresa. Vim a Goiânia a trabalho e, por indicação de um amigo, almocei no Kanpai. Ambiente amplo e agradabilíssimo, serviço gentil e atencioso, comida espetacular.Uma dica: o festival executivo vale muito a pena. É comida que não acaba mais ;)",
+    "data": "2015-06-24",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Uma grata surpresa."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Ambiente amplo e agradabilíssimo, serviço gentil e atencioso, comida espetacular."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Uma dica: o festival executivo vale muito a pena."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "É comida que não acaba mais ;)"
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "plataforma": "facebook",
+    "author": "Celso E",
+    "titulo": "UM JEITO DE DE CONHECER UMA GAFIEIRA CHIC E DANÇAR A DOIS",
+    "descricao": "Apesar de ser escura esta região do centro do Rio e  bem policiada e se não sentir segura  vá de táxi .Uma gafieira chic com preços moderados e com ótimos drinks . Fique no tira-gostos. A dois ou em grupo e bom pra dançar e relaxar ao som de gafieira  .Boa ambientação com vários níveis  permitindo você escolher . Entre na noite do Rio em uma  autentica gafieria carioca.",
+    "data": "2016-08-16",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Apesar de ser escura esta região do centro do Rio e  bem policiada e se não sentir segura  vá de táxi .Uma gafieira chic com preços moderados e com ótimos drinks ."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Fique no tira-gostos."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Entre na noite do Rio em uma  autentica gafieria carioca."
+      }
+    ]
+  },
+  {
+    "id": "97",
+    "plataforma": "googlereviews",
+    "author": "Jayhir16",
+    "titulo": "Muito bom",
+    "descricao": "O diferencial é a área de diversão para crianças. O cardápio é variado, os preços são compatíveis com a qualidade oferecida.",
+    "data": "2016-08-01",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": []
+  },
+  {
+    "id": "98",
+    "plataforma": "facebook",
+    "author": "NathaliaAV",
+    "titulo": "Espetacular!",
+    "descricao": "Cozinha brasileira, cardápio incrível! Justifica o alto preço e a vista é uma delícia a parte! A sobremesa de sorvete de tapioca com calda de açaí é simplesmente inigualável!",
+    "data": "2013-07-12",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Cozinha brasileira, cardápio incrível!"
+      },
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Justifica o alto preço e a vista é uma delícia a parte!"
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "A sobremesa de sorvete de tapioca com calda de açaí é simplesmente inigualável!"
+      }
+    ]
+  },
+  {
+    "id": "99",
+    "plataforma": "instagram",
+    "author": "MarcoAurelioMarins",
+    "titulo": "Ótima pizzaria",
+    "descricao": "Preço muito bom, e a pizza muito saborosa, com uma massa bem fina e crocante. Restaurante possui vallet, o que é uma boa comodidade.Atendimento rápido e garçons muito educados.Ambiente agradável e aconchegante.",
+    "data": "2018-08-06",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Preço muito bom, e a pizza muito saborosa, com uma massa bem fina e crocante."
+      },
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Restaurante possui vallet, o que é uma boa comodidade."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Atendimento rápido e garçons muito educados."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Ambiente agradável e aconchegante."
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "plataforma": "yelp",
+    "author": "Cidoca",
+    "titulo": "Pra quem ama caranguejo!",
+    "descricao": "Este restaurante serve caranguejo de varias maneiras.A comida chega rápido, mas tem cara de pronta a muito tempo, não é quente nem barata.Vale a experiencia de comer caranguejo ,pra quem não tem esta iguaria na sua vida cotidiana.",
+    "data": "2016-07-31",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Este restaurante serve caranguejo de varias maneiras."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "A comida chega rápido, mas tem cara de pronta a muito tempo, não é quente nem barata."
+      }
+    ]
+  },
+  {
+    "id": "101",
+    "plataforma": "web",
+    "author": "dorivamr",
+    "titulo": "Almoço ",
+    "descricao": "Muita variedade de comidas típicas, ótimo atendimento, ambiente amplo para receber grupos. Vale a pena conhecer ",
+    "data": "2019-11-17",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Muita variedade de comidas típicas, ótimo atendimento, ambiente amplo para receber grupos."
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "plataforma": "tripadvisor",
+    "author": "brunoferreiram",
+    "titulo": "Fenomenal",
+    "descricao": "Já perdi as contas de quantas vezes já vim!Recomendo o Crispy e as Lemonades, ambas são sensacionais. Parabéns ao Moriconi, atendimento impecável.",
+    "data": "2018-02-24",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Já perdi as contas de quantas vezes já vim!Recomendo o Crispy e as Lemonades, ambas são sensacionais."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Parabéns ao Moriconi, atendimento impecável."
+      }
+    ]
+  },
+  {
+    "id": "103",
+    "plataforma": "instagram",
+    "author": "Felipe B",
+    "titulo": "Preciso voltar",
+    "descricao": "Não experimentei as costelinhas de porco pois eh muito grande para porção individual, mad fiquei com vontade pois todas as mesas estavam pedindo. Peixe na brasa estava bem gostoso, mad o arroz verde de camarão que acompanha estava horrível. Cerveja muito gelada!!",
+    "data": "2016-11-15",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Não experimentei as costelinhas de porco pois eh muito grande para porção individual, mad fiquei com vontade pois todas as mesas estavam pedindo."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Peixe na brasa estava bem gostoso, mad o arroz verde de camarão que acompanha estava horrível."
+      },
+      {
+        "category": "bebida",
+        "teor": "negative",
+        "sentenca": "Cerveja muito gelada!"
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "plataforma": "instagram",
+    "author": "Leandro299",
+    "titulo": "boa lanchonete",
+    "descricao": "com uma variedade de lanches muito boa so precisa agilizar mais o atendimento as vezes e um pouco demorado",
+    "data": "2015-01-16",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "com uma variedade de lanches muito boa so precisa agilizar mais o atendimento as vezes e um pouco demorado"
+      }
+    ]
+  },
+  {
+    "id": "105",
+    "plataforma": "web",
+    "author": "valcuccia",
+    "titulo": "Gostoso!",
+    "descricao": "Eu sempre almoço lá com a família.  Preço camarada e opções pra todos os gostos, exceto carne vermelha. Sucos naturais feitos na hora, lanches gostosos e uma mercearia de produtos naturais e pães feitos na casa com muita variedade e preços justos. Poderia investir em melhorar o visual, porque o salão das mesas não é bonito... ",
+    "data": "2020-02-26",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "Sucos naturais feitos na hora, lanches gostosos e uma mercearia de produtos naturais e pães feitos na casa com muita variedade e preços justos."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Poderia investir em melhorar o visual, porque o salão das mesas não é bonito..."
+      }
+    ]
+  },
+  {
+    "id": "106",
+    "plataforma": "instagram",
+    "author": "fabicottet",
+    "titulo": "Bom.",
+    "descricao": "Lugar bom para estar com amigos, preço um pouco salgado e atendimento deixa a desejar. Mas vale a pena provar o submarino. Na minha opinião, as porções de fritas estavam muito gordurosas.",
+    "data": "2015-10-09",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Lugar bom para estar com amigos, preço um pouco salgado e atendimento deixa a desejar."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Na minha opinião, as porções de fritas estavam muito gordurosas."
+      }
+    ]
+  },
+  {
+    "id": "107",
+    "plataforma": "googlereviews",
+    "author": "Herlei",
+    "titulo": "diverção",
+    "descricao": "Tem um ambiente acolhedor,  ótimo para reunir-se com amigos e colegas para passar boas horas jogando conversa fora.",
+    "data": "2015-07-09",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Tem um ambiente acolhedor,  ótimo para reunir-se com amigos e colegas para passar boas horas jogando conversa fora."
+      }
+    ]
+  },
+  {
+    "id": "108",
+    "plataforma": "yelp",
+    "author": "Claudia L",
+    "titulo": "Boa comida com otimo atendimento",
+    "descricao": "O restaurante´é bastante agradável e os funcionários são muito atenciosos.Possuem outros pratos além do famoso Pitú. Comemos uma picanha de carne de sol que estava maravilhosa.Recomendo. Preços de médio para alto!",
+    "data": "2020-02-12",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "O restaurante´é bastante agradável e os funcionários são muito atenciosos."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Possuem outros pratos além do famoso Pitú."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comemos uma picanha de carne de sol que estava maravilhosa."
+      },
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Preços de médio para alto!"
+      }
+    ]
+  },
+  {
+    "id": "109",
+    "plataforma": "facebook",
+    "author": "SuzanaH76",
+    "titulo": "Aniversario",
+    "descricao": "Alto Astral Nota 10. Comida Nota 100. Atendimento Nota 1000. Tequileiros sao a Sensacao da Casa. Local Ideal para Jantar com os Amigos e Familia Toda e se Divertir.",
+    "data": "2015-10-26",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Local Ideal para Jantar com os Amigos e Familia Toda e se Divertir."
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "plataforma": "googlereviews",
+    "author": "gabizinha174",
+    "titulo": "Ótimo restaurante recomendo",
+    "descricao": "Comida excelente mesmo com o nome de Camarões possui outros tipos de comida. Atendimento perfeito. Super recomendo lugar aconchegante.",
+    "data": "2017-04-10",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida excelente mesmo com o nome de Camarões possui outros tipos de comida."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Atendimento perfeito."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Super recomendo lugar aconchegante."
+      }
+    ]
+  },
+  {
+    "id": "111",
+    "plataforma": "facebook",
+    "author": "Carnevalefco",
+    "titulo": "PIZZA !!!!!",
+    "descricao": "Quer comer bem e barato no Rio de Janeiro? Vá ao Zona Sul e peça uma boa pizza com um vinho pego diretamente do lugar à sua escolha !",
+    "data": "2017-07-07",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Quer comer bem e barato no Rio de Janeiro?"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Vá ao Zona Sul e peça uma boa pizza com um vinho pego diretamente do lugar à sua escolha !"
+      }
+    ]
+  },
+  {
+    "id": "112",
+    "plataforma": "web",
+    "author": "RafaelHeib",
+    "titulo": "Rodizio de petiscos",
+    "descricao": "Lugar bem frequentado, com buffet variado e preço unico. Por ser bem cheio é preciso chegar cedo. Fica na orla de Atalaia, possui um espaço para estacionar.",
+    "data": "2014-02-01",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "preco",
+        "teor": "negative",
+        "sentenca": "Lugar bem frequentado, com buffet variado e preço unico."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Por ser bem cheio é preciso chegar cedo."
+      }
+    ]
+  },
+  {
+    "id": "113",
+    "plataforma": "twitter",
+    "author": "Fernando C",
+    "titulo": "Churrasco muito bom",
+    "descricao": "O churrasco é delicioso e os acompanhamentos também, porém um preço é um pouco salgado, mas a qualidade, sabor e o atendimento compensam o valor.",
+    "data": "2016-04-11",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "O churrasco é delicioso e os acompanhamentos também, porém um preço é um pouco salgado, mas a qualidade, sabor e o atendimento compensam o valor."
+      }
+    ]
+  },
+  {
+    "id": "114",
+    "plataforma": "facebook",
+    "author": "Abernardes",
+    "titulo": "Uma otima opção para botafogo",
+    "descricao": "um chopp otimo com com um atendimento meio tumultuado pois ache muito as sextas, porem os garçons se esforçam bastante para te deixar o melhor atendido possível.As porcões são deliciosas",
+    "data": "2016-08-10",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "um chopp otimo com com um atendimento meio tumultuado pois ache muito as sextas, porem os garçons se esforçam bastante para te deixar o melhor atendido possível."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "As porcões são deliciosas"
+      }
+    ]
+  },
+  {
+    "id": "115",
+    "plataforma": "tripadvisor",
+    "author": "411karlaf",
+    "titulo": "O melhor cartola. Buffet de qualidade!",
+    "descricao": "R $ 61,90 o kg em setembro/16O melhor cartola que comi em Natal. Além disso, quem quiser experimentar comida regional, este é o lugar perfeito.Um buffet muito variado, tudo muito bem feito e quentinho.Atendimento sem igual. Garçons muito atenciosos. Top 5:O pão de mandioca, doce ou salgado; os sucos (alguns misturados); a carne com nata; bolinho de queijo; escondidinho de carne do sol....Além disso tem risotto, Baião de dois, feijão verde, sopas variadas, peixe a milanesa, frango a milanesa, cuzcuz, canjica, mesa com queijos, salada...... Tem que ter muito foco pra não comer de tudo um pouco.Detalhe: o prato é enorme! Não se engane na quantidade que colocar nele.Detalhe 2: eles tem uma lojinha interna que vende muita coisa: alguns doces, avoador, itens regionais e até o famoso pão do mangai.  Até uma panela de fazer cuzcuz individual vende...Detalhe 3: vi umas 2 mesas comemorando aniversário lá.Local diferente e muito boa comida!",
+    "data": "2016-09-13",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "R $ 61,90 o kg em setembro/16\nO melhor cartola que comi em Natal."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Além disso, quem quiser experimentar comida regional, este é o lugar perfeito."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Um buffet muito variado, tudo muito bem feito e quentinho."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Garçons muito atenciosos."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Top 5:\nO pão de mandioca, doce ou salgado; os sucos (alguns misturados); a carne com nata; bolinho de queijo; escondidinho de carne do sol....\nAlém disso tem risotto, Baião de dois, feijão verde, sopas variadas, peixe a milanesa, frango a milanesa, cuzcuz, canjica, mesa com queijos, salada...... \nTem que ter muito foco pra não comer de tudo um pouco."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Detalhe: o prato é enorme!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Não se engane na quantidade que colocar nele."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Até uma panela de fazer cuzcuz individual vende...\n\nDetalhe 3: vi umas 2 mesas comemorando aniversário lá."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Local diferente e muito boa comida!"
+      }
+    ]
+  },
+  {
+    "id": "116",
+    "plataforma": "tripadvisor",
+    "author": "francad827",
+    "titulo": "Aniversário",
+    "descricao": "Ao visitarmos o cocô Bambu surpreendidos com o atendimento por excelência do Garson Ronaldo Martins nota 10 parabéns ao cocô Bambu por ter um profissional deste nível.França da Silva16/12/2019",
+    "data": "2019-12-15",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Ao visitarmos o cocô Bambu surpreendidos com o atendimento por excelência do Garson Ronaldo Martins nota 10 parabéns ao cocô Bambu por ter um profissional deste nível."
+      }
+    ]
+  },
+  {
+    "id": "117",
+    "plataforma": "googlereviews",
+    "author": "Marcos P",
+    "titulo": "Ótima Pizza",
+    "descricao": "ótima pizza, realmente deliciosa com excelentes ingredientes e sabores que fogem do tradicional....ambiente muito acolhedor, funcionários atenciosos....único ponto negativo é o horário: a casa fecha meia noite mas muito antes já estão retirando o buffet de saladas e encerram o rodizio pelo qual fiquei decepcionado pelo porte do estabelecimento. Havia comido poucas pizzas pelo horário ( +- 23h) até que o garçom veio me perguntar se havia algum sabor em especial que estava aguardando.....depois de comer os sabores que me trouxe, fiz o mesmo com as doces....acabei comendo pouca variedade....achei muito desrespeitoso com o cliente inclusive pelo valor pago que não é nada barato.",
+    "data": "2015-02-20",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "ótima pizza, realmente deliciosa com excelentes ingredientes e sabores que fogem do tradicional....ambiente muito acolhedor, funcionários atenciosos....único ponto negativo é o horário: a casa fecha meia noite mas muito antes já estão retirando o buffet de saladas e encerram o rodizio pelo qual fiquei decepcionado pelo porte do estabelecimento."
+      }
+    ]
+  },
+  {
+    "id": "118",
+    "plataforma": "facebook",
+    "author": "413kellenb",
+    "titulo": "Ambiente agradável em SP",
+    "descricao": "O restaurante oferece bons pratos, não tem um serviço rápido porém vale a pena ir em almoços de toda maneira.No almoço oferece música tocada em um piano exposto no meio do restaurante, com bastante vegetação.",
+    "data": "2018-01-20",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "O restaurante oferece bons pratos, não tem um serviço rápido porém vale a pena ir em almoços de toda maneira."
+      }
+    ]
+  },
+  {
+    "id": "119",
+    "plataforma": "twitter",
+    "author": "Arthur L",
+    "titulo": "Churrasquinho bom",
+    "descricao": "O Churrasquinho do Japa tem bom custo benefício, bem localizado e com comida boa. O espetinho vale a pena, as guarnições são bem preparadas. Entretanto, como fator negativo, a falta de refrigeração se faz sentir nos dias mais quentes.",
+    "data": "2014-10-29",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "O Churrasquinho do Japa tem bom custo benefício, bem localizado e com comida boa."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Entretanto, como fator negativo, a falta de refrigeração se faz sentir nos dias mais quentes."
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "plataforma": "tripadvisor",
+    "author": "394samuelf",
+    "titulo": "Ambiente envolvente em bairro elegante de Sampa",
+    "descricao": "Ao passar pela porta dessa pequena trattoria italiana já fiquei curioso, pois o ambiente é muito charmoso e convidativo; em seguida fui com amigos para jantar e ótima surpresa tive, carta de vinhos enxuta mas honesta, pratos fartos e saborosos, atendimento muito eficiente e simpático, e com direito a prova de dois lemoncellos ao final por cortesia. Agora...a sobremesa não empolgou, sendo que, acredito que vários restaurantes tem contratado a parte de confeitaria já pronta através de empresas especializadas, que infelizmente deixa a desejar.",
+    "data": "2019-12-11",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Ao passar pela porta dessa pequena trattoria italiana já fiquei curioso, pois o ambiente é muito charmoso e convidativo; em seguida fui com amigos para jantar e ótima surpresa tive, carta de vinhos enxuta mas honesta, pratos fartos e saborosos, atendimento muito eficiente e simpático, e com direito a prova de dois lemoncellos ao final por cortesia."
+      },
+      {
+        "category": "geral",
+        "teor": "negative",
+        "sentenca": "Agora...a sobremesa não empolgou, sendo que, acredito que vários restaurantes tem contratado a parte de confeitaria já pronta através de empresas especializadas, que infelizmente deixa a desejar."
+      }
+    ]
+  },
+  {
+    "id": "121",
+    "plataforma": "tripadvisor",
+    "author": "fernando m",
+    "titulo": "otimo..",
+    "descricao": "boas opções no cardapio, produtos com qualidade, preços justos, bom atendimento, facil acesso, vale a pena conhecer.",
+    "data": "2015-08-31",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "boas opções no cardapio, produtos com qualidade, preços justos, bom atendimento, facil acesso, vale a pena conhecer."
+      }
+    ]
+  },
+  {
+    "id": "122",
+    "plataforma": "facebook",
+    "author": "jejeee",
+    "titulo": "Nosso restaurante favorito em Manaus",
+    "descricao": "Voce nunca vai imaginar que vai encontrar um bacalhau tao bom em Manaus. Meu marido já morou em diversas partes do mundo e o Alentejo é o restaurante favorito dele.Ambiente sofisticado, elegante e agradável.Tudo é bom, o bacalhau, as verduras e ate o arroz! Atendimento impecável! Geraldo e Tati são muito profissionais e queridos.Vale a pela levar uma blusa se for muito friorento ;)Recomendo, mesmo para turistas (que normalmente procuram culinária regional). Com certeza serão surpreendidos.",
+    "data": "2017-09-02",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Voce nunca vai imaginar que vai encontrar um bacalhau tao bom em Manaus."
+      },
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Meu marido já morou em diversas partes do mundo e o Alentejo é o restaurante favorito dele."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Ambiente sofisticado, elegante e agradável."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Tudo é bom, o bacalhau, as verduras e ate o arroz!"
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Atendimento impecável!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Vale a pela levar uma blusa se for muito friorento ;)\nRecomendo, mesmo para turistas (que normalmente procuram culinária regional)."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Com certeza serão surpreendidos."
+      }
+    ]
+  },
+  {
+    "id": "123",
+    "plataforma": "tripadvisor",
+    "author": "Aldirlene M",
+    "titulo": "Comida excelente",
+    "descricao": "Ótimo serviço, boa localização e comida excelente! Estou apaixonada pela carne de sol. Fácil acesso.",
+    "data": "2018-09-22",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Ótimo serviço, boa localização e comida excelente!"
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Estou apaixonada pela carne de sol."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Fácil acesso."
+      }
+    ]
+  },
+  {
+    "id": "124",
+    "plataforma": "instagram",
+    "author": "Guilherme A",
+    "titulo": "Melhor comida asiática do Rio de Janeiro!",
+    "descricao": "Localização acessível, ótimo atendimento, dependências confortáveis e a comida deliciosa. A Chef Ana Carolina está de parabéns!",
+    "data": "2018-11-01",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Localização acessível, ótimo atendimento, dependências confortáveis e a comida deliciosa."
+      }
+    ]
+  },
+  {
+    "id": "125",
+    "plataforma": "yelp",
+    "author": "Lucilene D",
+    "titulo": "Peixada",
+    "descricao": "Ambiente muito legal, uma comida de qualidade. gosto muito do peixe a delicia de la hummm... Lugar arejado e bastante espaço",
+    "data": "2016-05-06",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Ambiente muito legal, uma comida de qualidade."
+      }
+    ]
+  },
+  {
+    "id": "126",
+    "plataforma": "twitter",
+    "author": "jessicafusco2",
+    "titulo": "Bom ambiente e muito boa comida",
+    "descricao": "Apesar de às vezes ter fila, é um restaurante que oferece boa comida. Há opções de salada, quiches, tudo muito bem preparado. Parece muito pequeno de fora, mas ao entrar, percebe-se que o ambiente não é tão pequeno.",
+    "data": "2016-08-23",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Apesar de às vezes ter fila, é um restaurante que oferece boa comida."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Há opções de salada, quiches, tudo muito bem preparado."
+      },
+      {
+        "category": "ambiente",
+        "teor": "negative",
+        "sentenca": "Parece muito pequeno de fora, mas ao entrar, percebe-se que o ambiente não é tão pequeno."
+      }
+    ]
+  },
+  {
+    "id": "127",
+    "plataforma": "tripadvisor",
+    "author": "karinemuricy",
+    "titulo": "MELHOR CARANGUEJO DE SALVADOR!!!!!!!!",
+    "descricao": "Quando penso em caranguejo só vem a mente o Caranga... Já fui em outros mais nenhum se compara com a qualidade  dos caranguejos de lá. Saboroso... soltinho da casca...o pirão com camarão dentro... hummmm... sem falar no serviço perfeito e ambiente super agradável. .. ",
+    "data": "2014-07-29",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Quando penso em caranguejo só vem a mente o Caranga... Já fui em outros mais nenhum se compara com a qualidade  dos caranguejos de lá."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": ".."
+      }
+    ]
+  },
+  {
+    "id": "128",
+    "plataforma": "googlereviews",
+    "author": "RAINNER R",
+    "titulo": "Bom",
+    "descricao": "Boa e cara cafeteria de aeroporto! O café é sempre bom, mas os preços continuam nas alturas. O atendimento continua bom e rápido.",
+    "data": "2013-12-15",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Boa e cara cafeteria de aeroporto!"
+      },
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "O café é sempre bom, mas os preços continuam nas alturas."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "O atendimento continua bom e rápido."
+      }
+    ]
+  },
+  {
+    "id": "129",
+    "plataforma": "yelp",
+    "author": "Rafael M",
+    "titulo": "Jantar",
+    "descricao": "Ótimo restaurante e atendimento execelente do Garçom Marciel sempre muito atencioso com os clientes. Obg.",
+    "data": "2019-10-13",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Ótimo restaurante e atendimento execelente do Garçom Marciel sempre muito atencioso com os clientes."
+      }
+    ]
+  },
+  {
+    "id": "130",
+    "plataforma": "yelp",
+    "author": "Ninarosa-azevedo",
+    "titulo": "Comida caseira e gostosa. Sucos variados",
+    "descricao": "O restaurante oferece pratos rapidos diariamente. A feijoada Light é muito boa, a virada paulista também.  O preço é bem acessível, e a comida caseira muito Boa. Já almocei vários dias lá.  São mais de 80 sucos naturais diversos e escolha. ",
+    "data": "2016-05-02",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A feijoada Light é muito boa, a virada paulista também."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "O preço é bem acessível, e a comida caseira muito Boa."
+      },
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "São mais de 80 sucos naturais diversos e escolha."
+      }
+    ]
+  },
+  {
+    "id": "131",
+    "plataforma": "twitter",
+    "author": "Moris A",
+    "titulo": "Um Due Cuochi tranquilo e muito agradável",
+    "descricao": "Frequentador habitual do Due Cuochi do Shopping Cidade Jardim resolvemos festejar o aniversário de minha filha na casa da Henri Dunant. A experiência foi a melhor possível. Embora relativamente cheio é um local calmo, amplo e muito bem decorado. O serviço é excelente e muito cuidadoso. A carta de vinhos oferece uma boa variedade e os pratos, principalmente as massas, são muito saborosas. Uma raridade hoje em dia em São Paulo, há valet parking no local gratuito. Voltaremos com certeza.Espero ter ajudado.",
+    "data": "2016-05-23",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Frequentador habitual do Due Cuochi do Shopping Cidade Jardim resolvemos festejar o aniversário de minha filha na casa da Henri Dunant."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A experiência foi a melhor possível."
+      },
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Embora relativamente cheio é um local calmo, amplo e muito bem decorado."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "O serviço é excelente e muito cuidadoso."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "A carta de vinhos oferece uma boa variedade e os pratos, principalmente as massas, são muito saborosas."
+      },
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Uma raridade hoje em dia em São Paulo, há valet parking no local gratuito."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Voltaremos com certeza."
+      }
+    ]
+  },
+  {
+    "id": "132",
+    "plataforma": "instagram",
+    "author": "JoaoTeixeira2013",
+    "titulo": "Reijonal",
+    "descricao": "Como restaurante regional excelente. Mas não se trata de restaurante regional e sim um misto de regional/tradicional/turístico/internacional e pode até incluir os manjados contemporâneos/gourmets/damoda e outros na sua categoria. Pratos variados e especiais num cardápio que na escolha já te deixa com água na boca e a ânsia de como será o gosto. Entradas gostosas e que diferem das mesmices de outros restaurantes. Filhote na brasa maravilhoso: disse o garçon, ser o carro chefe. Ambiente agradável, mesas feitas de troncos de madeiras dão ar amazônico ao ambiente. Na entrada um pequeno carpete limpa pés, destoa do ambiente, com risco de escorregões que podem sofrer os frequentadores. Carta de vinho compatível com as especialidades da casa. Serviços de atendimento de boa qualidade. Voltarei e recomendo..",
+    "data": "2016-11-03",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Como restaurante regional excelente."
+      },
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Mas não se trata de restaurante regional e sim um misto de regional/tradicional/turístico/internacional e pode até incluir os manjados contemporâneos/gourmets/damoda e outros na sua categoria."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Pratos variados e especiais num cardápio que na escolha já te deixa com água na boca e a ânsia de como será o gosto."
+      },
+      {
+        "category": "geral",
+        "teor": "negative",
+        "sentenca": "Entradas gostosas e que diferem das mesmices de outros restaurantes."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Filhote na brasa maravilhoso: disse o garçon, ser o carro chefe."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Ambiente agradável, mesas feitas de troncos de madeiras dão ar amazônico ao ambiente."
+      },
+      {
+        "category": "ambiente",
+        "teor": "negative",
+        "sentenca": "Na entrada um pequeno carpete limpa pés, destoa do ambiente, com risco de escorregões que podem sofrer os frequentadores."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Serviços de atendimento de boa qualidade."
+      }
+    ]
+  },
+  {
+    "id": "133",
+    "plataforma": "yelp",
+    "author": "eduardomL5770XF",
+    "titulo": "Excelente",
+    "descricao": "Ligar muito agradável com ótimo atendimento. Todos muito atenciosos. A comida bem servida com ótima porcão. Vale muito a pena",
+    "data": "2019-02-17",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Ligar muito agradável com ótimo atendimento."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Todos muito atenciosos."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "A comida bem servida com ótima porcão."
+      }
+    ]
+  },
+  {
+    "id": "134",
+    "plataforma": "web",
+    "author": "ZePaulo2018",
+    "titulo": "Santa Grelha Meireles - Sinônimo de Qualidade e Conforto",
+    "descricao": "Um restaurante extremamente confortável, atendimento impecável, ambiente climatizado e com ótimas opções de carnes, o local tem um clima acolhedor, calmo e com um piano tocado ao vivo, que deixa uma atmosfera perfeita (O pianista é ótimo), os pratos são bem satisfatórios, tanto na qualidade, quantidade e apresentação, o sr. Freire (Maîte), é um excelente profissional, lembrou de mim, sou de São Paulo, e fazia 1 ano que não o visitava, foi gratificante revê-lo. Para mim, é um dos melhores lugares de Fortaleza, é a 5º vez que vou e não deixo de visitá-los, recomendo com certeza, nota 10.",
+    "data": "2017-11-29",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Um restaurante extremamente confortável, atendimento impecável, ambiente climatizado e com ótimas opções de carnes, o local tem um clima acolhedor, calmo e com um piano tocado ao vivo, que deixa uma atmosfera perfeita (O pianista é ótimo), os pratos são bem satisfatórios, tanto na qualidade, quantidade e apresentação, o sr. Freire (Maîte), é um excelente profissional, lembrou de mim, sou de São Paulo, e fazia 1 ano que não o visitava, foi gratificante revê-lo."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Para mim, é um dos melhores lugares de Fortaleza, é a 5º vez que vou e não deixo de visitá-los, recomendo com certeza, nota 10."
+      }
+    ]
+  },
+  {
+    "id": "135",
+    "plataforma": "instagram",
+    "author": "Jhonnatan s",
+    "titulo": "Comida arabe",
+    "descricao": "Gostei de ter comido no El Arabe Culinaria Chohfe, pois uma comida com um excelente tempero, espero que possa voltar a comer a esfirra de lá.",
+    "data": "2014-12-25",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Gostei de ter comido no El Arabe Culinaria Chohfe, pois uma comida com um excelente tempero, espero que possa voltar a comer a esfirra de lá."
+      }
+    ]
+  },
+  {
+    "id": "136",
+    "plataforma": "facebook",
+    "author": "RaquelB1976",
+    "titulo": "Demorado",
+    "descricao": "Quando fui, estava vazio mas o atendimento foi muito demorado. Reclamei e em um minuto o pedido veio. ",
+    "data": "2016-12-20",
+    "rating": "2",
+    "teor": "negative",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "negative",
+        "sentenca": "Quando fui, estava vazio mas o atendimento foi muito demorado."
+      }
+    ]
+  },
+  {
+    "id": "137",
+    "plataforma": "twitter",
+    "author": "Carol S",
+    "titulo": "Recomendo",
+    "descricao": "Massa muito boa, recheios excelentes, os que mais gosto são o de charque e doce de leite; com preço excelente.",
+    "data": "2015-01-08",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Massa muito boa, recheios excelentes, os que mais gosto são o de charque e doce de leite; com preço excelente."
+      }
+    ]
+  },
+  {
+    "id": "138",
+    "plataforma": "googlereviews",
+    "author": "Aitak A",
+    "titulo": "O melhor da mooca",
+    "descricao": "Eu sempre passava na frente, e confesso que o cheirinho de bolo era uma tentaçao. Ate que um dia resolvi entrar e levar uma delicia dessa para casa. Pra que senhor, agora sou vicida, é de lei sair do trabalho e passar p pegar um bolo. Pao caseiro é maravilhoso também. Parabens tudo muito perfeito, feito com carinho e amor.",
+    "data": "2018-02-15",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Pra que senhor, agora sou vicida, é de lei sair do trabalho e passar p pegar um bolo."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Pao caseiro é maravilhoso também."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Parabens tudo muito perfeito, feito com carinho e amor."
+      }
+    ]
+  },
+  {
+    "id": "139",
+    "plataforma": "twitter",
+    "author": "Alan P",
+    "titulo": "Bom custo benefício ",
+    "descricao": "Boa para “tomar uma” com os amigos, cerveja barata e gelada.Atendimento um tanto demorado, acredito que por conta da barraca cheia, mas pelo menos não cobram 10%.Entradas excelentes!",
+    "data": "2018-04-14",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "Boa para “tomar uma” com os amigos, cerveja barata e gelada."
+      },
+      {
+        "category": "servico",
+        "teor": "negative",
+        "sentenca": "Atendimento um tanto demorado, acredito que por conta da barraca cheia, mas pelo menos não cobram 10%."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Entradas excelentes!"
+      }
+    ]
+  },
+  {
+    "id": "140",
+    "plataforma": "tripadvisor",
+    "author": "itsmedouglas",
+    "titulo": "Boa opção",
+    "descricao": "A lanchonete é boa. A comida é ótima e os preços são bastante acessíveis, sem falar na localização, em frente à praia de Iracema, mas os lanches são simples.",
+    "data": "2014-06-24",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A lanchonete é boa."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "A comida é ótima e os preços são bastante acessíveis, sem falar na localização, em frente à praia de Iracema, mas os lanches são simples."
+      }
+    ]
+  },
+  {
+    "id": "141",
+    "plataforma": "web",
+    "author": "aninhahage",
+    "titulo": "Comer bem!",
+    "descricao": "Um ambiente agradável, comida deliciosa, rodízio bem servido, variedade de acompanhamentos, atendimento muito bom e serviço de qualidade.Vale muito a pena!",
+    "data": "2017-10-03",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Um ambiente agradável, comida deliciosa, rodízio bem servido, variedade de acompanhamentos, atendimento muito bom e serviço de qualidade.Vale muito a pena!"
+      }
+    ]
+  },
+  {
+    "id": "142",
+    "plataforma": "instagram",
+    "author": "lucianaf441",
+    "titulo": "Excelente!!!!!",
+    "descricao": "Polvo sensacional!!!! Imperdivel!!!!!Garçom Jose impecavel!!!!Nao pode perder!!!!!!!Serviço e comida perfeitos!!!!!",
+    "data": "2020-01-17",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Polvo sensacional!!!!"
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Garçom Jose impecavel!!!!"
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Serviço e comida perfeitos!!!!"
+      }
+    ]
+  },
+  {
+    "id": "143",
+    "plataforma": "instagram",
+    "author": "Irineu S",
+    "titulo": "Simpático com bom serviço, mas caro",
+    "descricao": "Embora a unidade já tenha alguns anos, foi a primeira vez que lá estive. O ambiente é simples e simpático. Gostei do serviço, pois os garçons foram bastante atenciosos. A carne estava muito boa, embora o molho que a acompanhou fosse um pouco forte para o meu gosto (talvez pudesse ser opcional ou ter outras opções). Ainda que a \"pegada\" do lugar seja simples, gostaria de sugerir que os talheres fossem trocados ao chegar o prato principal, porquanto já tinham sido utilizados no prato de salada. Porém, ao final, a conta me pareceu bastante pesada para tão simples jantar.",
+    "data": "2018-02-14",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Embora a unidade já tenha alguns anos, foi a primeira vez que lá estive."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "O ambiente é simples e simpático."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Gostei do serviço, pois os garçons foram bastante atenciosos."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "A carne estava muito boa, embora o molho que a acompanhou fosse um pouco forte para o meu gosto (talvez pudesse ser opcional ou ter outras opções)."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Ainda que a \"pegada\" do lugar seja simples, gostaria de sugerir que os talheres fossem trocados ao chegar o prato principal, porquanto já tinham sido utilizados no prato de salada."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Porém, ao final, a conta me pareceu bastante pesada para tão simples jantar."
+      }
+    ]
+  },
+  {
+    "id": "144",
+    "plataforma": "googlereviews",
+    "author": "nathaliaconradim",
+    "titulo": "Almoço com a família",
+    "descricao": "Excelente atendimento, variedade de sushis e sashimis. E o mais interessante é o sistema inovador de rodízio, com baixo desperdício e alta variedade. Recomendo a todos.",
+    "data": "2018-06-16",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Excelente atendimento, variedade de sushis e sashimis."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "E o mais interessante é o sistema inovador de rodízio, com baixo desperdício e alta variedade."
+      }
+    ]
+  },
+  {
+    "id": "145",
+    "plataforma": "facebook",
+    "author": "Fabricioisso",
+    "titulo": "PÉSSIMO. Impondo regras internas cobrar o cliente da forma eles acha melhor. Absurdo! Local assalta os clientes!",
+    "descricao": "Comprei 03 sorvetes e depois consumir vieram alegar regras internas de cobrar 1,00 a mais por cada ao pagar no cartão de crédito ou débito. Dizem podem fazer isso pois está na Lei. Mas a lei não fala em valores ou formas de pagamento!!! Eles recusaram a entender a lei. Foi um transtorno total. Estão assaltando os clientes!!! Funcionário do caixa Sassá, diz se chamar Julielson, recusou ligar para o dono, diz se chamar Gleidson, para resolver transtorno e ainda debochou do caso!!! Em resumo, péssimo local. Um assalto aos clientes nos \"direitos deles\".Nas imagens estão a lei oficial e a lei deles na caneta, fixados em lugares escondidos na padaria.NÃO COMPREM, NÃO VÃO LÁ. EVITEM PASSAR TRANSTORNO.RECOMENDO NEM PARA O MEU INIMIGO.",
+    "data": "2017-11-06",
+    "rating": "1",
+    "teor": "negative",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Comprei 03 sorvetes e depois consumir vieram alegar regras internas de cobrar 1,00 a mais por cada ao pagar no cartão de crédito ou débito."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Foi um transtorno total."
+      },
+      {
+        "category": "localizacao",
+        "teor": "negative",
+        "sentenca": "Em resumo, péssimo local."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Nas imagens estão a lei oficial e a lei deles na caneta, fixados em lugares escondidos na padaria."
+      }
+    ]
+  },
+  {
+    "id": "146",
+    "plataforma": "web",
+    "author": "MarciaSbaraini",
+    "titulo": "Ambiente agradável e bonito mas a comida deixa a desejar.",
+    "descricao": "Estive pelo menos quatro vezes, e nenhum dos pratos mereceu destaque. Pratos medianos, a moqueca extremamente aguada. Pedimos peixe à Belle Meunière para levar para casa, ao custo de R$ 120,00, quantidade irrisória, quando a indicação é que serve duas pessoas.Não retornaria.",
+    "data": "2016-10-27",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Estive pelo menos quatro vezes, e nenhum dos pratos mereceu destaque."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Pratos medianos, a moqueca extremamente aguada."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Pedimos peixe à Belle Meunière para levar para casa, ao custo de R$ 120,00, quantidade irrisória, quando a indicação é que serve duas pessoas."
+      }
+    ]
+  },
+  {
+    "id": "147",
+    "plataforma": "instagram",
+    "author": "julial688",
+    "titulo": "comida excelente",
+    "descricao": "carne ao ponto,ambiente familiar,ótimo atendimento em especial ao que nos atendeu que foi o orlando atencioso e educada tirou todas nossas duvidas e fez com que a noite ficasse mais agradável,foi um prazer estar nesse restaurante mais uma fez me senti em casa e espero voltar em breve",
+    "data": "2020-02-18",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "carne ao ponto,ambiente familiar,ótimo atendimento em especial ao que nos atendeu que foi o orlando atencioso e educada tirou todas nossas duvidas e fez com que a noite ficasse mais agradável,foi um prazer estar nesse restaurante mais uma fez me senti em casa e espero voltar em breve"
+      }
+    ]
+  },
+  {
+    "id": "148",
+    "plataforma": "facebook",
+    "author": "Jorge C",
+    "titulo": "Boa carne",
+    "descricao": "Para mim, uma das melhores carnes de Fortaleza. Ambiente agradável, atendimento de qualidade. Um verdadeiro churrasco argentino.",
+    "data": "2014-04-01",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Para mim, uma das melhores carnes de Fortaleza."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Ambiente agradável, atendimento de qualidade."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Um verdadeiro churrasco argentino."
+      }
+    ]
+  },
+  {
+    "id": "149",
+    "plataforma": "facebook",
+    "author": "MARILIA R",
+    "titulo": "Uma tapioca excelente",
+    "descricao": "A tapioca é uma delícia. tem de vários sabores. Eu pedi de carne de sol com queijo coalho (que eu adoro!). No almoço tem bufe por quilo. Cardápio variado. Servem até bacalhau! R$60,00 o quilo...meio puxado, né?",
+    "data": "2015-05-06",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Eu pedi de carne de sol com queijo coalho (que eu adoro!)."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "R$60,00 o quilo...meio puxado, né?"
+      }
+    ]
+  },
+  {
+    "id": "150",
+    "plataforma": "tripadvisor",
+    "author": "DoutorS",
+    "titulo": "Uma costela diferente e saborosa",
+    "descricao": "Churrasco rodízio normal, mas a costela é especial. Macia como nenhuma outra. Especialidade da casa que atrai gente de diversos lugares. Quem ainda não foi, não perca esta boa opção. ",
+    "data": "2014-08-17",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Churrasco rodízio normal, mas a costela é especial."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Macia como nenhuma outra."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Especialidade da casa que atrai gente de diversos lugares."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Quem ainda não foi, não perca esta boa opção."
+      }
+    ]
+  },
+  {
+    "id": "151",
+    "plataforma": "twitter",
+    "author": "eduardolfsouza",
+    "titulo": "Melhor restaurante de carnes de campo grande",
+    "descricao": "O vermelho grill e muito bem localizado, ambiente rustico simples e arejado, com luz ideal, atendimento na medida, com bebidas geladas e disponibiliza um cardapio de carnes na medida certa com variedade e muito bem feitas. O melhor e o sabor. So tome cuidado com o ponto das carnes. Porque o ponto e importante para quem aprecia carne. Peça ajuda se precisar.",
+    "data": "2015-11-03",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "O vermelho grill e muito bem localizado, ambiente rustico simples e arejado, com luz ideal, atendimento na medida, com bebidas geladas e disponibiliza um cardapio de carnes na medida certa com variedade e muito bem feitas."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O melhor e o sabor."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "So tome cuidado com o ponto das carnes."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Porque o ponto e importante para quem aprecia carne."
+      }
+    ]
+  },
+  {
+    "id": "152",
+    "plataforma": "instagram",
+    "author": "962lorenal",
+    "titulo": "Café no campo",
+    "descricao": "É literalmente um café da manhã no campo. Paga-se uma taxa de 33,00/pessoa e, assim, pode se servir à vontade. Como opções havia cuzcuz, beiju, ovo mexido, carne de sol cozida e desfiada, pães, geleia,  doce de leite, tortas salgadas, pão de queijo, bolos variados, sucos, café, leite, mingau doce.. O local é ideal para crianças: muitos brinquedos (casinhas, balanço), tem alguns animais (bois, coelhos, galinhas, peixes). O local só funciona nos domingos.",
+    "data": "2018-04-12",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Como opções havia cuzcuz, beiju, ovo mexido, carne de sol cozida e desfiada, pães, geleia,  doce de leite, tortas salgadas, pão de queijo, bolos variados, sucos, café, leite, mingau doce.. O local é ideal para crianças: muitos brinquedos (casinhas, balanço), tem alguns animais (bois, coelhos, galinhas, peixes)."
+      },
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "O local só funciona nos domingos."
+      }
+    ]
+  },
+  {
+    "id": "153",
+    "plataforma": "web",
+    "author": "75victorm",
+    "titulo": "Super summer ",
+    "descricao": "Sensacional! Pedimos o prato Super Summer.Ambiente super agradável, atendimento muito bom e a comida sem comentários.Super recomendo. ",
+    "data": "2017-04-15",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Sensacional!"
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Pedimos o prato Super Summer."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Ambiente super agradável, atendimento muito bom e a comida sem comentários."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Super recomendo."
+      }
+    ]
+  },
+  {
+    "id": "154",
+    "plataforma": "yelp",
+    "author": "Clara_Clara2015",
+    "titulo": "Uma experiência imperdível!!!",
+    "descricao": "Que loucura essa pizzaria!! O lugar é  lindo, o atendimento é diferenciado, cortez, acolhedor, responsável e muito afetivo! As pizzas são inexplicáveis de tão  boas. Só prpvando mesmo! Os sabores são  variados e um melhor que o outro! Realmente uma experiência incrível e que vale quanto custa ou ainda muito mais! Estacionamento ao lado, com manobrista. É pago, mas o carro fixa perto e bem cuidado. VALE A PENA!!!Parabéns para o estabelecimento e um abraço carinhoso na equipe de colaboradores,  ficamos encantados com o atendimento!",
+    "data": "2020-03-15",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "O lugar é  lindo, o atendimento é diferenciado, cortez, acolhedor, responsável e muito afetivo!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "As pizzas são inexplicáveis de tão  boas."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Os sabores são  variados e um melhor que o outro!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Realmente uma experiência incrível e que vale quanto custa ou ainda muito mais!"
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Parabéns para o estabelecimento e um abraço carinhoso na equipe de colaboradores,  ficamos encantados com o atendimento!"
+      }
+    ]
+  },
+  {
+    "id": "155",
+    "plataforma": "yelp",
+    "author": "flaviaferra",
+    "titulo": "Melhor de Natal",
+    "descricao": "Comida excelente e porção bem servida. Atendimento diferenciado e acima de 3 pessoas o custo beneficio sai super em conta.",
+    "data": "2016-03-28",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida excelente e porção bem servida."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Atendimento diferenciado e acima de 3 pessoas o custo beneficio sai super em conta."
+      }
+    ]
+  },
+  {
+    "id": "156",
+    "plataforma": "facebook",
+    "author": "Daniela R",
+    "titulo": "Boa Pizza",
+    "descricao": "Muito boa a pizza com variedade de sabores. O valor não é dos mais baratos. Mas vale a pena para comer uma pizza de qualidade.",
+    "data": "2014-11-13",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Muito boa a pizza com variedade de sabores."
+      }
+    ]
+  },
+  {
+    "id": "157",
+    "plataforma": "googlereviews",
+    "author": "Milena B",
+    "titulo": "Rei mesmo",
+    "descricao": "Mesmo não gostando muito de beiju, as amigas me incentivaram e provei, muito bom. Muita variedade e feito na hora. ",
+    "data": "2016-04-23",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Mesmo não gostando muito de beiju, as amigas me incentivaram e provei, muito bom."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Muita variedade e feito na hora."
+      }
+    ]
+  },
+  {
+    "id": "158",
+    "plataforma": "web",
+    "author": "Wankenne",
+    "titulo": "Ragazzo Washington Luiz - Horrível, nunca mais!",
+    "descricao": "Fomos (2 casais) experimentar esse Ragazzo (Jardim Marajoara) no último domingo dia 29 de Outubro. O \"panino\" que pedimos, ...não tinha! O milkshake de frutas vermelhas, ...não tinha! Pedimos duas canecas do Pica Pau,...não tinha! A sopa de cebola estava azeda, nem comi! As almôndegas do \"espaguete com almôndegas ao sugo\" parecia ter sido feitas com restos de carne cozida! Dois funcionários (aparentemente mais graduados porque eram vestidos de preto) ficaram o tempo inteiro brigando, em um canto do salão. A porta do estabelecimento  ficou o tempo todo inteiramente aberta!!! Deve ser para tentar estourar o ar condicionado(?), ou permitir uma melhor entrada no salão dos gazes de escapamento do alto transito (?), ou dificultar o acesso pela rampa (?). Simplesmente infame!",
+    "data": "2017-11-05",
+    "rating": "1",
+    "teor": "negative",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Dois funcionários (aparentemente mais graduados porque eram vestidos de preto) ficaram o tempo inteiro brigando, em um canto do salão."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "A porta do estabelecimento  ficou o tempo todo inteiramente aberta!!!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "), ou permitir uma melhor entrada no salão dos gazes de escapamento do alto transito (?"
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Simplesmente infame!"
+      }
+    ]
+  },
+  {
+    "id": "159",
+    "plataforma": "yelp",
+    "author": "Dukoque",
+    "titulo": "Ambiente agradável ",
+    "descricao": "Ambiente agradável, boa música. Do lado de fora tem uma mesabde sinuca, final de tarde ou a noite deve ser bom. Os pratos são mais massa, que não é caseira fresca, molho pomodoro ou branco com uma carne, não empolgou.",
+    "data": "2017-01-07",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Ambiente agradável, boa música."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Do lado de fora tem uma mesabde sinuca, final de tarde ou a noite deve ser bom."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Os pratos são mais massa, que não é caseira fresca, molho pomodoro ou branco com uma carne, não empolgou."
+      }
+    ]
+  },
+  {
+    "id": "160",
+    "plataforma": "facebook",
+    "author": "Sarah B",
+    "titulo": ".",
+    "descricao": "O Ara é um restaurante super interessante, de comida coreana, achei muito legal o sabor da comida, é bastante apimentada e tem aquele toque de comida agridoce.",
+    "data": "2015-06-04",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "O Ara é um restaurante super interessante, de comida coreana, achei muito legal o sabor da comida, é bastante apimentada e tem aquele toque de comida agridoce."
+      }
+    ]
+  },
+  {
+    "id": "161",
+    "plataforma": "twitter",
+    "author": "Victor A",
+    "titulo": "Boteco estilo Carioca na Bahia!",
+    "descricao": "O bar possui excelentes aperitivos, a banda é animada e o estilo é chorinho, samba.. O único ponto negativo é o tempo para se conseguir uma mesa e o valor da entradas em alta temporada. A feijoada aos domingos é o ponto alto. Excelente, a melhor que já comi!",
+    "data": "2013-11-05",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "O bar possui excelentes aperitivos, a banda é animada e o estilo é chorinho, samba.. O único ponto negativo é o tempo para se conseguir uma mesa e o valor da entradas em alta temporada."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "A feijoada aos domingos é o ponto alto."
+      }
+    ]
+  },
+  {
+    "id": "162",
+    "plataforma": "instagram",
+    "author": "Gustavo_Reis28",
+    "titulo": "Imperdível ",
+    "descricao": "Ambiente agradável, atendimento bom !! Pratos para todos os gostos.... de entrada a casquinha de Siri é uma ótima opção !!! pedi o famoso \"chiclete de camarão\" que vem 5 opções de queijo e achei muito gostoso (enquanto quente, quando esfria o queijo fica duro e enjoativo) as outras pessoas que estavam comigo experimentaram o esperto de lagosta (TOP), camarão ao catupiry (TOP tbm), camarão na manteiga com ervas da horta (excelente) e filet mignon ao molho vinho e pimenta verde com talharim ao molho parmesão (carne um pouco dura) de sobremesa pétit gateau (muito bom) e mousse de maracujá com doce de manga rosa e sorvete de tapioca (delicia de sobremesa típica) enfim , vale a pena ! Super recomendo!  ",
+    "data": "2017-09-17",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Ambiente agradável, atendimento bom !!"
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Pratos para todos os gostos.... de entrada a casquinha de Siri é uma ótima opção !!!"
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "pedi o famoso \"chiclete de camarão\" que vem 5 opções de queijo e achei muito gostoso (enquanto quente, quando esfria o queijo fica duro e enjoativo) as outras pessoas que estavam comigo experimentaram o esperto de lagosta (TOP), camarão ao catupiry (TOP tbm), camarão na manteiga com ervas da horta (excelente) e filet mignon ao molho vinho e pimenta verde com talharim ao molho parmesão (carne um pouco dura) de sobremesa pétit gateau (muito bom) e mousse de maracujá com doce de manga rosa e sorvete de tapioca (delicia de sobremesa típica) enfim , vale a pena !"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Super recomendo!"
+      }
+    ]
+  },
+  {
+    "id": "163",
+    "plataforma": "twitter",
+    "author": "LolitaDrummond",
+    "titulo": "O sabor potiguar",
+    "descricao": "Um restaurante fino, bem estruturado, muito bem decorado.Comida maravilhosa, porções muito fartas.A comida muito saborosa e um tempero divino.Onde você pode comer camarões preparados em uma variedade infinita.",
+    "data": "2014-10-01",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Um restaurante fino, bem estruturado, muito bem decorado."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida maravilhosa, porções muito fartas."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "A comida muito saborosa e um tempero divino."
+      }
+    ]
+  },
+  {
+    "id": "164",
+    "plataforma": "googlereviews",
+    "author": "korablikovas",
+    "titulo": "Boa opção, mas atendimento ruim ",
+    "descricao": "O buffet é típico, comida fresca, gostosa. A estrela ficou por conta do risoto se pato feito na hora. Achamos os 57 reais um valor um pouco elevado, e o atendimento deixa bastante a desejar.",
+    "data": "2016-03-04",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "O buffet é típico, comida fresca, gostosa."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A estrela ficou por conta do risoto se pato feito na hora."
+      },
+      {
+        "category": "servico",
+        "teor": "negative",
+        "sentenca": "Achamos os 57 reais um valor um pouco elevado, e o atendimento deixa bastante a desejar."
+      }
+    ]
+  },
+  {
+    "id": "165",
+    "plataforma": "web",
+    "author": "Manoel P",
+    "titulo": "Peixe na Telha",
+    "descricao": "Um ótimo achado da comida tipica goiana, aos que forem a cidade devem experimentar pelo menos o peixe na telha e a panelinha. Um excelente restaurante, RECOMENDO!",
+    "data": "2014-03-31",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Um ótimo achado da comida tipica goiana, aos que forem a cidade devem experimentar pelo menos o peixe na telha e a panelinha."
+      },
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Um excelente restaurante, RECOMENDO!"
+      }
+    ]
+  },
+  {
+    "id": "166",
+    "plataforma": "tripadvisor",
+    "author": "Alessandra M",
+    "titulo": "Almoço delicioso",
+    "descricao": "Kibe ou michui mais uma saladinha, opção maravilhosa para almoçar. Tudo muito gostoso. Voltarei sempre que estiver em São Paulo.",
+    "data": "2017-10-02",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Kibe ou michui mais uma saladinha, opção maravilhosa para almoçar."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Tudo muito gostoso."
+      }
+    ]
+  },
+  {
+    "id": "167",
+    "plataforma": "googlereviews",
+    "author": "HenriA59",
+    "titulo": "Ótimo custo beneficio!",
+    "descricao": "Por vinte reais você pode se servir a vontade sem repetir. A comida é boa, bem preparada e variada porem de vez em quando a comida esta fria no buffet.",
+    "data": "2017-05-15",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "A comida é boa, bem preparada e variada porem de vez em quando a comida esta fria no buffet."
+      }
+    ]
+  },
+  {
+    "id": "168",
+    "plataforma": "googlereviews",
+    "author": "EduardoR256",
+    "titulo": "Muito bom, já foi melhor.",
+    "descricao": "Sempre vamos e gostamos  muito do Chalet Suisse, tradicional em Curitiba, clássico no fundue. Desta vez achei que decaiu um pouco, tanto na variedade dos molhos do fundue como no atendimento. Continua muito bom, porém , não sentimos aquela vontade de retornar como das outras vezes.",
+    "data": "2016-07-23",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Sempre vamos e gostamos  muito do Chalet Suisse, tradicional em Curitiba, clássico no fundue."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Continua muito bom, porém , não sentimos aquela vontade de retornar como das outras vezes."
+      }
+    ]
+  },
+  {
+    "id": "169",
+    "plataforma": "web",
+    "author": "fabiolasouza_",
+    "titulo": "Excelente opção em Natal",
+    "descricao": "Muita opção no self serviço, qualidade excepcional! Recomendo o salmão. O preço condiz com a qualidade da comida! ",
+    "data": "2018-09-09",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Muita opção no self serviço, qualidade excepcional!"
+      }
+    ]
+  },
+  {
+    "id": "170",
+    "plataforma": "web",
+    "author": "Fernanda Z",
+    "titulo": "Muito Bom!",
+    "descricao": "Referente ao atendimento, cardápio, ambiente, preço, agilidade, difícil alguém não gostar deste restaurante. Voltarei com certeza pois são muitas boas opções para provar",
+    "data": "2015-06-30",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "negative",
+        "sentenca": "Referente ao atendimento, cardápio, ambiente, preço, agilidade, difícil alguém não gostar deste restaurante."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Voltarei com certeza pois são muitas boas opções para provar"
+      }
+    ]
+  },
+  {
+    "id": "171",
+    "plataforma": "tripadvisor",
+    "author": "Rafaelopesa",
+    "titulo": "Ótima moqueca",
+    "descricao": "Comi um deliciosa moqueca de camarão, tudo muito bem preparado de otimo tempero e sabor, o arroz bem soltinho, salda fresquinha e bebida gelada, atendimento bom e preço convidativo.",
+    "data": "2015-11-16",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "Comi um deliciosa moqueca de camarão, tudo muito bem preparado de otimo tempero e sabor, o arroz bem soltinho, salda fresquinha e bebida gelada, atendimento bom e preço convidativo."
+      }
+    ]
+  },
+  {
+    "id": "172",
+    "plataforma": "facebook",
+    "author": "Vivis_Ribeiro",
+    "titulo": "Lembrando até hoje dos camarões de la!",
+    "descricao": "Pra quem ama frutos do mar e tem um orçamento sobrando para investir em comida boa, recomendo fortemente o Coco Bambu. O ambiente é agradável, de bom gosto e o atendimento muito bom. Aos apaixonados por camarão, deixo duas dicas: a porção de pastéis de camarão e a porção de camarão empanado com gergelim. Vale cada centavo (e olha custa muitos centavos)! ",
+    "data": "2015-10-16",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Pra quem ama frutos do mar e tem um orçamento sobrando para investir em comida boa, recomendo fortemente o Coco Bambu."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "O ambiente é agradável, de bom gosto e o atendimento muito bom."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Aos apaixonados por camarão, deixo duas dicas: a porção de pastéis de camarão e a porção de camarão empanado com gergelim."
+      }
+    ]
+  },
+  {
+    "id": "173",
+    "plataforma": "facebook",
+    "author": "deyser2014",
+    "titulo": "Já foi-se o tempo...",
+    "descricao": "Passei anos frequentando a Quitinete, principalmente com minhas amigas. Gostava muito do cardápio e da qualidade da comida/bebidas. Há cerca de 3 anos fui algumas vezes, mas nenhuma com sucesso. Da última vez (há 2 dias), decidi não voltar mais. Primeiro, o garçom que me atendeu não sabia que existia um cardápio de bebidas. Depois, o sanduíche que pedi estava seco... Os garçons não eram atenciosos e pareciam estar chateados com algo... É verdade que a entrada que pedimos (um picadinho de filé ao molho de cogumelos) estava realmente maravilhosa. Mas, para ser sincera, foi o único aspecto positivo...",
+    "data": "2014-01-18",
+    "rating": "2",
+    "teor": "negative",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Passei anos frequentando a Quitinete, principalmente com minhas amigas."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Gostava muito do cardápio e da qualidade da comida/bebidas."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Há cerca de 3 anos fui algumas vezes, mas nenhuma com sucesso."
+      },
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "Primeiro, o garçom que me atendeu não sabia que existia um cardápio de bebidas."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Depois, o sanduíche que pedi estava seco... Os garçons não eram atenciosos e pareciam estar chateados com algo... \nÉ verdade que a entrada que pedimos (um picadinho de filé ao molho de cogumelos) estava realmente maravilhosa."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Mas, para ser sincera, foi o único aspecto positivo..."
+      }
+    ]
+  },
+  {
+    "id": "174",
+    "plataforma": "web",
+    "author": "danubiaa2014",
+    "titulo": "Funcionários mal educados! Não recomendo!",
+    "descricao": "Ontem meu esposo fez uma reserva para comemorarmos meu aniversário.Já no primeiro contato avisaram grosseiramente que após 20:30 a ocupação das mesas é por ordem de chegada. Nos mandaram para o primeiro andar sem ao menos nos mostrar o caminho. Nos sentamos e pedimos por 3 vezes o cardápio. Depois de uns 20 minutos recebemos os mesmos e durante a escolha dos pratos verifiquei a informação de que não aceitam cartões, apenas cheques ou dinheiro. Um absurdo em plena Ipanema e século XXl. Não acho uma boa ideia andar com no mínimo R$ 500,00 na bolsa, à noite no Rio de Janeiro para pagar um jantar. Nos levantamos e resolvemos partir para outro restaurante. O manobrista nos devolveu o carro todo sujo de cimento, pois o estacionaram no canteiro de obras do Metro. Partimos para o Restaurante D'Amici no Leme, onde fomos bem atendidos, onde o ravioli de cherne com camarões e molho de açafrão estava divino.",
+    "data": "2015-07-11",
+    "rating": "1",
+    "teor": "negative",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Já no primeiro contato avisaram grosseiramente que após 20:30 a ocupação das mesas é por ordem de chegada."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Nos mandaram para o primeiro andar sem ao menos nos mostrar o caminho."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Nos sentamos e pedimos por 3 vezes o cardápio."
+      },
+      {
+        "category": "comida",
+        "teor": "negative",
+        "sentenca": "Depois de uns 20 minutos recebemos os mesmos e durante a escolha dos pratos verifiquei a informação de que não aceitam cartões, apenas cheques ou dinheiro."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Não acho uma boa ideia andar com no mínimo R$ 500,00 na bolsa, à noite no Rio de Janeiro para pagar um jantar."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "O manobrista nos devolveu o carro todo sujo de cimento, pois o estacionaram no canteiro de obras do Metro."
+      }
+    ]
+  },
+  {
+    "id": "175",
+    "plataforma": "tripadvisor",
+    "author": "Renata_Figueiredo",
+    "titulo": "Experiência gastronômica",
+    "descricao": "Excelente  atendimento, ambiente extremamente agradável, pratos com boa apresentação é muito saborosos! Preço justo. Experiência gastronômica!",
+    "data": "2019-11-17",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Excelente  atendimento, ambiente extremamente agradável, pratos com boa apresentação é muito saborosos!"
+      },
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Preço justo."
+      }
+    ]
+  },
+  {
+    "id": "176",
+    "plataforma": "googlereviews",
+    "author": "Ronald B",
+    "titulo": "Excelente padrão Gero",
+    "descricao": "Restauranfe excelenre até para quem não gosta de peixe ou frutos do mar. Quando me hospedo no Fasano sempre janto por lá e gosto muito. Raramente vou quando não estou no hotel por ser Al Mare e não gostar de peixes. A única coisa que sempre me intrigou é aquela parede que tapa as vistas para um dos cenários mais bonitos do mundo, que é o mar do Rio. Mas o tratamento e a sofisticação do local não tem prejuízo.",
+    "data": "2015-04-03",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Raramente vou quando não estou no hotel por ser Al Mare e não gostar de peixes."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A única coisa que sempre me intrigou é aquela parede que tapa as vistas para um dos cenários mais bonitos do mundo, que é o mar do Rio."
+      }
+    ]
+  },
+  {
+    "id": "177",
+    "plataforma": "twitter",
+    "author": "Patricia L",
+    "titulo": "Muito bom",
+    "descricao": "Peixes no qual estao no cadapio e seu acompanhantes maravilhoso. Dourado muito saboroso e as batatas que o acompanha.",
+    "data": "2018-01-17",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Peixes no qual estao no cadapio e seu acompanhantes maravilhoso."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Dourado muito saboroso e as batatas que o acompanha."
+      }
+    ]
+  },
+  {
+    "id": "178",
+    "plataforma": "tripadvisor",
+    "author": "Claudiamachad0",
+    "titulo": "Lugar normal",
+    "descricao": "Um restaurante a kilo bem decorado , lugar bem charmoso, mas o atendentes não estão interessados em executar suas funções. A comida é boa e bem variada .....mas não voltaria. ",
+    "data": "2015-07-09",
+    "rating": "3",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Um restaurante a kilo bem decorado , lugar bem charmoso, mas o atendentes não estão interessados em executar suas funções."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "A comida é boa e bem variada .....mas não voltaria."
+      }
+    ]
+  },
+  {
+    "id": "179",
+    "plataforma": "googlereviews",
+    "author": "daviribeir0",
+    "titulo": "IMPERDÍVEL",
+    "descricao": "Excelente restaurante. Sempre que tenho oportunidade retorno e tenho agradáveis surpresas. A comida é mistura de ingredientes regionais feitos de forma mais sofisticada. É imperdível!",
+    "data": "2017-08-23",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Excelente restaurante."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Sempre que tenho oportunidade retorno e tenho agradáveis surpresas."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "A comida é mistura de ingredientes regionais feitos de forma mais sofisticada."
+      }
+    ]
+  },
+  {
+    "id": "180",
+    "plataforma": "twitter",
+    "author": "926vanessa",
+    "titulo": "Delícia ",
+    "descricao": "Chegamos por volta de 21:00 no domingo, não teve espera.Fomos muitooo bem atendidos, atendimento ágil.Picanha estava sensacional, como os outros cortes.Música agradável (  piano  ).Muito barato comparado a Bh.Indico c certeza.",
+    "data": "2019-02-28",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Fomos muitooo bem atendidos, atendimento ágil."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Picanha estava sensacional, como os outros cortes."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Música agradável (  piano  )."
+      },
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "Muito barato comparado a Bh."
+      }
+    ]
+  },
+  {
+    "id": "181",
+    "plataforma": "twitter",
+    "author": "Michel R",
+    "titulo": "Excelente",
+    "descricao": "Vi as avaliações sobre essa pizzaria e resolvi arriscar, achei a pizza excelente, alias a tempos que eu nao comia uma pizza tão boa.",
+    "data": "2015-01-18",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Vi as avaliações sobre essa pizzaria e resolvi arriscar, achei a pizza excelente, alias a tempos que eu nao comia uma pizza tão boa."
+      }
+    ]
+  },
+  {
+    "id": "182",
+    "plataforma": "googlereviews",
+    "author": "Romero F",
+    "titulo": "Avaliação Nez",
+    "descricao": "Pedimos um filé em crosta de prima donna e um camarão crocante com risoto de alho poró. Indico com certeza!",
+    "data": "2016-10-25",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Indico com certeza!"
+      }
+    ]
+  },
+  {
+    "id": "183",
+    "plataforma": "tripadvisor",
+    "author": "paullinhob",
+    "titulo": "Muito bom ",
+    "descricao": "Faz parte do grupo mangai, dispensa apresentações ! Excelente o que pedir é garantido que vem com qualidade e sabor ",
+    "data": "2019-04-28",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Excelente o que pedir é garantido que vem com qualidade e sabor"
+      }
+    ]
+  },
+  {
+    "id": "184",
+    "plataforma": "facebook",
+    "author": "Lets_A",
+    "titulo": "Peixe bom e barato",
+    "descricao": "A especialidade do local é a Tilápia, peixe da região. A porção com todas as variedades de tilápia, frita, empanada, com queijo, com bacon... é a minha preferida. A porção pequena serve umas 3 pessoas, você experimenta vários tipos de tilápia e é bom pra bater um papo, tomando uma cervejinha e beliscando um peixinho.O local tem espaço para crianças e elas são muito bem tratadas. Dependendo da data pode ficar um pouco cheio.Eles também possuem estacionamento próprio e a localização é muito boa.",
+    "data": "2013-07-19",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A porção com todas as variedades de tilápia, frita, empanada, com queijo, com bacon... é a minha preferida."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "A porção pequena serve umas 3 pessoas, você experimenta vários tipos de tilápia e é bom pra bater um papo, tomando uma cervejinha e beliscando um peixinho."
+      },
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "O local tem espaço para crianças e elas são muito bem tratadas."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Dependendo da data pode ficar um pouco cheio."
+      },
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Eles também possuem estacionamento próprio e a localização é muito boa."
+      }
+    ]
+  },
+  {
+    "id": "185",
+    "plataforma": "yelp",
+    "author": "Casanovas_Ana",
+    "titulo": "Simplicidade com bom gosto",
+    "descricao": "Amei a comida, simples com sabor inigualável.. Desde o dono até a cozinheira atendem muito bem, se quiser mudar algo é só pedir.. Simpatias é o forte e um bom papo..",
+    "data": "2015-12-30",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Amei a comida, simples com sabor inigualável.. Desde o dono até a cozinheira atendem muito bem, se quiser mudar algo é só pedir.. Simpatias é o forte e um bom papo.."
+      }
+    ]
+  },
+  {
+    "id": "186",
+    "plataforma": "instagram",
+    "author": "Geraldo C",
+    "titulo": "Muito bom",
+    "descricao": "Lugar bem agradável, ótimo para ir com amigos e ou namorado, por ter um ambiente agradável e uma vista bem bonita.",
+    "data": "2014-09-29",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Lugar bem agradável, ótimo para ir com amigos e ou namorado, por ter um ambiente agradável e uma vista bem bonita."
+      }
+    ]
+  },
+  {
+    "id": "187",
+    "plataforma": "web",
+    "author": "Manoela_Araujo",
+    "titulo": "Boas surpresas nos molhos",
+    "descricao": "Fomos ao restaurante com a sugestão de uma amiga. Estávamos na Savassi e chegamos rapidamente ao local. A grande surpresa foram os molhos que acompanhavam os dois pratos que pedimos. Muito saborosos! Uma porção de surubim com um tal \"molho da tia\" estava muito gostosa! Também pedimos um trio composto por torresminho de tilápia, linguicinha e bolinho de mandioca. Esse trio acompanhava um molho de limão e outro que parecia barbecue. Enfim, tudo muito bom! E, para completar com chave de ouro, cervejas geladinhas! E o preço bem tranquilo. Super recomendo.",
+    "data": "2015-01-14",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Estávamos na Savassi e chegamos rapidamente ao local."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Muito saborosos!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Uma porção de surubim com um tal \"molho da tia\" estava muito gostosa!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Enfim, tudo muito bom!"
+      },
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "E, para completar com chave de ouro, cervejas geladinhas!"
+      },
+      {
+        "category": "preco",
+        "teor": "positive",
+        "sentenca": "E o preço bem tranquilo."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Super recomendo."
+      }
+    ]
+  },
+  {
+    "id": "188",
+    "plataforma": "tripadvisor",
+    "author": "idimar",
+    "titulo": "a verdadeira cozinha italiana",
+    "descricao": "Cozinha de primeira qualidade. Ambiente simples com proprietários extremamente atenciosos, massas caseiras que remetem a gente a italia. Recomendo a todos que visitarem maceio. Imperdivel.",
+    "data": "2016-11-23",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Cozinha de primeira qualidade."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Ambiente simples com proprietários extremamente atenciosos, massas caseiras que remetem a gente a italia."
+      }
+    ]
+  },
+  {
+    "id": "189",
+    "plataforma": "googlereviews",
+    "author": "Francita5",
+    "titulo": "Jantar",
+    "descricao": "Prato muito saboroso! Escalope  macio, nhoc impecavel! Alem disso, a apresentação dos pratos tambem conquista!O atendimento é bom! Ambiente familiar",
+    "data": "2016-04-09",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Prato muito saboroso!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Escalope  macio, nhoc impecavel!"
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "O atendimento é bom!"
+      }
+    ]
+  },
+  {
+    "id": "190",
+    "plataforma": "web",
+    "author": "Henrique P",
+    "titulo": "Bom",
+    "descricao": "Buffet muito bom, estive na festa da minha priminha e o serviço foi bom, serviram com timing e os salgados eram servidos ainda quentes e a cerveja gelada.",
+    "data": "2014-07-31",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "bebida",
+        "teor": "positive",
+        "sentenca": "Buffet muito bom, estive na festa da minha priminha e o serviço foi bom, serviram com timing e os salgados eram servidos ainda quentes e a cerveja gelada."
+      }
+    ]
+  },
+  {
+    "id": "191",
+    "plataforma": "yelp",
+    "author": "tisianeo",
+    "titulo": "Excelente.",
+    "descricao": "Comida excelente, atendimento diferenciado. Ambiente sofisticado. Vale a pena conhecer e descobrir a culinária de Fortaleza.",
+    "data": "2017-08-17",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Comida excelente, atendimento diferenciado."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "Ambiente sofisticado."
+      }
+    ]
+  },
+  {
+    "id": "192",
+    "plataforma": "tripadvisor",
+    "author": "AnadeMatosVieira",
+    "titulo": "Muito bom!",
+    "descricao": "Gostei muito do restaurante, ótimo atendimento, comida muito boa e uma vista maravilhosa da Bahia de Guanabara. Fui no almoço e era Bufffet livre.",
+    "data": "2013-10-26",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Gostei muito do restaurante, ótimo atendimento, comida muito boa e uma vista maravilhosa da Bahia de Guanabara."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Fui no almoço e era Bufffet livre."
+      }
+    ]
+  },
+  {
+    "id": "193",
+    "plataforma": "web",
+    "author": "betinameazza",
+    "titulo": "Aniversário ",
+    "descricao": "Maravilhoso lugar , ótimo atendimento pelo garçom Deodoro, recomendamos a todos. Podem trazer a família, a casa se especializou em peixes, mas tambem serve bons filés e saladas. Prove o filé à parmegiana e não vai se arrepender.",
+    "data": "2018-01-22",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Maravilhoso lugar , ótimo atendimento pelo garçom Deodoro, recomendamos a todos."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Podem trazer a família, a casa se especializou em peixes, mas tambem serve bons filés e saladas."
+      }
+    ]
+  },
+  {
+    "id": "194",
+    "plataforma": "googlereviews",
+    "author": "ricardoorii",
+    "titulo": "ÓTIMA PIZZARIA NA MÓOCA",
+    "descricao": "A pizzaria Nova Anarella que conheço fica na rua  Oratorio, 2254. Massa média com e sem recheio de catupiry (original) na borda, Ingredientessempre  de primeira . Atende todos os dias só para delivery na região",
+    "data": "2017-02-28",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Massa média com e sem recheio de catupiry (original) na borda, Ingredientessempre  de primeira ."
+      },
+      {
+        "category": "outros",
+        "teor": "negative",
+        "sentenca": "Atende todos os dias só para delivery na região"
+      }
+    ]
+  },
+  {
+    "id": "195",
+    "plataforma": "web",
+    "author": "Carlos P",
+    "titulo": "Cerveja gelada e com um preço inacreditável ",
+    "descricao": "O bar fica na orla da praia, possui som ambiente, música ao vivo, bons petiscos e pratos e cervejas geladas. O ponto positivo deste Bar são os valores dos pratos e cervejas, comparando com Rio de Janeiro. Recomendo ",
+    "data": "2016-07-20",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "O bar fica na orla da praia, possui som ambiente, música ao vivo, bons petiscos e pratos e cervejas geladas."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "O ponto positivo deste Bar são os valores dos pratos e cervejas, comparando com Rio de Janeiro."
+      }
+    ]
+  },
+  {
+    "id": "196",
+    "plataforma": "tripadvisor",
+    "author": "Hirsch_alfredo",
+    "titulo": "Muito top!",
+    "descricao": "Busquei a dica aqui no tripadvisor e foi perfeita! Tentei uma reserva as 20:00 mas não rolou. Fomos direto e chegamos as 20:30, com fila para 2 pessoas de 30 min. Valeu cada minuto da espera! Local, atendimento, comida... tudo perfeito. RECOMENDO MUITO!",
+    "data": "2014-02-23",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Busquei a dica aqui no tripadvisor e foi perfeita!"
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Fomos direto e chegamos as 20:30, com fila para 2 pessoas de 30 min."
+      },
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Local, atendimento, comida... tudo perfeito."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "RECOMENDO MUITO!"
+      }
+    ]
+  },
+  {
+    "id": "197",
+    "plataforma": "googlereviews",
+    "author": "cleidec2013",
+    "titulo": "Ótimos petiscos",
+    "descricao": "Passamos neste estabelecimento para fazermos uma refeição rápida, gostamos do pronto atendimento e da qualidade do nosso filé com fritas. Tem música ao vivo.",
+    "data": "2015-08-12",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "Passamos neste estabelecimento para fazermos uma refeição rápida, gostamos do pronto atendimento e da qualidade do nosso filé com fritas."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Tem música ao vivo."
+      }
+    ]
+  },
+  {
+    "id": "198",
+    "plataforma": "googlereviews",
+    "author": "ALCCS",
+    "titulo": "Bastante agradável ",
+    "descricao": "Localizado no 3o andar do Eataly, o Brace é um restaurante acolhedor e oferece deliciosas opções, desde a entrada até a sobremesa. O atendimento é excelente e eficiente. ",
+    "data": "2018-01-11",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "geral",
+        "teor": "positive",
+        "sentenca": "Localizado no 3o andar do Eataly, o Brace é um restaurante acolhedor e oferece deliciosas opções, desde a entrada até a sobremesa."
+      },
+      {
+        "category": "servico",
+        "teor": "positive",
+        "sentenca": "O atendimento é excelente e eficiente."
+      }
+    ]
+  },
+  {
+    "id": "199",
+    "plataforma": "yelp",
+    "author": "RobertoFarias",
+    "titulo": "O Melhor Sanduiche",
+    "descricao": "Um local bacana e arrumado, com wi fi e um vasto cardápio, de dia funciona para almoço e a noite com lanchonete.",
+    "data": "2015-08-18",
+    "rating": "5",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "localizacao",
+        "teor": "positive",
+        "sentenca": "Um local bacana e arrumado, com wi fi e um vasto cardápio, de dia funciona para almoço e a noite com lanchonete."
+      }
+    ]
+  },
+  {
+    "id": "200",
+    "plataforma": "googlereviews",
+    "author": "Erichveigah",
+    "titulo": "Almoço as 15",
+    "descricao": "Estava sem saber onde almoçar pedi ao Waze um bom lugar e ao chegar vi que comida a kilo. Para minha surpresa estava tudo quente bonito e gostoso. Tem uma pimenta de primeira cheguei a comprar para levar para casa. O ambiente é fantástico equipe de garçons muito educados. Recomendo",
+    "data": "2014-08-27",
+    "rating": "4",
+    "teor": "positive",
+    "HashImg": "1111",
+    "opinions": [
+      {
+        "category": "comida",
+        "teor": "positive",
+        "sentenca": "Estava sem saber onde almoçar pedi ao Waze um bom lugar e ao chegar vi que comida a kilo."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Para minha surpresa estava tudo quente bonito e gostoso."
+      },
+      {
+        "category": "outros",
+        "teor": "positive",
+        "sentenca": "Tem uma pimenta de primeira cheguei a comprar para levar para casa."
+      },
+      {
+        "category": "ambiente",
+        "teor": "positive",
+        "sentenca": "O ambiente é fantástico equipe de garçons muito educados."
+      }
+    ]
+  }
+]
