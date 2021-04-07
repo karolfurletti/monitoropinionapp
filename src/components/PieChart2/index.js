@@ -1,46 +1,40 @@
-import React, { PureComponent } from 'react';
-import './index.css'
+import React, { PureComponent } from "react"
+import "./index.css"
 import {
-  PieChart, Pie, Cell,
-} from 'recharts';
-
-
-
-import {connect} from 'react-redux'
-
-
-import Filtros2 from '../../Filtros'
-
-const Filtros = new Filtros2
-
-
-const COLORS = ['#379a51', '#de3b3bde'];
-
-
+  PieChart, Pie, Cell
+} from "recharts"
+import { connect } from "react-redux"
+import Filtros2 from "../../Filtros"
+const Filtros = new Filtros2()
+const COLORS = ["#379a51", "#de3b3bde"]
 
 class PieChartPercent extends PureComponent {
 
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
       data: [
-        { name: 'Negativos', value: 0 },
-        { name: 'Positivos', value: 0 },
+        {
+          name: "Negativos",
+          value: 0
+        },
+        {
+          name: "Positivos",
+          value: 0
+        }
       ]
     }
   }
 
-
-  componentDidUpdate(){
+  componentDidUpdate() {
     let newData = 0
-    if(this.state.data[0].value != Filtros.CountPositiveNegativePercent(this.props.opinions_by_cronology)[0]){
-       newData = this.state.data.slice() //copy the array
+    if (this.state.data[0].value !== Filtros.CountPositiveNegativePercent(this.props.opinions_by_cronology)[0]) {
+      newData = this.state.data.slice() //copy the array
       newData[0].value = Filtros.CountPositiveNegativePercent(this.props.opinions_by_cronology)[0] //execute the manipulations
       newData[1].value = Filtros.CountPositiveNegativePercent(this.props.opinions_by_cronology)[1] //execute the manipulations
-      this.setState({data: newData}) //set the new state
+      this.setState({ data: newData }) //set the new state
     }
   }
-
 
   render() {
     return (
@@ -60,12 +54,12 @@ class PieChartPercent extends PureComponent {
           }
         </Pie>
       </PieChart>
-    );
+    )
   }
 }
 
-function mapStateToProps(state){
-  return{
+function mapStateToProps(state) {
+  return {
     opinions_by_cronology: state.opinions_by_cronology,
     chart_opinions: state.chart_opinions,
     estado_select_filtro_principal: state.estado_select_filtro_principal,

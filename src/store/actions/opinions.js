@@ -1,470 +1,413 @@
 import moment from 'moment'
-import FiltrosImport from '../../Filtros'
-import DataOpinions from '../../Data'
 import api from '../../Services/api'
-const Opinions = new DataOpinions
 
-const opinions_padrao = Opinions.GetOpinions()
-const Filtros = new FiltrosImport
+// const Opinions = new DataOpinions()
+// const opinionsDefault = Opinions.GetOpinions()
+// const Filtros = new FiltrosImport()
 
-export function AtualizarLineChart(ChartOpinions){ //RECEBE AS OPINIONS ORDENADAS E DEVOLVE NA FORMATACAO DO COMPONENT LINECHART
-    
+// RECEBE AS OPINIONS ORDENADAS E DEVOLVE NA FORMATACAO DO COMPONENT LINECHART
+export function AtualizarLineChart(ChartOpinions) {}
+
+// ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
+export function AtualizarEstadoSelect(filterTime) {
+  return dispatch => {
+    dispatch({
+      type: 'ESTADO_SELECT_ATUALIZADO',
+      filter_time: filterTime
+    })
+  }
 }
 
-
-export function AtualizarEstadoSelect(filter_time){ //ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
-    return dispatch => {
-        dispatch({
-            type: 'ESTADO_SELECT_ATUALIZADO',
-            filter_time: filter_time
-        })
-        
-    }  
+// ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
+export function AtualizarEstadoButtonFilter(filterInterval) {
+  return async dispatch => {
+    dispatch({
+      type: 'ESTADO_BUTTON_ATUALIZADO',
+      filter_interval: filterInterval
+    })
+  }
 }
 
-export function AtualizarEstadoButtonFilter(filter_interval){ //ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
-    return async dispatch => {
-        dispatch({
-            type: 'ESTADO_BUTTON_ATUALIZADO',
-            filter_interval: filter_interval
-        })
-        
-    }  
+// ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
+export function AtualizarConcorrente(competitorId) {
+  return async dispatch => {
+    dispatch({
+      type: 'CONCORRENTE_ATUALIZADO',
+      concorrente_id: competitorId
+    })
+  }
 }
 
-export function AtualizarConcorrente(concorrente_id){ //ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
-    return async dispatch => {
-
-        dispatch({
-            type: 'CONCORRENTE_ATUALIZADO',
-            concorrente_id: concorrente_id
-        })
-        
-    }  
+// ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
+export function AtualizarConcorrenteData(competitorData) {
+  return async dispatch => {
+    dispatch({
+      type: 'CONCORRENTE_DADOS_ATUALIZADOS',
+      concorrente_data: competitorData
+    })
+  }
 }
-
-export function AtualizarConcorrenteData(concorrente_data){ //ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
-    return async dispatch => {
-
-        dispatch({
-            type: 'CONCORRENTE_DADOS_ATUALIZADOS',
-            concorrente_data: concorrente_data
-        })
-        
-    }  
-}
-
-
-
-
 
 // export const FiltroMaster = (interval_init, interval_fim)=>
 // Promise.resolve({
 //   type:'FILTRO_MASTER_ATUALIZADO',
 //   interval_init: interval_init,
-//   interval_fim: interval_fim, 
+//   interval_fim: interval_fim,
 // })
 
+export const FiltroMaster = (
+  estabelecimentoId,
+  intervalInit,
+  intervalEnd,
+  category,
+  AutoTurnOffLoading
+) => {
+  const data = {
+    estabelecimento_id: estabelecimentoId,
+    interval_init: moment(intervalInit, 'DD MM YYYY hh:mm:ss'),
+    interval_fim: moment(intervalEnd, 'DD MM YYYY hh:mm:ss'),
+    category: category
+  }
 
-export  const FiltroMaster = (estabelecimento_id,interval_init, interval_fim, category, AutoTurnOffLoading) => {
+  return dispatch => {
+    dispatch(AtualizarLoading(true))
 
-const data = {
-    "estabelecimento_id": estabelecimento_id,
-    "interval_init": moment(interval_init, "DD MM YYYY hh:mm:ss"),
-    "interval_fim": moment(interval_fim, "DD MM YYYY hh:mm:ss"),
-    "category": category
-    }
+    dispatch({
+      type: 'INTERVAL_INIT_ATUALIZADO',
+      interval_init: intervalInit
+    })
 
- 
+    dispatch({
+      type: 'INTERVAL_FIM_ATUALIZADO',
+      interval_fim: intervalEnd
+    })
 
-
-
-    return dispatch => {
-        dispatch(AtualizarLoading(true))
-
-        dispatch({
-            type: 'INTERVAL_INIT_ATUALIZADO',
-            interval_init: interval_init,
+    try {
+      api
+        .post('opinion', data, {
+          headers: {
+            Authorization: 'setadomanualmente'
+          }
         })
+        .then(response => {
+          dispatch({
+            type: 'FILTRO_MASTER_ATUALIZADO',
+            opinionsByCronology: response.data.OpinionsByChronology
+          })
 
-        dispatch({
-            type: 'INTERVAL_FIM_ATUALIZADO',
-            interval_fim: interval_fim,
-        })
+          dispatch({
+            type: 'LINE_CHART_ATUALIZADO',
+            ChartOpinions: response.data.ChartOpinions
+          })
 
+          dispatch({
+            type: 'PrincipaisPerfis_Atualizado',
+            PrincipaisPerfis: response.data.PrincipaisPerfis
+          })
 
-        try{
-          api.post('opinion', data, {
-               headers:{
-                   Authorization: 'setadomanualmente'
-               }
-           }).then((response) => {
-           
-               
-            dispatch({  
-                type: 'FILTRO_MASTER_ATUALIZADO',
-              opinions_by_cronology: response.data.OpinionsByChronology
-            })
-            
-            dispatch({
-                type: 'LINE_CHART_ATUALIZADO',
-                ChartOpinions: response.data.ChartOpinions,
-            })
+          dispatch({
+            type: 'PrincipaisPlataformas_Atualizado',
+            PrincipaisPlataformas: response.data.PrincipaisPlataformas
+          })
 
-            dispatch({
-                type: 'PrincipaisPerfis_Atualizado',
-                PrincipaisPerfis: response.data.PrincipaisPerfis,
-            })
+          dispatch({
+            type: 'QuantidadeOpinions_Atualizado',
+            QuantidadeOpinions: response.data.QuantidadeOpinions
+          })
 
-            dispatch({
-                type: 'PrincipaisPlataformas_Atualizado',
-                PrincipaisPlataformas: response.data.PrincipaisPlataformas,
-            })
+          dispatch({
+            type: 'NegativeOpinions_Atualizado',
+            NegativeOpinions: response.data.NegativeOpinions
+          })
 
-            dispatch({
-                type: 'QuantidadeOpinions_Atualizado',
-                QuantidadeOpinions: response.data.QuantidadeOpinions,
-            })
+          dispatch({
+            type: 'PositiveOpinions_Atualizado',
+            PositiveOpinions: response.data.PositiveOpinions
+          })
 
-            dispatch({
-                type: 'NegativeOpinions_Atualizado',
-                NegativeOpinions: response.data.NegativeOpinions,
-            })
+          dispatch({
+            type: 'PercentOpinionsPositive_Atualizado',
+            PercentOpinionsPositive: response.data.PercentOpinionsPositive
+          })
 
-            dispatch({
-                type: 'PositiveOpinions_Atualizado',
-                PositiveOpinions: response.data.PositiveOpinions,
-            })
+          dispatch({
+            type: 'PercentOpinionsNegative_Atualizado',
+            PercentOpinionsNegative: response.data.PercentOpinionsNegative
+          })
 
-            dispatch({
-                type: 'PercentOpinionsPositive_Atualizado',
-                PercentOpinionsPositive: response.data.PercentOpinionsPositive,
-            })
+          dispatch({
+            type: 'count_positive_category_Atualizado',
+            count_positive_category: response.data.count_positive_category
+          })
 
+          dispatch({
+            type: 'count_negative_category_Atualizado',
+            count_negative_category: response.data.count_negative_category
+          })
 
-            dispatch({
-                type: 'PercentOpinionsNegative_Atualizado',
-                PercentOpinionsNegative: response.data.PercentOpinionsNegative,
-            })
+          dispatch({
+            type: 'PercentForEachPlataforma_Atualizado',
+            PercentForEachPlataforma: response.data.PercentForEachPlataforma
+          })
 
+          dispatch({
+            type: 'CountSitesEspecializados_Atualizado',
+            PercentForEachPlataforma: response.data.CountSitesEspecializados
+          })
 
-            dispatch({
-                type: 'count_positive_category_Atualizado',
-                count_positive_category: response.data.count_positive_category,
-            })
+          dispatch({
+            type: 'CountWeb_Atualizado',
+            CountWeb: response.data.CountWeb
+          })
 
+          dispatch({
+            type: 'CountRedesSociais_Atualizado',
+            CountRedesSociais: response.data.CountRedesSociais
+          })
 
-            dispatch({
-                type: 'count_negative_category_Atualizado',
-                count_negative_category: response.data.count_negative_category,
-            })
-
-            
-            dispatch({
-                type: 'PercentForEachPlataforma_Atualizado',
-                PercentForEachPlataforma: response.data.PercentForEachPlataforma,
-            })
-
-            dispatch({
-                type: 'CountSitesEspecializados_Atualizado',
-                PercentForEachPlataforma: response.data.CountSitesEspecializados,
-            })
-
-            dispatch({
-                type: 'CountWeb_Atualizado',
-                CountWeb: response.data.CountWeb,
-            })
-
-            dispatch({
-                type: 'CountRedesSociais_Atualizado',
-                CountRedesSociais: response.data.CountRedesSociais,
-            })
-
-
-
-
-            if(AutoTurnOffLoading != true){
-                dispatch(AtualizarLoading(false))
-            }
-      
-
-            
-            
-
-        }).catch(
-            function (error) {
-              console.log('Erro ao requisitar servidor linha 118 opinions.js')
-              return Promise.reject(error)
-            }
-          )
-           
-         }catch(err){
+          if (!AutoTurnOffLoading) {
             dispatch(AtualizarLoading(false))
-             alert('a')
-             console.log(err)
-           console.log('erro ao buscar dados. Verifique a funcao FiltroMaster em store/opinions linha 78')
-       }
-        
-           
-
-        
-       
-
-                     
-
-
-
-      }
+          }
+        })
+        .catch(function (error) {
+          console.log('Erro ao requisitar servidor linha 118 opinions.js')
+          return Promise.reject(error)
+        })
+    } catch (err) {
+      dispatch(AtualizarLoading(false))
+      alert('a')
+      console.log(err)
+      console.log(
+        'erro ao buscar dados. Verifique a funcao FiltroMaster em store/opinions linha 78'
+      )
     }
-
-
-    export function FiltroCategory(estabelecimento_id, concorrente_id, interval_init, interval_fim, category){ //ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
-
-       if(concorrente_id === false){
-        return dispatch => {
-            dispatch(FiltroMaster(estabelecimento_id, interval_init, interval_fim, category))
-
-        }}else{
-            return dispatch => {
-                dispatch(FiltroMaster_Comparacao(estabelecimento_id, concorrente_id,interval_init, interval_fim, category))
-    
-            }
-        }
-
-
+  }
 }
-  
 
+// ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
+export function FiltroCategory(
+  estabelecimentoId,
+  competitorId,
+  intervalInit,
+  intervalEnd,
+  category
+) {
+  if (!competitorId) {
+    return dispatch => {
+      dispatch(
+        FiltroMaster(estabelecimentoId, intervalInit, intervalEnd, category)
+      )
+    }
+  } else {
+    return dispatch => {
+      dispatch(
+        filterMasterComparation(
+          estabelecimentoId,
+          competitorId,
+          intervalInit,
+          intervalEnd,
+          category
+        )
+      )
+    }
+  }
+}
 
+export const filterMasterComparation = (
+  estabelecimentoId,
+  competitorId,
+  intervalInit,
+  intervalEnd,
+  category
+) => {
+  const data = {
+    concorrente_id: competitorId,
+    estabelecimento_id: estabelecimentoId,
+    interval_init: moment(intervalInit, 'DD MM YYYY hh:mm:ss'),
+    interval_fim: moment(intervalEnd, 'DD MM YYYY hh:mm:ss'),
+    category: category
+  }
 
+  return dispatch => {
+    dispatch(AtualizarLoading(true))
+    dispatch({
+      type: 'INTERVAL_INIT_ATUALIZADO',
+      interval_init: intervalInit
+    })
 
-    
+    dispatch({
+      type: 'INTERVAL_FIM_ATUALIZADO',
+      interval_fim: intervalEnd
+    })
 
-     export  const FiltroMaster_Comparacao = (estabelecimento_id, concorrente_id,interval_init, interval_fim, category) => {
+    try {
+      api
+        .post('compareopinion', data, {
+          headers: {
+            Authorization: 'setadomanualmente'
+          }
+        })
+        .then(response => {
+          dispatch({
+            type: 'FILTRO_MASTER_ATUALIZADO_COMPARACAO',
+            opinionsByCronology:
+              response.data.estabelecimento.OpinionsByChronology
+          })
 
+          dispatch({
+            type: 'FILTRO_CONCORRENTE_ATUALIZADO',
+            opinionsByCronology: response.data.concorrente.OpinionsByChronology
+          })
 
+          dispatch({
+            type: 'LINE_CHART_ATUALIZADO',
+            ChartOpinions: response.data.ChartOpinions
+          })
 
-        const data = {
-            "concorrente_id": concorrente_id,
-            "estabelecimento_id": estabelecimento_id,
-            "interval_init": moment(interval_init, "DD MM YYYY hh:mm:ss"),
-            "interval_fim": moment(interval_fim, "DD MM YYYY hh:mm:ss"),
-            "category": category
-            }
-        
-        
-        
-        
-        
-            return dispatch => {
-                dispatch(AtualizarLoading(true))
-                dispatch({
-                    type: 'INTERVAL_INIT_ATUALIZADO',
-                    interval_init: interval_init,
-                })
-        
-                dispatch({
-                    type: 'INTERVAL_FIM_ATUALIZADO',
-                    interval_fim: interval_fim,
-                })
-        
-        
-                try{
-                  api.post('compareopinion', data, {
-                       headers:{
-                           Authorization: 'setadomanualmente'
-                       }
-                   }).then((response) => {
-                   
-                       
-                    dispatch({  
-                        type: 'FILTRO_MASTER_ATUALIZADO_COMPARACAO',
-                      opinions_by_cronology: response.data.estabelecimento.OpinionsByChronology
-                    })
+          dispatch({
+            type: 'PrincipaisPerfis_Atualizado',
+            PrincipaisPerfis: response.data.estabelecimento.PrincipaisPerfis
+          })
 
-                    dispatch({  
-                        type: 'FILTRO_CONCORRENTE_ATUALIZADO',
-                      opinions_by_cronology: response.data.concorrente.OpinionsByChronology
-                    })
-                    
-                    dispatch({
-                        type: 'LINE_CHART_ATUALIZADO',
-                        ChartOpinions: response.data.ChartOpinions,
-                    })
+          dispatch({
+            type: 'PrincipaisPlataformas_Atualizado',
+            PrincipaisPlataformas:
+              response.data.estabelecimento.PrincipaisPlataformas
+          })
 
-                  
-            dispatch({
-                type: 'PrincipaisPerfis_Atualizado',
-                PrincipaisPerfis: response.data.estabelecimento.PrincipaisPerfis,
-            })
+          dispatch({
+            type: 'QuantidadeOpinions_Atualizado',
+            QuantidadeOpinions: response.data.estabelecimento.QuantidadeOpinions
+          })
 
-            dispatch({
-                type: 'PrincipaisPlataformas_Atualizado',
-                PrincipaisPlataformas: response.data.estabelecimento.PrincipaisPlataformas,
-            })
+          dispatch({
+            type: 'NegativeOpinions_Atualizado',
+            NegativeOpinions: response.data.estabelecimento.NegativeOpinions
+          })
 
-            dispatch({
-                type: 'QuantidadeOpinions_Atualizado',
-                QuantidadeOpinions: response.data.estabelecimento.QuantidadeOpinions,
-            })
+          dispatch({
+            type: 'PositiveOpinions_Atualizado',
+            PositiveOpinions: response.data.estabelecimento.PositiveOpinions
+          })
 
-            dispatch({
-                type: 'NegativeOpinions_Atualizado',
-                NegativeOpinions: response.data.estabelecimento.NegativeOpinions,
-            })
+          dispatch({
+            type: 'PercentOpinionsPositive_Atualizado',
+            PercentOpinionsPositive:
+              response.data.estabelecimento.PercentOpinionsPositive
+          })
 
-            dispatch({
-                type: 'PositiveOpinions_Atualizado',
-                PositiveOpinions: response.data.estabelecimento.PositiveOpinions,
-            })
+          dispatch({
+            type: 'PercentOpinionsNegative_Atualizado',
+            PercentOpinionsNegative:
+              response.data.estabelecimento.PercentOpinionsNegative
+          })
 
-            dispatch({
-                type: 'PercentOpinionsPositive_Atualizado',
-                PercentOpinionsPositive: response.data.estabelecimento.PercentOpinionsPositive,
-            })
+          dispatch({
+            type: 'PrincipaisPerfis_Atualizado_CONCORRENTE',
+            PrincipaisPerfis: response.data.concorrente.PrincipaisPerfis
+          })
 
+          dispatch({
+            type: 'PrincipaisPlataformas_Atualizado_CONCORRENTE',
+            PrincipaisPlataformas:
+              response.data.concorrente.PrincipaisPlataformas
+          })
 
-            dispatch({
-                type: 'PercentOpinionsNegative_Atualizado',
-                PercentOpinionsNegative: response.data.estabelecimento.PercentOpinionsNegative,
-            })
+          dispatch({
+            type: 'QuantidadeOpinions_Atualizado_CONCORRENTE',
+            QuantidadeOpinions: response.data.concorrente.QuantidadeOpinions
+          })
 
+          dispatch({
+            type: 'NegativeOpinions_Atualizado_CONCORRENTE',
+            NegativeOpinions: response.data.concorrente.NegativeOpinions
+          })
 
+          dispatch({
+            type: 'PositiveOpinions_Atualizado_CONCORRENTE',
+            PositiveOpinions: response.data.concorrente.PositiveOpinions
+          })
 
+          dispatch({
+            type: 'PercentOpinionsPositive_Atualizado_CONCORRENTE',
+            PercentOpinionsPositive:
+              response.data.concorrente.PercentOpinionsPositive
+          })
 
+          dispatch({
+            type: 'PercentOpinionsNegative_Atualizado_CONCORRENTE',
+            PercentOpinionsNegative:
+              response.data.concorrente.PercentOpinionsNegative
+          })
 
+          dispatch({
+            type: 'PercentForEachPlataforma_Atualizado',
+            PercentForEachPlataforma:
+              response.data.concorrente.PercentForEachPlataforma
+          })
 
-            dispatch({
-                type: 'PrincipaisPerfis_Atualizado_CONCORRENTE',
-                PrincipaisPerfis: response.data.concorrente.PrincipaisPerfis,
-            })
+          dispatch({
+            type: 'PercentForEachPlataforma_Atualizado_CONCORRENTE',
+            PercentForEachPlataforma:
+              response.data.concorrente.PercentForEachPlataforma
+          })
 
-            dispatch({
-                type: 'PrincipaisPlataformas_Atualizado_CONCORRENTE',
-                PrincipaisPlataformas: response.data.concorrente.PrincipaisPlataformas,
-            })
+          dispatch({
+            type: 'CountSitesEspecializados_Atualizado',
+            PercentForEachPlataforma:
+              response.data.estabelecimento.CountSitesEspecializados
+          })
 
-            dispatch({
-                type: 'QuantidadeOpinions_Atualizado_CONCORRENTE',
-                QuantidadeOpinions: response.data.concorrente.QuantidadeOpinions,
-            })
+          dispatch({
+            type: 'CountSitesEspecializados_Atualizado_CONCORRENTE',
+            PercentForEachPlataforma:
+              response.data.concorrente.CountSitesEspecializados
+          })
 
-            dispatch({
-                type: 'NegativeOpinions_Atualizado_CONCORRENTE',
-                NegativeOpinions: response.data.concorrente.NegativeOpinions,
-            })
+          dispatch({
+            type: 'CountRedesSociais_Atualizado_CONCORRENTE',
+            CountRedesSociais: response.data.concorrente.CountRedesSociais
+          })
 
-            dispatch({
-                type: 'PositiveOpinions_Atualizado_CONCORRENTE',
-                PositiveOpinions: response.data.concorrente.PositiveOpinions,
-            })
+          dispatch({
+            type: 'CountRedesSociais_Atualizado',
+            CountRedesSociais: response.data.estabelecimento.CountRedesSociais
+          })
 
-            dispatch({
-                type: 'PercentOpinionsPositive_Atualizado_CONCORRENTE',
-                PercentOpinionsPositive: response.data.concorrente.PercentOpinionsPositive,
-            })
+          dispatch({
+            type: 'CountWeb_Atualizado',
+            CountWeb: response.data.estabelecimento.CountWeb
+          })
 
+          dispatch({
+            type: 'CountWeb_Atualizado_CONCORRENTE',
+            CountWeb: response.data.concorrente.CountWeb
+          })
 
-            dispatch({
-                type: 'PercentOpinionsNegative_Atualizado_CONCORRENTE',
-                PercentOpinionsNegative: response.data.concorrente.PercentOpinionsNegative,
-            })
-                    
-                    
-
-
-
-
-
-            dispatch({
-                type: 'PercentForEachPlataforma_Atualizado',
-                PercentForEachPlataforma: response.data.concorrente.PercentForEachPlataforma,
-            })
-
-            dispatch({
-                type: 'PercentForEachPlataforma_Atualizado_CONCORRENTE',
-                PercentForEachPlataforma: response.data.concorrente.PercentForEachPlataforma,
-            })
-
-
-
-            dispatch({
-                type: 'CountSitesEspecializados_Atualizado',
-                PercentForEachPlataforma: response.data.estabelecimento.CountSitesEspecializados,
-            })
-
-            dispatch({
-                type: 'CountSitesEspecializados_Atualizado_CONCORRENTE',
-                PercentForEachPlataforma: response.data.concorrente.CountSitesEspecializados,
-            })
-
-
-
-
-
-
-            dispatch({
-                type: 'CountRedesSociais_Atualizado_CONCORRENTE',
-                CountRedesSociais: response.data.concorrente.CountRedesSociais,
-            })
-
-            dispatch({
-                type: 'CountRedesSociais_Atualizado',
-                CountRedesSociais: response.data.estabelecimento.CountRedesSociais,
-            })
-
-
-            dispatch({
-                type: 'CountWeb_Atualizado',
-                CountWeb: response.data.estabelecimento.CountWeb,
-            })
-
-            dispatch({
-                type: 'CountWeb_Atualizado_CONCORRENTE',
-                CountWeb: response.data.concorrente.CountWeb,
-            })
-
-
-            
-                    
-        
-                    dispatch(AtualizarLoading(false))
-                    
-        
-                }).catch(
-                    function (error) {
-                      console.log('Erro ao requisitar servidor linha 118 opinions.js')
-                      return Promise.reject(error)
-                    }
-                  )
-                   
-                 }catch(err){
-                    dispatch(AtualizarLoading(false))
-                     alert('a')
-                     console.log(err)
-                   console.log('erro ao buscar dados. Verifique a funcao FiltroMaster em store/opinions linha 78')
-               }
-                
-                   
-        
-                
-               
-        
-                             
-        
-        
-        
-              }
-
-     }
+          dispatch(AtualizarLoading(false))
+        })
+        .catch(function (error) {
+          console.log('Erro ao requisitar servidor linha 118 opinions.js')
+          return Promise.reject(error)
+        })
+    } catch (err) {
+      dispatch(AtualizarLoading(false))
+      alert('a')
+      console.log(err)
+      console.log(
+        'erro ao buscar dados. Verifique a funcao FiltroMaster em store/opinions linha 78'
+      )
+    }
+  }
+}
 
 // export function FiltroMaster(interval_init,interval_fim ){ //ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
 //     return dispatch => {
-        
+
 //         dispatch({
 //             type: 'FILTRO_MASTER_ATUALIZADO',
 //             interval_init: interval_init,
-//             interval_fim: interval_fim, 
+//             interval_fim: interval_fim,
 //         })
 
 //         dispatch({
@@ -478,121 +421,115 @@ const data = {
 //         })
 
 //         return Promise.resolve()
-        
-//     }  
-// }
 
+//     }
+// }
 
 // export function FiltroCategory(opinions, filter_category){ //ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
 //     return dispatch => {
 //         dispatch({
 //             type: 'FILTRO_CATEGORIA_APLICADO',
 //             opinions: opinions,
-//             filter_category: filter_category 
-//         })        
-//     }  
+//             filter_category: filter_category
+//         })
+//     }
 // }
-
 
 // export function FiltroCategory(concorrente_id, interval_init, interval_fim, category){ //ESTADO DO COMPONENTE BOTAO DE FILTRO DE DATA
 
-    
 //     return dispatch => {
 
-//         Filtros.FilterByFreeInterval(concorrente_id, interval_init, interval_fim, category).then(function(opinions_by_cronology){
-        
-//             dispatch({  
+//         Filtros.FilterByFreeInterval(concorrente_id, interval_init, interval_fim, category).then(function(opinionsByCronology){
+
+//             dispatch({
 //                 type: 'FILTRO_MASTER_ATUALIZADO',
-//               opinions_by_cronology: opinions_by_cronology
+//               opinionsByCronology: opinionsByCronology
 //             })
 
 //             dispatch({
 //                 type: 'FILTRO_CATEGORIA_APLICADO',
 //                 filter_category: category,
-//                 opinions_by_cronology: opinions_by_cronology
-//             }) 
+//                 opinionsByCronology: opinionsByCronology
+//             })
 //     })
 // }}
 
-export function FiltroPrincipalDashboard(filter_time, filter_interval){ //RECEBE DADOS BRUTOS E FILTRA POR MES SEMANA DIA SETANDO O COMPONENTE opinions_by_cronology
-    return dispatch => {
-        dispatch({
-            type: 'DATA_FILTRO_ALTERADA',
-            filter_time: filter_time
-        })
-        if(filter_time == "hoje"){
-            dispatch(AtualizarEstadoSelect("hoje"))
-        } else if (filter_time == "ontem"){
-            dispatch(AtualizarEstadoSelect("ontem"))
-        } else if (filter_time == "7dias") {
-            dispatch(AtualizarEstadoSelect("7dias"))
-        }else if (filter_time == "30dias") {
-            dispatch(AtualizarEstadoSelect("30dias"))
-        }else if (filter_time == "3meses") {
-            dispatch(AtualizarEstadoSelect("3meses"))
-        }else if (filter_time == "ano") {
-            dispatch(AtualizarEstadoSelect("ano"))
-        }
-
-        if(filter_interval == "dias"){
-            dispatch(AtualizarEstadoButtonFilter("dias"))
-        } else if (filter_interval == "semanas"){
-            dispatch(AtualizarEstadoButtonFilter("semanas"))
-        } else if (filter_interval == "meses") {
-            dispatch(AtualizarEstadoButtonFilter("meses"))
-        }
-}
-
-}
-
-export function FiltrarComentarios(plataforma, aba_value, opinions_by_cronology){
-    return {
-            type: 'FILTRO_APLICADO',
-            payload: plataforma,
-            aba_value: aba_value,
-            opinions_by_cronology: opinions_by_cronology
-    }   
-}
-
-
-
-export function OrdenarComentarios(tipo_ordenacao){
-    return {
-        type: 'ORDENACAO_ALTERADA',
-        payload: tipo_ordenacao,
-        
-    }   
-}
-    export function AlternarAba(tipo_plataforma, tipo_aba){
-        return [{
-            type: 'ABA_ALTERADA',
-            payload: tipo_aba
-        }, FiltrarComentarios(tipo_plataforma, tipo_aba)]
+export function FiltroPrincipalDashboard(filterTime, filterInterval) {
+  // RECEBE DADOS BRUTOS E FILTRA POR MES SEMANA DIA SETANDO O COMPONENTE opinionsByCronology
+  return dispatch => {
+    dispatch({
+      type: 'DATA_FILTRO_ALTERADA',
+      filter_time: filterTime
+    })
+    if (filterTime === 'hoje') {
+      dispatch(AtualizarEstadoSelect('hoje'))
+    } else if (filterTime === 'ontem') {
+      dispatch(AtualizarEstadoSelect('ontem'))
+    } else if (filterTime === '7dias') {
+      dispatch(AtualizarEstadoSelect('7dias'))
+    } else if (filterTime === '30dias') {
+      dispatch(AtualizarEstadoSelect('30dias'))
+    } else if (filterTime === '3meses') {
+      dispatch(AtualizarEstadoSelect('3meses'))
+    } else if (filterTime === 'ano') {
+      dispatch(AtualizarEstadoSelect('ano'))
     }
 
-        export function AlterarPlataforma(tipo_plataforma, tipo_aba){
-            return dispatch => {
-                dispatch({
-                    type: 'PLATAFORMA_ALTERADA',
-                    payload: tipo_plataforma
-                })
-                
-                dispatch(FiltrarComentarios(tipo_plataforma, tipo_aba))
-                
-            }  
+    if (filterInterval === 'dias') {
+      dispatch(AtualizarEstadoButtonFilter('dias'))
+    } else if (filterInterval === 'semanas') {
+      dispatch(AtualizarEstadoButtonFilter('semanas'))
+    } else if (filterInterval === 'meses') {
+      dispatch(AtualizarEstadoButtonFilter('meses'))
     }
+  }
+}
 
-     export function AtualizarLoading(state){
-         return dispatch => {
-             dispatch({
-                 type: 'LOADING_ALTERADO',
-                 state: state
-             })
-         }  
- }
+export function FiltrarComentarios(plataforma, abaValue, opinionsByCronology) {
+  return {
+    type: 'FILTRO_APLICADO',
+    payload: plataforma,
+    abaValue: abaValue,
+    opinionsByCronology: opinionsByCronology
+  }
+}
 
+export function OrdenarComentarios(sortingOrder) {
+  return {
+    type: 'ORDENACAO_ALTERADA',
+    payload: sortingOrder
+  }
+}
 
+export function AlternarAba(platformType, typeAba) {
+  return [
+    {
+      type: 'ABA_ALTERADA',
+      payload: typeAba
+    },
+    FiltrarComentarios(platformType, typeAba)
+  ]
+}
 
+export function AlterarPlataforma(platformType, typeAba) {
+  return dispatch => {
+    dispatch({
+      type: 'PLATAFORMA_ALTERADA',
+      payload: platformType
+    })
+
+    dispatch(FiltrarComentarios(platformType, typeAba))
+  }
+}
+
+export function AtualizarLoading(state) {
+  return dispatch => {
+    dispatch({
+      type: 'LOADING_ALTERADO',
+      state: state
+    })
+  }
+}
 
 // export function AtualizarLoading(state) {
 //     return dispatch => {
@@ -601,12 +538,8 @@ export function OrdenarComentarios(tipo_ordenacao){
 //             type: 'LOADING_ALTERADO',
 //             state: state
 //         })
-  
+
 //         resolve()
 //       });
 //     }
 //  }
-
-
-    
-

@@ -2,81 +2,63 @@ import React, {PureComponent} from 'react'
 import Typography from '@material-ui/core/Typography';
 import Badge from '@material-ui/core/Badge';
 import Divider from '@material-ui/core/Divider';
-
 import './index.css'
-
-import CommentIcon from '@material-ui/icons/Comment';
-
 import {connect} from 'react-redux'
-
-import {AtualizarLineChart} from '../../../store/actions/opinions'
-
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend } from 'recharts';
-import { SettingsSystemDaydreamTwoTone } from '@material-ui/icons';
-
-
-import Filtros2 from '../../../Filtros'
-
-const Filtros = new Filtros2
-
-
-
-
 const margin = { top: 5, right:5, bottom: 5, left: 5 }
 
 
-
 class LChart extends PureComponent {
-  
+
   constructor(props){
     super(props)
     this.state = {
-      data: this.props.ChartOpinions == undefined ? this.props.ChartOpinions : [],
+      data: this.props.ChartOpinions === undefined ? this.props.ChartOpinions : [],
       opacity: {
         uv: 1,
         pv: 1,
       },
     };
   }
-  AtualizarLineChart(opinions_by_cronology, estado_button_filter ){
-
-    this.setState({
-      data: this.props.ChartOpinions,
-    });
-  }
+  // AtualizarLineChart(opinions_by_cronology, estado_button_filter ){
+  //
+  //   this.setState({
+  //     data: this.props.ChartOpinions,
+  //   });
+  // }
 
   componentDidMount(){
-  
-      this.AtualizarLineChart(this.props.opinions_by_cronology, this.props.estado_button_filter)
-    
+
+      // this.AtualizarLineChart(this.props.opinions_by_cronology, this.props.estado_button_filter)
+
   }
-  
+
 
   componentDidUpdate(nextProps, nextState){
     if(nextProps.opinions_by_cronology !== this.props.opinions_by_cronology){
       //this.AtualizarLineChart(this.props.opinions_by_cronology, this.props.estado_button_filter)
     }
   }
-  
+
     handleMouseEnter = (o) => {
       const { dataKey } = o;
       const { opacity } = this.state;
-  
+
       this.setState({
         opacity: { ...opacity, [dataKey]: 0.5 },
       });
     }
-  
+
     handleMouseLeave = (o) => {
       const { dataKey } = o;
       const { opacity } = this.state;
-  
+
       this.setState({
         opacity: { ...opacity, [dataKey]: 1 },
       });
     }
 
-    
+
 
     render() {
         const { opacity } = this.state;
@@ -97,7 +79,7 @@ class LChart extends PureComponent {
                     <XAxis dataKey="name" strokeWidth={0}/>
                     <YAxis strokeWidth={1}/>
                     <Tooltip />
-                    
+
                     <Line name="Positivos" type="monotone" dataKey="pv" strokeOpacity={opacity.uv} strokeWidth={1} stroke="#2ca9d2" dot={false} isAnimationActive={false}/>
                     <Line name="Negativos" type="monotone" dataKey="uv" strokeOpacity={opacity.pv} strokeWidth={1} stroke="#cc1f1f" isAnimationActive={false} dot={false}/>
                     <Legend onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} />
@@ -112,13 +94,13 @@ class LChart extends PureComponent {
 
 
 function mapActionCreatorsToProps(dispatch){
-  return{
-    AtualizarLineChart(opinions_by_cronology, estado_botao_filtro_principal){
-          //action creator
-          const action = AtualizarLineChart(opinions_by_cronology, estado_botao_filtro_principal)
-          dispatch(action)
-      }
-  }
+  // return{
+  //   AtualizarLineChart(opinions_by_cronology, estado_botao_filtro_principal){
+  //         //action creator
+  //         const action = AtualizarLineChart(opinions_by_cronology, estado_botao_filtro_principal)
+  //         dispatch(action)
+  //     }
+  // }
 }
 
 function mapStateToProps(state){

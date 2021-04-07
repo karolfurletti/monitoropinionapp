@@ -1,36 +1,30 @@
-import React, { PureComponent } from 'react';
-import './index.css'
+import React, { PureComponent } from "react"
+import "./index.css"
 import {
-  PieChart, Pie, Cell,
-} from 'recharts';
-
-
-
-import {connect} from 'react-redux'
-
-
-import Filtros2 from '../../../../Filtros'
-const Filtros = new Filtros2
-
-
-const COLORS = ['#de3b3bde', '#379a51' ];
-
-
+  PieChart, Pie, Cell
+} from "recharts"
+import { connect } from "react-redux"
+const COLORS = ["#de3b3bde", "#379a51"]
 
 class PieChartPercent extends PureComponent {
 
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
       data: [
-        { name: 'Negativos', value: 0 },
-        { name: 'Positivos', value: 0 },
+        {
+          name: "Negativos",
+          value: 0
+        },
+        {
+          name: "Positivos",
+          value: 0
+        }
       ]
     }
   }
 
-
-  componentDidUpdate(){
+  componentDidUpdate() {
     // let newData = 0
     // if(this.state.data[0].value != Filtros.CountPositiveNegativePercent(this.props.opinions_by_cronology)[0]){
     //    newData = this.state.data.slice() //copy the array
@@ -40,17 +34,28 @@ class PieChartPercent extends PureComponent {
     // }
   }
 
-
   render() {
     return (
       <PieChart width={300} height={500} onMouseEnter={this.onPieEnter} className="pie2">
         <Pie
-          data={this.props.variante === 'concorrente' ? [
-            { name: 'Negativos', value: this.props.PercentOpinionsNegativeConcorrente },
-            { name: 'Positivos', value: this.props.PercentOpinionsPositiveConcorrente },
-          ]:  [
-            { name: 'Negativos', value: this.props.PercentOpinionsNegative },
-            { name: 'Positivos', value: this.props.PercentOpinionsPositive},
+          data={this.props.variante === "concorrente" ? [
+            {
+              name: "Negativos",
+              value: this.props.PercentOpinionsNegativeConcorrente
+            },
+            {
+              name: "Positivos",
+              value: this.props.PercentOpinionsPositiveConcorrente
+            }
+          ] : [
+            {
+              name: "Negativos",
+              value: this.props.PercentOpinionsNegative
+            },
+            {
+              name: "Positivos",
+              value: this.props.PercentOpinionsPositive
+            }
           ]}
           cx={120}
           cy={200}
@@ -65,12 +70,12 @@ class PieChartPercent extends PureComponent {
           }
         </Pie>
       </PieChart>
-    );
+    )
   }
 }
 
-function mapStateToProps(state){
-  return{
+function mapStateToProps(state) {
+  return {
     PercentOpinionsPositive: state.PercentOpinionsPositive,
     PercentOpinionsPositiveConcorrente: state.PercentOpinionsPositiveConcorrente,
     PercentOpinionsNegativeConcorrente: state.PercentOpinionsNegativeConcorrente,

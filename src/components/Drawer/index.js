@@ -1,137 +1,125 @@
-import React from 'react';
-import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Divider from '@material-ui/core/Divider';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
-import ChatIcon from '@material-ui/icons/Chat';
-import NoteIcon from '@material-ui/icons/Note';
-import PollIcon from '@material-ui/icons/Poll';
-import SettingsIcon from '@material-ui/icons/Settings';
-import CompareIcon from '@material-ui/icons/Compare';
-import PieChartIcon from '@material-ui/icons/PieChart';
+import React from "react"
+import clsx from "clsx"
+import { makeStyles, useTheme } from "@material-ui/core/styles"
+import Drawer from "@material-ui/core/Drawer"
+import AppBar from "@material-ui/core/AppBar"
+import Toolbar from "@material-ui/core/Toolbar"
+import List from "@material-ui/core/List"
+import CssBaseline from "@material-ui/core/CssBaseline"
+import Divider from "@material-ui/core/Divider"
+import IconButton from "@material-ui/core/IconButton"
+import MenuIcon from "@material-ui/icons/Menu"
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft"
+import ChevronRightIcon from "@material-ui/icons/ChevronRight"
+import ListItem from "@material-ui/core/ListItem"
+import ListItemIcon from "@material-ui/core/ListItemIcon"
+import ListItemText from "@material-ui/core/ListItemText"
+import MenuItem from "@material-ui/core/MenuItem"
+import Menu from "@material-ui/core/Menu"
+import ChatIcon from "@material-ui/icons/Chat"
+import NoteIcon from "@material-ui/icons/Note"
+import PollIcon from "@material-ui/icons/Poll"
+import CompareIcon from "@material-ui/icons/Compare"
+import PieChartIcon from "@material-ui/icons/PieChart"
+import SearchIcon from "@material-ui/icons/Search"
+import AccountCircleIcon from "@material-ui/icons/AccountCircle"
+import NotificationsIcon from "@material-ui/icons/Notifications"
+import LibraryBooksIcon from "@material-ui/icons/LibraryBooks"
+import Logo from "../../Assets/logo.png"
+import { Grid } from "@material-ui/core"
+import { Link } from "react-router-dom"
+import "./index.css"
 
-import SearchIcon from '@material-ui/icons/Search';
-
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-
-import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
-
-
-
-import Logo from '../../Assets/logo.png'
-import { Grid } from '@material-ui/core'
-
-
-import { Link } from 'react-router-dom'
-
-
-import './index.css'
-
-const drawerWidth = 240;
+const drawerWidth = 240
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
+    display: "flex"
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-    transition: theme.transitions.create(['width', 'margin'], {
+    transition: theme.transitions.create(["width", "margin"], {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
+      duration: theme.transitions.duration.leavingScreen
+    })
   },
   appBarShift: {
     marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(['width', 'margin'], {
+    transition: theme.transitions.create(["width", "margin"], {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
+      duration: theme.transitions.duration.enteringScreen
+    })
   },
   menuButton: {
-    marginRight: 36,
+    marginRight: 36
   },
   hide: {
-    display: 'none',
+    display: "none"
   },
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
-    whiteSpace: 'nowrap',
+    whiteSpace: "nowrap"
   },
   drawerOpen: {
     width: drawerWidth,
-    transition: theme.transitions.create('width', {
+    transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
+      duration: theme.transitions.duration.enteringScreen
+    })
   },
   drawerClose: {
-    transition: theme.transitions.create('width', {
+    transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
+      duration: theme.transitions.duration.leavingScreen
     }),
-    overflowX: 'hidden',
+    overflowX: "hidden",
     width: theme.spacing(7) + 1,
-    [theme.breakpoints.up('sm')]: {
-      width: theme.spacing(9) + 1,
-    },
+    [theme.breakpoints.up("sm")]: {
+      width: theme.spacing(9) + 1
+    }
   },
   toolbar: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "flex-end",
     padding: theme.spacing(0, 1),
     // necessary for content to be below app bar
-    ...theme.mixins.toolbar,
+    ...theme.mixins.toolbar
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
-  },
-}));
-
+    padding: theme.spacing(3)
+  }
+}))
 
 export default function MiniDrawer(props) {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [selectedIndex, setSelectedIndex] = React.useState(props.option);
+  const [anchorEl, setAnchorEl] = React.useState(null)
+  const selectedIndex = props.option
 
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+    setAnchorEl(event.currentTarget)
+  }
 
   const handleClose = () => {
-    setAnchorEl(null);
-  };
+    setAnchorEl(null)
+  }
 
-  const classes = useStyles();
-  const theme = useTheme();
-  const [open, setOpen] = React.useState(true);
+  const classes = useStyles()
+  const theme = useTheme()
+  const [open, setOpen] = React.useState(true)
 
   const handleDrawerOpen = () => {
-    setOpen(true);
-  };
+    setOpen(true)
+  }
 
   const handleDrawerClose = () => {
-    setOpen(false);
-  };
+    setOpen(false)
+  }
 
   const handleSetNavigation = () => {
-   
+
   }
 
   return (
@@ -140,7 +128,7 @@ export default function MiniDrawer(props) {
       <AppBar
         position="fixed"
         className={clsx(classes.appBar, {
-          [classes.appBarShift]: open,
+          [classes.appBarShift]: open
         })}
       >
         <Toolbar>
@@ -150,25 +138,23 @@ export default function MiniDrawer(props) {
             onClick={handleDrawerOpen}
             edge="start"
             className={clsx(classes.menuButton, {
-              [classes.hide]: open,
+              [classes.hide]: open
             })}
           >
             <MenuIcon />
           </IconButton>
-    
-          
+
+
           <Grid container justify="flex-end">
-          {/* <Grid item>
+            {/* <Grid item>
                 <Typography variant="h6">{props.NavTitle}</Typography>
           </Grid> */}
-              <Grid item>
-                <IconButton color="inherit">
-                  <NotificationsIcon />
-                </IconButton>
-              </Grid>
-              <Grid item>
-                
-
+            <Grid item>
+              <IconButton color="inherit">
+                <NotificationsIcon />
+              </IconButton>
+            </Grid>
+            <Grid item>
 
 
               <IconButton aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
@@ -182,23 +168,24 @@ export default function MiniDrawer(props) {
                 onClose={handleClose}
               >
                 <MenuItem className="menu-item-draw-titulo">Essencia do Sabor</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/minhaconta" className="menu-item-draw">Minha conta</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/dadospessoais" className="menu-item-draw">Dados pessoais</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Pagamentos e faturas</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Notificações</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Indique um amigo</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Logout</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/minhaconta" className="menu-item-draw">Minha
+                  conta</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/dadospessoais"
+                          className="menu-item-draw">Dados pessoais</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Pagamentos
+                  e faturas</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes"
+                          className="menu-item-draw">Notificações</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Indique
+                  um amigo</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes"
+                          className="menu-item-draw">Logout</MenuItem>
 
               </Menu>
 
 
-
-
-
-
-
-              </Grid>
             </Grid>
+          </Grid>
 
         </Toolbar>
       </AppBar>
@@ -206,35 +193,36 @@ export default function MiniDrawer(props) {
         variant="permanent"
         className={clsx(classes.drawer, {
           [classes.drawerOpen]: open,
-          [classes.drawerClose]: !open,
+          [classes.drawerClose]: !open
         })}
         classes={{
           paper: clsx({
             [classes.drawerOpen]: open,
-            [classes.drawerClose]: !open,
-          }),
+            [classes.drawerClose]: !open
+          })
         }}
       >
         <div className={classes.toolbar}>
-          <img src={Logo} alt="MonitorOpinion" className='LogoImg'></img>
+          <img src={Logo} alt="MonitorOpinion" className="LogoImg" />
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+            {theme.direction === "rtl" ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </div>
         <Divider />
         <List>
-          <ListItem button component={Link} to="/dashboard/inicio" onClick={handleSetNavigation} selected={selectedIndex === 0}>
+          <ListItem button component={Link} to="/dashboard/inicio" onClick={handleSetNavigation}
+                    selected={selectedIndex === 0}>
             <ListItemIcon><LibraryBooksIcon /> </ListItemIcon>
-            <ListItemText  primary="Visão Geral" />
+            <ListItemText primary="Visão Geral" />
           </ListItem>
 
-          <ListItem button component={Link} to="/dashboard/analise"  selected={selectedIndex === 1}>
-            <ListItemIcon><PieChartIcon/> </ListItemIcon>
+          <ListItem button component={Link} to="/dashboard/analise" selected={selectedIndex === 1}>
+            <ListItemIcon><PieChartIcon /> </ListItemIcon>
             <ListItemText primary="Análise" />
           </ListItem>
 
-          <ListItem button component={Link} to="/dashboard/fontes" selected={selectedIndex === 2} >
-            <ListItemIcon><SearchIcon/> </ListItemIcon>
+          <ListItem button component={Link} to="/dashboard/fontes" selected={selectedIndex === 2}>
+            <ListItemIcon><SearchIcon /> </ListItemIcon>
             <ListItemText primary="Fontes" />
           </ListItem>
 
@@ -252,16 +240,15 @@ export default function MiniDrawer(props) {
             <ListItemIcon><PollIcon /> </ListItemIcon>
             <ListItemText primary="Infográfico" />
           </ListItem> */}
-           <ListItem button component="a" href="http://localhost:3000/dashboard/infografico" target="_blank">
+          <ListItem button component="a" href="http://localhost:3000/dashboard/infografico" target="_blank">
             <ListItemIcon><PollIcon /> </ListItemIcon>
             <ListItemText primary="Infográfico" />
           </ListItem>
 
-         
 
           <ListItem button component={Link} to="/dashboard/comparacao" selected={selectedIndex === 6}>
             <ListItemIcon><CompareIcon /> </ListItemIcon>
-            <ListItemText primary="Comparação" className="ComparacaoTab"/>
+            <ListItemText primary="Comparação" className="ComparacaoTab" />
           </ListItem>
 
           {/* <ListItem button component={Link} to="/dashboard/configuracao" selected={selectedIndex === 7}>
@@ -269,12 +256,12 @@ export default function MiniDrawer(props) {
             <ListItemText primary="Configuração" className="ConfiguracaoTab"/>
           </ListItem> */}
 
-      </List>
+        </List>
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
         {props.children}
       </main>
     </div>
-  );
+  )
 }

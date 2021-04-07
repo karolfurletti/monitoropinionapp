@@ -1,38 +1,30 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Divider from '@material-ui/core/Divider';
+import React from "react"
+import PropTypes from "prop-types"
+import AppBar from "@material-ui/core/AppBar"
+import Tabs from "@material-ui/core/Tabs"
+import Tab from "@material-ui/core/Tab"
+import Box from "@material-ui/core/Box"
+import ComentarioPositivo from "../comentario_positivo"
+import ComentarioNegativo from "../comentario_negativo"
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+import { connect } from "react-redux"
+import { FiltrarComentarios } from "../../../store/actions/opinions"
+import { OrdenarComentarios } from "../../../store/actions/opinions"
+import { AlternarAba } from "../../../store/actions/opinions"
+import { AlterarPlataforma } from "../../../store/actions/opinions"
+import "./index.css"
+import Filtros2 from "../../../Filtros"
 
-import ComentarioPositivo from '../comentario_positivo'
-import ComentarioNegativo from '../comentario_negativo'
-
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-
-import {connect} from 'react-redux'
-
-import {FiltrarComentarios} from '../../../store/actions/opinions'
-import {OrdenarComentarios} from '../../../store/actions/opinions'
-import {AlternarAba} from '../../../store/actions/opinions'
-import {AlterarPlataforma} from '../../../store/actions/opinions'
-
-
-
-
-
-import './index.css'
-import Filtros2 from '../../../Filtros'
-const Filtros = new Filtros2 
-
-
+const Filtros = new Filtros2
 
 function TabPanel(props) {
-  const { children, value, index, ...other } = props;
+  const {
+    children,
+    value,
+    index,
+    ...other
+  } = props
 
   return (
     <div
@@ -48,35 +40,25 @@ function TabPanel(props) {
         </Box>
       )}
     </div>
-  );
+  )
 }
 
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
-};
+  value: PropTypes.any.isRequired
+}
 
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
+    "aria-controls": `simple-tabpanel-${index}`
+  }
 }
 
+class SimpleTabs extends React.Component {
 
-
-
-
-
-
-
-
-
-
-class SimpleTabs extends React.Component{
-
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
       value: 0,
@@ -84,105 +66,103 @@ class SimpleTabs extends React.Component{
     }
   }
 
- 
-  
-  componentDidUpdate(){
-    if(JSON.stringify(this.state.opinions_by_teor) != JSON.stringify(Filtros.opinions_by_teor(this.props.plataforma_value,this.props.aba_value,  this.props.opinions_by_cronology))){
-      this.setState({opinions_by_teor: Filtros.opinions_by_teor(this.props.plataforma_value,this.props.aba_value,  this.props.opinions_by_cronology )})
-      }
+  componentDidUpdate() {
+    if (JSON.stringify(this.state.opinions_by_teor) != JSON.stringify(Filtros.opinions_by_teor(this.props.plataforma_value, this.props.aba_value, this.props.opinions_by_cronology))) {
+      this.setState({ opinions_by_teor: Filtros.opinions_by_teor(this.props.plataforma_value, this.props.aba_value, this.props.opinions_by_cronology) })
     }
+  }
+
   handleChange = (event, newValue) => {
-    this.setState({value: newValue});
-    switch(newValue){
+    this.setState({ value: newValue })
+    switch (newValue) {
       case 0:
         this.props.AlternarAba(this.props.plataforma_value, 0)
-  
+
         break
       case 1:
-        this.props.AlternarAba(this.props.plataforma_value, 1)  
-        
+        this.props.AlternarAba(this.props.plataforma_value, 1)
+
         break
-        
+
     }
-  };
-render(){
-  return (
-    <div>
-      <AppBar position="static">
-        <Tabs value={this.state.value} onChange={this.handleChange} aria-label="simple tabs example" variant="scrollable">
-          <Tab label="Negativos" {...a11yProps(0)} className="tab-1"/>
-          <Tab label="Positivos" {...a11yProps(1)} className="tab-2"/>
-        </Tabs>
-      </AppBar>
-      <TabPanel value={this.state.value} index={0}>
+  }
 
-      <div className="tab-component">
-          <List component="nav" aria-label="main mailbox folders">
-          
-            {this.state.opinions_by_teor.map((item, index) => {
-              return (
-                <ListItem key={index} button>
-                 <ComentarioNegativo item={item}></ComentarioNegativo>
-                </ListItem>
-              )
-            })}
+  render() {
+    return (
+      <div>
+        <AppBar position="static">
+          <Tabs value={this.state.value} onChange={this.handleChange} aria-label="simple tabs example"
+                variant="scrollable">
+            <Tab label="Negativos" {...a11yProps(0)} className="tab-1" />
+            <Tab label="Positivos" {...a11yProps(1)} className="tab-2" />
+          </Tabs>
+        </AppBar>
+        <TabPanel value={this.state.value} index={0}>
 
-        
-          </List>
-        </div>
+          <div className="tab-component">
+            <List component="nav" aria-label="main mailbox folders">
 
-      </TabPanel>
+              {this.state.opinions_by_teor.map((item, index) => {
+                return (
+                  <ListItem key={index} button>
+                    <ComentarioNegativo item={item} />
+                  </ListItem>
+                )
+              })}
 
 
-      <TabPanel value={this.state.value} index={1}>
-        <div className="tab-component">
-          <List component="nav" aria-label="main mailbox folders">
-          
-            {this.state.opinions_by_teor.map((item, index) => {
-              return (
-                <ListItem key={index} button>
-                   <ComentarioPositivo item={item}></ComentarioPositivo>
-                  
-                </ListItem>
-              )
-            })}
+            </List>
+          </div>
 
-        
-          </List>
-        </div>
-      </TabPanel>
-    </div>
-  );
-}}
+        </TabPanel>
 
 
-function mapActionCreatorsToProps(dispatch){
-  return{
-      FiltrarComentarios(plataforma, aba_value, opinions_by_cronology){
-          //action creator
-          const action = FiltrarComentarios(plataforma, aba_value, opinions_by_cronology)
-          dispatch(action)
-      },
+        <TabPanel value={this.state.value} index={1}>
+          <div className="tab-component">
+            <List component="nav" aria-label="main mailbox folders">
 
-      OrdenarComentarios(tipo_ordenacao){
-          //action creator
-          const action = OrdenarComentarios(tipo_ordenacao)
-          dispatch(action)
-      },
-      AlternarAba(tipo_plataforma,tipo_aba){
-        const action = AlternarAba(tipo_plataforma, tipo_aba)
-        dispatch(action)
-      },
-      AlterarPlataforma(tipo_plataforma, tipo_aba){
-        //action creator
-        const action = AlterarPlataforma(tipo_plataforma, tipo_aba)
-        dispatch(action)
+              {this.state.opinions_by_teor.map((item, index) => {
+                return (
+                  <ListItem key={index} button>
+                    <ComentarioPositivo item={item} />
+                  </ListItem>
+                )
+              })}
+            </List>
+          </div>
+        </TabPanel>
+      </div>
+    )
+  }
+}
+
+function mapActionCreatorsToProps(dispatch) {
+  return {
+    FiltrarComentarios(plataforma, aba_value, opinions_by_cronology) {
+      //action creator
+      const action = FiltrarComentarios(plataforma, aba_value, opinions_by_cronology)
+      dispatch(action)
+    },
+
+    OrdenarComentarios(tipo_ordenacao) {
+      //action creator
+      const action = OrdenarComentarios(tipo_ordenacao)
+      dispatch(action)
+    },
+    AlternarAba(tipo_plataforma, tipo_aba) {
+      const action = AlternarAba(tipo_plataforma, tipo_aba)
+      dispatch(action)
+    },
+    AlterarPlataforma(tipo_plataforma, tipo_aba) {
+      //action creator
+      const action = AlterarPlataforma(tipo_plataforma, tipo_aba)
+      dispatch(action)
     }
   }
 }
 
-function mapStateToProps(state){
-  return{
+function mapStateToProps(state) {
+  return {
     opinions_by_cronology: state.opinions_by_cronology,
     opinions_by_teor: state.opinions_by_teor,
     aba_value: state.aba_value,

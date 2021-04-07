@@ -2,31 +2,17 @@ import React, {PureComponent} from 'react'
 import Typography from '@material-ui/core/Typography';
 import Badge from '@material-ui/core/Badge';
 import Divider from '@material-ui/core/Divider';
-
 import './index.css'
-
-
-
 import {connect} from 'react-redux'
-
 import {AtualizarLineChart} from '../../../store/actions/opinions'
-
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend } from 'recharts';
-
-
-
 import Filtros2 from '../../../Filtros'
-const Filtros = new Filtros2 
-
-
-
-
+const Filtros = new Filtros2
 const margin = { top: 5, right:5, bottom: 5, left: 5 }
 
 
-
 class LChart extends PureComponent {
-  
+
   constructor(props){
     super(props)
     this.state = {
@@ -41,7 +27,7 @@ class LChart extends PureComponent {
 
   let data = ''
   data = Filtros.FormatToChartFree(opinions_by_cronology, this.props.interval_init, this.props.interval_fim)
-    
+
     this.setState({
       data: data,
     });
@@ -53,26 +39,26 @@ class LChart extends PureComponent {
       console.log(this.props.estado_button_filter)
     }
   }
-  
+
     handleMouseEnter = (o) => {
       const { dataKey } = o;
       const { opacity } = this.state;
-  
+
       this.setState({
         opacity: { ...opacity, [dataKey]: 0.5 },
       });
     }
-  
+
     handleMouseLeave = (o) => {
       const { dataKey } = o;
       const { opacity } = this.state;
-  
+
       this.setState({
         opacity: { ...opacity, [dataKey]: 1 },
       });
     }
 
-    
+
 
     render() {
         const { opacity } = this.state;

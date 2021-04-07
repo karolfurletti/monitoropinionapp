@@ -1,79 +1,60 @@
-import React, { PureComponent } from 'react';
-import './index.css'
+import React, { PureComponent } from "react"
+import "./index.css"
 import {
-  PieChart, Pie, Cell,
-} from 'recharts';
+  PieChart, Pie, Cell
+} from "recharts"
+import { connect } from "react-redux"
 
+const COLORS = ["#de3b3bde", "#379a51"]
 
-
-import {connect} from 'react-redux'
-
-
-import Filtros2 from '../../Filtros'
-
-const Filtros = new Filtros2
-
-const COLORS = ['#de3b3bde','#379a51' ];
-
-
-
-
-
-
-
-
-
-
-const data =  [
-  { name: 'Negativos', value:  Math.floor(Math.random() * 100) },
-  { name: 'Positivos', value:  Math.floor(Math.random() * 100) },
-]
-
-
-
-
+// const data = [
+//   {
+//     name: "Negativos",
+//     value: Math.floor(Math.random() * 100)
+//   },
+//   {
+//     name: "Positivos",
+//     value: Math.floor(Math.random() * 100)
+//   }
+// ]
 
 class PieChartPercent extends PureComponent {
 
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
-      activeIndex: 0,
+      activeIndex: 0
     }
   }
 
-
   onPieEnter = (data, index) => {
     this.setState({
-      activeIndex: index,
-    });
-  };
+      activeIndex: index
+    })
+  }
 
-  
-
-
-  componentDidUpdate(){
+  componentDidUpdate() {
 
   }
 
-
-
-
-
-  
-
-
   render() {
-        return (
+    return (
       <PieChart width={80} height={80} onMouseEnter={this.onPieEnter} className="pie2">
-        <text x={40} y={40} textAnchor="middle" dominantBaseline="middle" className="LabelInsidePie" style={{ fill: '#312020' }}>
+        <text x={40} y={40} textAnchor="middle" dominantBaseline="middle" className="LabelInsidePie"
+              style={{ fill: "#312020" }}>
           {this.props.item.opinions_total}
         </text>
         <Pie
           data={
             [
-              { name: 'Negativos', value:  this.props.item.negative_opinions},
-              { name: 'Positivos', value:  this.props.item.positive_opinions },
+              {
+                name: "Negativos",
+                value: this.props.item.negative_opinions
+              },
+              {
+                name: "Positivos",
+                value: this.props.item.positive_opinions
+              }
             ]
           }
           cx={35}
@@ -82,24 +63,29 @@ class PieChartPercent extends PureComponent {
           outerRadius={40}
           paddingAngle={2}
           dataKey="value"
-      
-          
-        
+
+
         >
           {
-               [
-                { name: 'Negativos', value:  this.props.item.negative_opinions},
-                { name: 'Positivos', value:  this.props.item.positive_opinions },
-              ].map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />)
+            [
+              {
+                name: "Negativos",
+                value: this.props.item.negative_opinions
+              },
+              {
+                name: "Positivos",
+                value: this.props.item.positive_opinions
+              }
+            ].map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />)
           }
         </Pie>
       </PieChart>
-    );
+    )
   }
 }
 
-function mapStateToProps(state){
-  return{
+function mapStateToProps(state) {
+  return {
     opinions_by_cronology: state.opinions_by_cronology,
     chart_opinions: state.chart_opinions,
     estado_select_filtro_principal: state.estado_select_filtro_principal,
