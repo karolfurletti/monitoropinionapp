@@ -9,14 +9,16 @@ import Comentarios from './pages/Dashboard/Comentarios'
 import Infografico from './pages/Dashboard/Infografico'
 import MinhaConta from './pages/Dashboard/MinhaConta'
 import DadosPessoais from './pages/Dashboard/DadosPessoais'
-import Logon from './pages/Auth/Logon'
+import Login from './pages/Auth/Login/Login'
+import Register from './pages/Auth/Register/Register'
 
 export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Logon} />
+        <Route path="/" exact component={Login} />
         <Route path="/dashboard" exact component={Inicio} />
+        <Route path="/register" exact component={Register} />
         <Route path="/dashboard/inicio" component={Inicio} />
         <Route path="/dashboard/analise" component={Analise} />
         <Route path="/dashboard/comentarios" component={Comentarios} />

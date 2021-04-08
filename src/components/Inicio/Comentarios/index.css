@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-   
+
 
 }
 .item-classificador .item{
@@ -17,15 +17,15 @@
     text-justify: center;
     text-align: center;
     color: grey !important;
-    
 
-  
+
+
 }
 
-
-.MuiSelect-selectMenu{
-    font-size: 9px !important;
-}
+/*verificar pagina de comentarios */
+/*.MuiSelect-selectMenu{*/
+/*    font-size: 9px !important;*/
+/*}*/
 
 .item-classificador .item .MuiTypography-root{
     font-size: 0.7vw;
