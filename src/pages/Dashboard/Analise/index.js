@@ -27,7 +27,7 @@ class Analise extends React.Component {
 
   render() {
     return (
-      <Drawer NavTitle="Analise" option={1}>
+      <Drawer  history={this.props.history}  NavTitle="Analise" option={1}>
         <LoadingComponent />
         <Grid container spacing={2}>
           <Grid item xs={12}>

@@ -13,7 +13,7 @@ import { AtualizarLoading } from '../../../store/actions/opinions'
 class index extends React.Component {
   render() {
     return (
-      <Drawer NavTitle="Visão Geral" option={0}>
+      <Drawer  history={this.props.history}  NavTitle="Visão Geral" option={0}>
         <LoadingComponent />
         <Grid container spacing={2}>
           <Grid item xs={12}>

@@ -10,7 +10,7 @@ import SearchConcorrentes from '../../../components/Comparacao/SearchConcorrente
 class Analise extends React.Component {
   render() {
     return (
-      <Drawer NavTitle="Comparacao" option={6}>
+      <Drawer  history={this.props.history}  NavTitle="Comparacao" option={6}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <SearchConcorrentes history={this.props.history} />

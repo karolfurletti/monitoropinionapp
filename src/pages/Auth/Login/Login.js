@@ -9,17 +9,33 @@ import { rules } from "../../../utils/feedback"
 import InputValidator from "../../../components/InputValidator/inputValidator"
 import Button from "@material-ui/core/Button"
 import { serviceApi } from "../../../Services/api"
+import { useCookies } from "react-cookie"
+import CircularProgress from "@material-ui/core/CircularProgress"
+import Backdrop from "@material-ui/core/Backdrop"
+
+import { makeStyles } from "@material-ui/core/styles"
+
+const useStyles = makeStyles((theme) => ({
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: "#fff"
+  }
+}))
 
 const Login = (props) => {
+  const classes = useStyles()
   const form = useRef(null)
   const [toast, setToast] = useState(false)
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  // eslint-disable-next-line no-unused-vars
+  const [cookies, setCookie] = useCookies(["email"])
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     if (props.history.location.toast) {
-      setMessage('Conta criada com sucesso! Faça o login para acessar o sistema.')
+      setMessage("Conta criada com sucesso! Faça o login para acessar o sistema.")
       setToast(true)
     }
     // eslint-disable-next-line
@@ -33,15 +49,21 @@ const Login = (props) => {
   }
 
   const submit = () => {
+    setLoading(true)
     const formData = {
       email,
       password
     }
     serviceApi.post("/login", formData).then(response => {
-      const { type, message } = response.data
+      const {
+        type,
+        message
+      } = response.data
       if (type === "success") {
-         return props.history.push("/dashboard")
+        setCookie("email", email, { path: "/" })
+        return props.history.push("/dashboard")
       }
+      setLoading(false)
       setMessage(message)
       setToast(true)
     }).catch(err => {
@@ -49,8 +71,17 @@ const Login = (props) => {
     })
   }
 
+  const closeLoading = () => {
+    setLoading(false)
+  }
+
   return (
     <div className={styles.container}>
+
+      <Backdrop className={classes.backdrop} open={loading} onClick={closeLoading}>
+        <CircularProgress color="inherit" />
+      </Backdrop>
+
       <Snackbar
         autoHideDuration={3000}
         anchorOrigin={{

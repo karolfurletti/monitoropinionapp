@@ -90,6 +90,7 @@ const FormClient = (props) => {
           onChange={(e) => {
             setPassword(e.target.value)
           }}
+          type={'password'}
           name="password"
           value={password}
           validators={["required", "isPasswordEquals"]}
@@ -101,7 +102,8 @@ const FormClient = (props) => {
           onChange={(e) => {
             setPasswordTwo(e.target.value)
           }}
-          name="email"
+          name="passwordTwo"
+          type={'password'}
           value={passwordTwo}
           validators={["required", "isConfirmPasswordEquals"]}
           errorMessages={[rules.required, rules.equalPassword]}

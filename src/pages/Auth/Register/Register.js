@@ -1,7 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from "./Register.module.css"
 import HeaderAuth from "../headerAuth"
-import Register1 from "../../../Assets/register1.svg"
 import FormClient from "./formClient"
 import PropTypes from "prop-types"
 import { makeStyles } from "@material-ui/core/styles"
@@ -12,6 +11,7 @@ import Typography from "@material-ui/core/Typography"
 import Box from "@material-ui/core/Box"
 import FormCompany from "./formCompany"
 import { serviceApi } from "../../../Services/api"
+import { images } from "../../../utils/imagesSlideRegister"
 
 function TabPanel(props) {
   const {
@@ -62,8 +62,9 @@ const useStyles = makeStyles((theme) => ({
 
 const Register = (props) => {
   const classes = useStyles()
-  const [value, setValue] = React.useState(0)
-  const [dados, setDados] = React.useState(0)
+  const [value, setValue] = useState(0)
+  const [dados, setDados] = useState(0)
+  const [index, setIndex] = useState(0)
 
   const handleChange = (event, newValue) => {
     setValue(newValue)
@@ -89,7 +90,18 @@ const Register = (props) => {
   return (
     <div className={styles.container}>
       <div className={styles.containerHeader}>
-        <div className={styles.left}><img src={Register1} alt="" /></div>
+        <div className={styles.left}>
+          <img src={images[index].image.default} alt="" />
+          <div className={styles.text}>{images[index].title}</div>
+          <div className={styles.description}>{images[index].description}</div>
+
+          <div className={styles.containerRounds}>
+            {images.map((item, i) => (
+              <div onClick={()=> setIndex(i)} key={i} className={ index === i ? styles.roundActive : styles.roundInactive} />
+            ))}
+          </div>
+
+        </div>
       </div>
       <div className={styles.containerRight}>
         <HeaderAuth full={true} history={props.history} />
@@ -99,7 +111,7 @@ const Register = (props) => {
               <Tabs classes={{ indicator: classes.indicator }} centered value={value} onChange={handleChange}
                     aria-label="simple tabs example">
                 <Tab label="VOCÊ" {...a11yProps(0)} />
-                <Tab label="EMPRESA" {...a11yProps(1)} />
+                <Tab disabled={!dados} label="EMPRESA" {...a11yProps(1)} />
               </Tabs>
             </AppBar>
             <TabPanel value={value} index={0}><FormClient dados={dados} nextTab={(form) => nextTab(form)} /></TabPanel>

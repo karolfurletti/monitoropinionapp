@@ -1,13 +1,14 @@
-import ReactDOM from 'react-dom'
-import React from 'react'
-import './index.css'
-import App from './App'
-import { Provider } from 'react-redux'
-import reducers from './store/reducers'
-import { createStore, applyMiddleware } from 'redux'
-import promise from 'redux-promise'
-import multi from 'redux-multi'
-import thunk from 'redux-thunk'
+import ReactDOM from "react-dom"
+import React from "react"
+import "./index.css"
+import App from "./App"
+import { Provider } from "react-redux"
+import reducers from "./store/reducers"
+import { createStore, applyMiddleware } from "redux"
+import promise from "redux-promise"
+import multi from "redux-multi"
+import thunk from "redux-thunk"
+import { CookiesProvider } from "react-cookie"
 
 const devTools =
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
@@ -18,7 +19,9 @@ const store = applyMiddleware(thunk, multi, promise)(createStore)(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <CookiesProvider>
+      <App />
+    </CookiesProvider>
   </Provider>,
-  document.getElementById('root')
+  document.getElementById("root")
 )

@@ -29,6 +29,7 @@ import Logo from "../../Assets/logo.png"
 import { Grid } from "@material-ui/core"
 import { Link } from "react-router-dom"
 import "./index.css"
+import { useCookies } from "react-cookie"
 
 const drawerWidth = 240
 
@@ -95,6 +96,8 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export default function MiniDrawer(props) {
+  // eslint-disable-next-line no-unused-vars
+  const [cookies, setCookie, removeCookie] = useCookies(["email"])
   const [anchorEl, setAnchorEl] = React.useState(null)
   const selectedIndex = props.option
 
@@ -120,6 +123,11 @@ export default function MiniDrawer(props) {
 
   const handleSetNavigation = () => {
 
+  }
+
+  const logout = () => {
+    removeCookie("email")
+    props.history.push('/')
   }
 
   return (
@@ -178,8 +186,7 @@ export default function MiniDrawer(props) {
                           className="menu-item-draw">Notificações</MenuItem>
                 <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Indique
                   um amigo</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes"
-                          className="menu-item-draw">Logout</MenuItem>
+                <MenuItem onClick={logout} className="menu-item-draw">Logout</MenuItem>
 
               </Menu>
 
@@ -213,7 +220,8 @@ export default function MiniDrawer(props) {
           <ListItem button component={Link} to="/dashboard/inicio" onClick={handleSetNavigation}
                     selected={selectedIndex === 0}>
             <ListItemIcon><LibraryBooksIcon /> </ListItemIcon>
-            <ListItemText primary="Visão Geral" />
+            <ListItemText
+              primary="Visão Geral" />
           </ListItem>
 
           <ListItem button component={Link} to="/dashboard/analise" selected={selectedIndex === 1}>

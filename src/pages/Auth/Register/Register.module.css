@@ -6,28 +6,28 @@
   flex-direction: row;
 }
 
-.containerHeader{
+.containerHeader {
   display: flex;
   flex-direction: row;
   height: 100%;
 }
 
-.containerRight{
+.containerRight {
   width: 100%;
   height: 100%;
 }
 
-.containerForm{
+.containerForm {
   /*height: 100%;*/
   padding-left: 18%;
   padding-right: 18%;
 }
 
-.tabs{
- box-shadow: none !important;
+.tabs {
+  box-shadow: none !important;
 }
 
-.tab{
+.tab {
   border-bottom: 2px solid #744D9C;
   width: 163px;
   text-align: center;
@@ -37,15 +37,57 @@
 }
 
 .left {
-  background-color:  #744D9C;
+  background-color: #744D9C;
   width: 420px;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.header{
+.text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-top: 14px;
+}
+
+.description {
+  font-size: 10px;
+  line-height: 12px;
+  color: #FFFFFF;
+  margin-top: 21px;
+  margin-left: 60px;
+  margin-right: 40px;
+}
+
+.containerRounds {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.roundInactive {
+  width: 7px;
+  height: 7px;
+  background: #CFB8E7;
+  border-radius: 50px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.roundActive {
+  background: #FFFFFF;
+  width: 11px;
+  height: 11px;
+  margin-left: 7px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: -2px;
+}
+
+.header {
   width: 100%;
   display: flex;
   flex: 1;
