@@ -1,8 +1,8 @@
 import axios from "axios"
 
-const REACT_APP_IP_API = 'https://monitoropinionapi.herokuapp.com'
+const REACT_APP_IP_API = 'http://monitoropinion-com.umbler.net'
 const api = axios.create({
-  baseURL: "https://monitoropinionapi.herokuapp.com"
+  baseURL: "http://monitoropinion-com.umbler.net"
 })
 
 export const configHeaders = (token) => {
