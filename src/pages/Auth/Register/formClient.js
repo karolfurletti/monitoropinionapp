@@ -5,6 +5,8 @@ import InputValidator from "../../../components/InputValidator/inputValidator"
 import { rules } from "../../../utils/feedback"
 import { phoneMask } from "../../../utils/mask"
 import Button from "@material-ui/core/Button"
+import { serviceApi } from "../../../Services/api"
+import Snackbar from "@material-ui/core/Snackbar"
 
 const FormClient = (props) => {
 
@@ -15,7 +17,8 @@ const FormClient = (props) => {
   const [password, setPassword] = useState(dados.password || "")
   const [passwordTwo, setPasswordTwo] = useState(dados.password || "")
   const [phone, setPhone] = useState(dados.phone || "")
-
+  const [toast, setToast] = useState(false)
+  const [message, setMessage] = useState("")
 
   useEffect(() => {
     customRulesInput()
@@ -51,11 +54,42 @@ const FormClient = (props) => {
       password,
       phone
     }
-    props.nextTab(formClient)
+
+    const options = { params: { email } }
+    serviceApi.get("/verifyEmail", options).then(response => {
+      if (response.data.status === "SUCCESS") {
+        props.nextTab(formClient)
+      }
+      if (response.data.status === "usedEMail") {
+        setMessage("O email que você escolheu já esta sendo usado por outro usuário")
+        setToast(true)
+      }
+
+    }).catch(err => {
+      console.log(err)
+    })
+  }
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return
+    }
+    setToast(false)
   }
 
   return (
     <div className={styles.content}>
+
+      <Snackbar
+        autoHideDuration={3000}
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "center"
+        }}
+        open={toast}
+        onClose={handleClose}
+        message={message}
+      />
 
       <ValidatorForm
         style={{ width: "100%" }}
@@ -90,7 +124,7 @@ const FormClient = (props) => {
           onChange={(e) => {
             setPassword(e.target.value)
           }}
-          type={'password'}
+          type={"password"}
           name="password"
           value={password}
           validators={["required", "isPasswordEquals"]}
@@ -103,7 +137,7 @@ const FormClient = (props) => {
             setPasswordTwo(e.target.value)
           }}
           name="passwordTwo"
-          type={'password'}
+          type={"password"}
           value={passwordTwo}
           validators={["required", "isConfirmPasswordEquals"]}
           errorMessages={[rules.required, rules.equalPassword]}

@@ -1,8 +1,8 @@
 import axios from "axios"
 
-const REACT_APP_IP_API = 'http://monitoropinion-com.umbler.net'
+const REACT_APP_IP_API = 'http://api.monitoropinion.com'
 const api = axios.create({
-  baseURL: "http://monitoropinion-com.umbler.net"
+  baseURL: "http://api.monitoropinion.com"
 })
 
 export const configHeaders = (token) => {
