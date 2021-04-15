@@ -176,16 +176,11 @@ export default function MiniDrawer(props) {
                 onClose={handleClose}
               >
                 <MenuItem className="menu-item-draw-titulo">Essencia do Sabor</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/minhaconta" className="menu-item-draw">Minha
-                  conta</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/dadospessoais"
-                          className="menu-item-draw">Dados pessoais</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Pagamentos
-                  e faturas</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes"
-                          className="menu-item-draw">Notificações</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Indique
-                  um amigo</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/minhaconta" className="menu-item-draw">Minha conta</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/dadospessoais" className="menu-item-draw">Dados pessoais</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Pagamentos e faturas</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Notificações</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Indique um amigo</MenuItem>
                 <MenuItem onClick={logout} className="menu-item-draw">Logout</MenuItem>
 
               </Menu>
@@ -248,7 +243,7 @@ export default function MiniDrawer(props) {
             <ListItemIcon><PollIcon /> </ListItemIcon>
             <ListItemText primary="Infográfico" />
           </ListItem> */}
-          <ListItem button component="a" href="http://localhost:3000/dashboard/infografico" target="_blank">
+          <ListItem button component="a" href="/dashboard/infografico" target="_blank">
             <ListItemIcon><PollIcon /> </ListItemIcon>
             <ListItemText primary="Infográfico" />
           </ListItem>

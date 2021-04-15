@@ -54,6 +54,7 @@
   },
   "scripts": {
     "start": "node server",
+    "dev": "react-scripts start",
     "postinstall": "yarn run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
