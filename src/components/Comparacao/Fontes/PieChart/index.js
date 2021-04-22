@@ -1,7 +1,47 @@
-import React, { PureComponent } from "react"
+import React, { useState } from "react"
 import { PieChart, Pie, Sector, ResponsiveContainer } from "recharts"
 import "./index.css"
-import { connect } from "react-redux"
+import { countMediaCommunication } from "../../../../helper/analise"
+
+const PieChart2 = (props) => {
+
+  const { list } = props
+  const [activeIndex, setActiveIndex] = useState(0)
+  const onPieEnter = (data, index) => {
+    setActiveIndex(index)
+  }
+
+  return (
+    <ResponsiveContainer height={300} width="99%" className="responsiveGraph" strokeWidth={1}>
+      <PieChart className="pie">
+        <Pie
+          activeIndex={activeIndex}
+          activeShape={renderActiveShape}
+          data={[
+            {
+              name: "Sites Especializados",
+              value: countMediaCommunication(list).specializedWebsites
+            },
+            {
+              name: "Redes Sociais",
+              value: countMediaCommunication(list).sociaNetworks
+            },
+            {
+              name: "Web",
+              value: countMediaCommunication(list).web
+            }
+          ]}
+          cx="50%"
+          cy="50%"
+          innerRadius={80}
+          outerRadius={100}
+          dataKey="value"
+          onMouseEnter={onPieEnter}
+        />
+      </PieChart>
+    </ResponsiveContainer>
+  )
+}
 
 const renderActiveShape = (props) => {
   const RADIAN = Math.PI / 180
@@ -59,139 +99,4 @@ const renderActiveShape = (props) => {
   )
 }
 
-class PieChart2 extends PureComponent {
-
-  constructor(props) {
-    super(props)
-    this.state = {
-      activeIndex: 0,
-      data: [
-        {
-          name: "Sites Especializados",
-          value: 1
-        },
-        {
-          name: "Redes Sociais",
-          value: 0
-        },
-        {
-          name: "Web",
-          value: 0
-        }
-      ]
-    }
-  }
-
-  componentDidUpdate() {
-    //   if(this.props.variante === "concorrente"){
-
-    //     let newData = 0
-    //   if(this.state.data[0].value != Filtros.CountSitesEspecializados(this.props.opinions_by_cronology_concorrente)){
-    //      newData = this.state.data.slice() //copy the array
-    //     newData[0].value = Filtros.CountSitesEspecializados(this.props.opinions_by_cronology_concorrente) //execute the manipulations
-    //     this.setState({data: newData}) //set the new state
-    //   }
-
-    //   if(this.state.data[1].value != Filtros.CountRedesSociais(this.props.opinions_by_cronology_concorrente)){
-    //      newData = this.state.data.slice() //copy the array
-    //     newData[1].value = Filtros.CountRedesSociais(this.props.opinions_by_cronology_concorrente) //execute the manipulations
-    //     this.setState({data: newData}) //set the new state
-    //   }
-
-    //   if(this.state.data[2].value != Filtros.CountWeb(this.props.opinions_by_cronology_concorrente)){
-    //     newData = this.state.data.slice() //copy the array
-    //     newData[2].value = Filtros.CountWeb(this.props.opinions_by_cronology_concorrente) //execute the manipulations
-    //     this.setState({data: newData}) //set the new state
-    //   }
-
-    //   }else{
-    //   let newData = 0
-    //   if(this.state.data[0].value != Filtros.CountSitesEspecializados(this.props.opinions_by_cronology)){
-    //      newData = this.state.data.slice() //copy the array
-    //     newData[0].value = Filtros.CountSitesEspecializados(this.props.opinions_by_cronology) //execute the manipulations
-    //     this.setState({data: newData}) //set the new state
-    //   }
-
-    //   if(this.state.data[1].value != Filtros.CountRedesSociais(this.props.opinions_by_cronology)){
-    //      newData = this.state.data.slice() //copy the array
-    //     newData[1].value = Filtros.CountRedesSociais(this.props.opinions_by_cronology) //execute the manipulations
-    //     this.setState({data: newData}) //set the new state
-    //   }
-
-    //   if(this.state.data[2].value != Filtros.CountWeb(this.props.opinions_by_cronology)){
-    //     newData = this.state.data.slice() //copy the array
-    //     newData[2].value = Filtros.CountWeb(this.props.opinions_by_cronology) //execute the manipulations
-    //     this.setState({data: newData}) //set the new state
-    //   }
-
-    // }
-
-  }
-
-  onPieEnter = (data, index) => {
-    this.setState({
-      activeIndex: index
-    })
-  }
-
-  render() {
-
-    return (
-      <ResponsiveContainer height={300} width="99%" className="responsiveGraph" strokeWidth={1}>
-        <PieChart className="pie">
-          <Pie
-            activeIndex={this.state.activeIndex}
-            activeShape={renderActiveShape}
-            data={this.props.variante === "concorrente" ? [
-              {
-                name: "Sites Especializados",
-                value: this.props.CountSitesEspecializadosConcorrente
-              },
-              {
-                name: "Redes Sociais",
-                value: this.props.CountRedesSociaisConcorrente
-              },
-              {
-                name: "Web",
-                value: this.props.CountWebConcorrente
-              }
-            ] : [
-              {
-                name: "Sites Especializados",
-                value: this.props.CountSitesEspecializados
-              },
-              {
-                name: "Redes Sociais",
-                value: this.props.CountRedesSociais
-              },
-              {
-                name: "Web",
-                value: this.props.CountWeb
-              }
-            ]}
-            cx="50%"
-            cy="50%"
-            innerRadius={80}
-            outerRadius={100}
-            dataKey="value"
-            onMouseEnter={this.onPieEnter}
-          />
-        </PieChart>
-      </ResponsiveContainer>
-    )
-  }
-
-}
-
-function mapStateToProps(state) {
-  return {
-    CountRedesSociaisConcorrente: state.CountRedesSociaisConcorrente,
-    CountRedesSociais: state.CountRedesSociais,
-    CountWebConcorrente: state.CountWebConcorrente,
-    CountWeb: state.CountWeb,
-    CountSitesEspecializados: state.CountSitesEspecializados,
-    CountSitesEspecializadosConcorrente: state.CountSitesEspecializadosConcorrente
-  }
-}
-
-export default connect(mapStateToProps)(PieChart2)
+export default PieChart2

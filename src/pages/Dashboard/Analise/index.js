@@ -1,90 +1,67 @@
-import React from 'react'
-import './index.css'
-import Drawer from '../../../components/Drawer'
-import Filter from '../../../components/FilterTecnical'
-import moment from 'moment'
-import Grid from '@material-ui/core/Grid'
-import Fontes from '../../../components/Comparacao/Fontes'
-import Comentarios from '../../../components/Inicio/Comentarios'
-import FiltroCaracteristica from '../../../components/FiltroCaracteristica'
-import { FiltroMaster, AtualizarLoading } from '../../../store/actions/opinions'
-import LineChart from '../../../components/Inicio/LineChart'
-import { connect } from 'react-redux'
-import LoadingComponent from '../../../components/LoadingComponent'
-import Fontes2 from '../../../components/Fontes2/SmallVersion'
-import DetalhesFontes from '../../../components/DetalhesFontes'
+import React, { useState } from "react"
+import "./index.css"
+import Drawer from "../../../components/Drawer"
+import Filter from "../../../components/FilterTecnical"
+import Grid from "@material-ui/core/Grid"
+import Fontes from "../../../components/Comparacao/Fontes"
+import Comentarios from "../../../components/Inicio/Comentarios"
+import FiltroCaracteristica from "../../../components/FiltroCaracteristica"
+import LineChart from "../../../components/Inicio/LineChart"
+import LoadingComponent from "../../../components/LoadingComponent"
+import Fontes2 from "../../../components/Fontes2/SmallVersion"
+import DetalhesFontes from "../../../components/DetalhesFontes"
+import { useSelector } from "react-redux"
+import { filterFeature, listGraph } from "../../../helper/analise"
+import { TYPE_CARACTERISTICA } from "../../../utils/const"
 
-class Analise extends React.Component {
-  componentDidMount() {
-    this.props.FiltroMaster(
-      '1234',
-      moment().subtract('weeks', 40),
-      moment(),
-      'geral'
-    )
-    this.props.AtualizarLoading(false)
+const Analise = (props) => {
+
+  const { generalModel } = useSelector((state) => state)
+  const [feature, setFeature] = useState(TYPE_CARACTERISTICA.GERAL)
+
+  const getFeature = (feature) => {
+    setFeature(feature)
   }
 
-  render() {
-    return (
-      <Drawer  history={this.props.history}  NavTitle="Analise" option={1}>
-        <LoadingComponent />
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <Filter titulo="Análise" />
-          </Grid>
-          <Grid item xs={12}>
-            <FiltroCaracteristica />
-          </Grid>
-          <Grid item xs={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <LineChart />
-              </Grid>
+  return (
+    <Drawer history={props.history} NavTitle="Analise" option={1}>
+      <LoadingComponent />
+      <Grid container spacing={2}>
 
-              <Grid item xs={6}>
-                <Comentarios />
-              </Grid>
-              <Grid item xs={6}>
-                <Fontes />
-              </Grid>
-              <Grid item xs={6} sm={12} md={6}>
-                <DetalhesFontes />
-              </Grid>
-              <Grid item xs={6} sm={12} md={6}>
-                <Fontes2 />
-              </Grid>
+        <Grid item xs={12}>
+          <Filter titulo="Análise" />
+        </Grid>
+
+        <Grid item xs={12}>
+          <FiltroCaracteristica getFeature={getFeature} />
+        </Grid>
+
+        <Grid item xs={12}>
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <LineChart list={listGraph(filterFeature(generalModel.list, feature))} />
             </Grid>
+
+            <Grid item xs={6}>
+              <Comentarios list={filterFeature(generalModel.list, feature)} />
+            </Grid>
+
+            <Grid item xs={6}>
+              <Fontes list={filterFeature(generalModel.list, feature)} />
+            </Grid>
+
+            <Grid item xs={6} sm={12} md={6}>
+              <DetalhesFontes list={filterFeature(generalModel.list, feature)} />
+            </Grid>
+
+            <Grid item xs={6} sm={12} md={6}>
+              <Fontes2 list={filterFeature(generalModel.list, feature)} />
+            </Grid>
+
           </Grid>
         </Grid>
-      </Drawer>
-    )
-  }
+      </Grid>
+    </Drawer>
+  )
 }
-function mapActionCreatorsToProps(dispatch) {
-  return {
-    FiltroMaster(estabelecimentoId, intervalInit, intervalEnd, category) {
-      // action creator
-      const action = FiltroMaster(
-        estabelecimentoId,
-        intervalInit,
-        intervalEnd,
-        category
-      )
-      dispatch(action)
-    },
-    AtualizarLoading(state) {
-      // action creator
-      const action = AtualizarLoading(state)
-      dispatch(action)
-    }
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    opinions_by_cronology: state.opinions_by_cronology
-  }
-}
-
-export default connect(mapStateToProps, mapActionCreatorsToProps)(Analise)
+export default Analise

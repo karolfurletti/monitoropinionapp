@@ -6,12 +6,16 @@ import Badge from "@material-ui/core/Badge"
 
 function FontesComentadas(props) {
 
+  const {
+    negative,
+    positive,
+    title
+  } = props
+
   return (
     <div className="PrincipaisPerfis">
-
-
       <div className="name">
-        <Typography className="plataforma" style={{ textTransform: "capitalize" }}>{props.item.plataforma}</Typography>
+        <Typography className="plataforma" style={{ textTransform: "capitalize" }}>{title}</Typography>
       </div>
 
       <div className="coluna_dados">
@@ -20,16 +24,13 @@ function FontesComentadas(props) {
         </Badge>
         <Badge color="secondary">
 
-
           <div>
             <Typography className="teor">Negativos</Typography>
           </div>
 
           <div>
-            <Typography className="number">{props.item.negative_opinions}</Typography>
+            <Typography className="number">{negative}</Typography>
           </div>
-
-
         </Badge>
       </div>
 
@@ -46,12 +47,11 @@ function FontesComentadas(props) {
           </div>
 
           <div>
-            <Typography className="number">{props.item.positive_opinions}</Typography>
+            <Typography className="number">{positive}</Typography>
           </div>
 
         </Badge>
       </div>
-
     </div>
 
   )

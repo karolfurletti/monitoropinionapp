@@ -1,40 +1,18 @@
-import React from 'react'
-import './index.css'
-import Drawer from '../../../components/Drawer'
-import Grid from '@material-ui/core/Grid'
+import React from "react"
+import "./index.css"
+import Drawer from "../../../components/Drawer"
+import Grid from "@material-ui/core/Grid"
+import SearchConcorrentes from "../../../components/Comparacao/SearchConcorrentes"
 
-import { FiltroPrincipalDashboard } from '../../../store/actions/opinions'
-import { connect } from 'react-redux'
-import SearchConcorrentes from '../../../components/Comparacao/SearchConcorrentes'
-
-class Analise extends React.Component {
-  render() {
-    return (
-      <Drawer  history={this.props.history}  NavTitle="Comparacao" option={6}>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <SearchConcorrentes history={this.props.history} />
-          </Grid>
+const Analise = (props) => {
+  return (
+    <Drawer history={props.history} NavTitle="Comparacao" option={6}>
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          <SearchConcorrentes history={props.history} />
         </Grid>
-      </Drawer>
-    )
-  }
+      </Grid>
+    </Drawer>
+  )
 }
-
-function mapActionCreatorsToProps(dispatch) {
-  return {
-    FiltroPrincipalDashboard(filterTime, filterInterval) {
-      // action creator
-      const action = FiltroPrincipalDashboard(filterTime, filterInterval)
-      dispatch(action)
-    }
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    opinions_by_cronology: state.opinions_by_cronology
-  }
-}
-
-export default connect(mapStateToProps, mapActionCreatorsToProps)(Analise)
+export default Analise

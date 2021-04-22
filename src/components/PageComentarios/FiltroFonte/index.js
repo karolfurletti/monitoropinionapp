@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react'
 import Typography from '@material-ui/core/Typography';
 
 
-import './index.css'
+import './index.module.css'
 
 
 
@@ -21,7 +21,7 @@ import Radio from '@material-ui/core/Radio';
 
 import Filtros from '../../../Filtros'
 
-const FiltrosOBJ = new Filtros
+const FiltrosOBJ = new Filtros()
 
 
 class LChart extends PureComponent {
@@ -148,7 +148,7 @@ class LChart extends PureComponent {
                     />
                 </div>
 
-                
+
 
             </div>
         )}

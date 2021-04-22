@@ -15,9 +15,6 @@ import {
   MuiPickersUtilsProvider,
   KeyboardDatePicker
 } from "@material-ui/pickers"
-import { connect } from "react-redux"
-import { filterMasterComparation } from "../../../store/actions/opinions"
-import { AtualizarLoading } from "../../../store/actions/opinions"
 
 class Filter extends React.Component {
 
@@ -37,16 +34,6 @@ class Filter extends React.Component {
     }
   }
 
-  componentDidMount() {
-
-    this.props.filterMasterComparation(this.props.concorrente_id, this.state.interval_init, this.state.interval_fim, "geral")
-  }
-
-  componentDidUpdate(prevProps) {
-    if (prevProps.opinions_by_cronology !== this.props.opinions_by_cronology) {
-      //this.props.AtualizarLoading(false)
-    }
-  }
 
   handleClickOpen = () => {
     this.setState({ open: true })
@@ -168,33 +155,4 @@ class Filter extends React.Component {
   }
 }
 
-function mapActionCreatorsToProps(dispatch) {
-  return {
-
-    AtualizarLoading(state) {
-      //action creator
-      const action = AtualizarLoading(state)
-      dispatch(action)
-    },
-
-    filterMasterComparation(estabelecimento_id, concorrente_id, interval_init, interval_fim, category) {
-      //action creator
-      const action = filterMasterComparation(estabelecimento_id, concorrente_id, interval_init, interval_fim, category)
-      dispatch(action)
-    }
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    opinions_by_cronology: state.opinions_by_cronology,
-    aba_value: state.aba_value,
-    plataforma_value: state.plataforma_value,
-    estado_button_filter: state.estado_button_filter,
-    estado_select_filtro_principal: state.estado_select_filtro_principal,
-    status_loading: state.status_loading,
-    concorrente_id: state.concorrente_id
-  }
-}
-
-export default connect(mapStateToProps, mapActionCreatorsToProps)(Filter)
+export default Filter

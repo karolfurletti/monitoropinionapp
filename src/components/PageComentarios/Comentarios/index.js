@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "./index.css"
 import Typography from "@material-ui/core/Typography"
 import Radio from "@material-ui/core/Radio"
@@ -12,204 +12,140 @@ import { faGoogle } from "@fortawesome/free-brands-svg-icons"
 import { faTripadvisor } from "@fortawesome/free-brands-svg-icons"
 import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 import Abas from "./tabs"
-import { FiltrarComentarios } from "../../../store/actions/opinions"
-import { OrdenarComentarios } from "../../../store/actions/opinions"
-import { AlterarPlataforma } from "../../../store/actions/opinions"
-import { connect } from "react-redux"
-import Filtros2 from "../../../Filtros"
-const Filtros = new Filtros2()
-class Comentarios extends React.Component {
+import { countComments } from "../../../helper/analise"
+import { TYPE_PLATFORM } from "../../../utils/const"
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      selectedValue: "a",
-      ordenar: ""
-    }
+const Comentarios = (props) => {
 
+
+  const {list} = props
+  const [selectedValue, setSelectedValue] = useState(TYPE_PLATFORM.GERAL)
+
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value)
   }
 
-  componentDidMount() {
-    this.props.FiltrarComentarios("padrao", 0)
-  }
+  return (
 
-  handleChange = (event) => {
-    switch (event.target.value) {
-      case "a":
-        this.props.AlterarPlataforma("padrao", this.props.aba_value)
+    <div className="card-comentarios">
+      <div className="item-classificador">
+        <div className="item">
+          <AllInclusiveIcon />
+          <Typography>Todos</Typography>
+          <Typography>{countComments(list, TYPE_PLATFORM.GERAL)}</Typography>
 
-        break
-      case "b":
-        this.props.AlterarPlataforma("twitter", this.props.aba_value)
+          <Radio
+            checked={selectedValue === TYPE_PLATFORM.GERAL}
+            onChange={handleChange}
+            value={TYPE_PLATFORM.GERAL}
+            name="radio-button-demo"
+            inputProps={{ "aria-label": "A" }}
+          />
+        </div>
 
-        break
-      case "c":
-        this.props.AlterarPlataforma("instagram", this.props.aba_value)
+        <div className="item">
+          <TwitterIcon />
+          <Typography>Twitter</Typography>
+          <Typography>{countComments(list, TYPE_PLATFORM.TWITTER)}</Typography>
 
-        break
-      case "d":
-        this.props.AlterarPlataforma("facebook", this.props.aba_value)
-        break
+          <Radio
+            checked={selectedValue === TYPE_PLATFORM.TWITTER}
+            onChange={handleChange}
+            value={TYPE_PLATFORM.TWITTER}
+            name="radio-button-demo"
+            inputProps={{ "aria-label": "A" }}
+          />
+        </div>
 
-      case "e":
-        this.props.AlterarPlataforma("tripadvisor", this.props.aba_value)
-        break
+        <div className="item">
+          <InstagramIcon />
+          <Typography>Instagram</Typography>
+          <Typography>{countComments(list, TYPE_PLATFORM.INSTRAGRAM)}</Typography>
 
-      case "f":
-        this.props.AlterarPlataforma("yelp", this.props.aba_value)
-        break
+          <Radio
+            checked={selectedValue === TYPE_PLATFORM.INSTRAGRAM}
+            onChange={handleChange}
+            value={TYPE_PLATFORM.INSTRAGRAM}
+            name="radio-button-demo"
+            inputProps={{ "aria-label": "A" }}
+          />
+        </div>
 
-      case "g":
-        this.props.AlterarPlataforma("googlereviews", this.props.aba_value)
-        break
-      case "h":
-        this.props.AlterarPlataforma("web", this.props.aba_value)
-        break
-      default:
-        console.log('DJAIOSDJA')
-    }
-    // this.state.selectedValue = event.target.value
-  }
+        <div className="item">
+          <FacebookIcon />
+          <Typography>Facebook</Typography>
+          <Typography>{countComments(list, TYPE_PLATFORM.FACEBOOK)}</Typography>
 
-  handleChangeSelect = (event) => {
-    switch (event.target.value) {
-      case "desc":
-        this.props.OrdenarComentarios("desc")
-        break
+          <Radio
+            checked={selectedValue === TYPE_PLATFORM.FACEBOOK}
+            onChange={handleChange}
+            value={TYPE_PLATFORM.FACEBOOK}
+            name="radio-button-demo"
+            inputProps={{ "aria-label": "A" }}
+          />
+        </div>
 
-      case "asc":
-        this.props.OrdenarComentarios("asc")
-        break
-      default:
-        console.log('IJDIOSADJAS')
-    }
-    // this.state.ordenar = event.target.value
-  }
+        <div className="item">
+          <FontAwesomeIcon icon={faTripadvisor} size="2x" />
+          <Typography>Tripadvisor</Typography>
+          <Typography>{countComments(list, TYPE_PLATFORM.TRIPADVISOR)}</Typography>
 
+          <Radio
+            checked={selectedValue === TYPE_PLATFORM.TRIPADVISOR}
+            onChange={handleChange}
+            value={TYPE_PLATFORM.TRIPADVISOR}
+            name="radio-button-demo"
+            inputProps={{ "aria-label": "A" }}
+          />
+        </div>
 
-  render() {
-    return (
+        <div className="item">
+          <FontAwesomeIcon icon={faYelp} size="2x" />
+          <Typography>Yelp</Typography>
+          <Typography>{countComments(list, TYPE_PLATFORM.YELP)}</Typography>
 
-      <div className="card-comentarios">
+          <Radio
+            checked={selectedValue === TYPE_PLATFORM.YELP}
+            onChange={handleChange}
+            value={TYPE_PLATFORM.YELP}
+            name="radio-button-demo"
+            inputProps={{ "aria-label": "A" }}
+          />
+        </div>
 
-        <div className="item-classificador">
-          <div className="item">
-            <AllInclusiveIcon/>
-            <Typography>Todos</Typography>
-            <Typography>{Filtros.CountOpinion(this.props.opinions_by_cronology)}</Typography>
+        <div className="item">
+          <FontAwesomeIcon icon={faGoogle} size="2x" />
+          <Typography>Google Reviews</Typography>
+          <Typography>{countComments(list, TYPE_PLATFORM.GOOGLE)}</Typography>
 
-            <Radio
-              checked={this.state.selectedValue === "a"}
-              onChange={this.handleChange}
-              value="a"
-              name="radio-button-demo"
-              inputProps={{ "aria-label": "A" }}
-            />
-          </div>
+          <Radio
+            checked={selectedValue === TYPE_PLATFORM.GOOGLE}
+            onChange={handleChange}
+            value={TYPE_PLATFORM.GOOGLE}
+            name="radio-button-demo"
+            inputProps={{ "aria-label": "g" }}
+          />
+        </div>
 
-          <div className="item">
-            <TwitterIcon/>
-            <Typography>Twitter</Typography>
-            <Typography>{Filtros.CountTwitter(this.props.opinions_by_cronology)}</Typography>
+        <div className="item">
+          <FontAwesomeIcon icon={faGlobe} size="2x" />
+          <Typography>Web</Typography>
+          <Typography>{countComments(list, TYPE_PLATFORM.WEB)}</Typography>
 
-            <Radio
-              checked={this.state.selectedValue === "b"}
-              onChange={this.handleChange}
-              value="b"
-              name="radio-button-demo"
-              inputProps={{ "aria-label": "A" }}
-            />
-          </div>
-
-          <div className="item">
-            <InstagramIcon/>
-            <Typography>Instagram</Typography>
-            <Typography>{Filtros.CountInstagram(this.props.opinions_by_cronology)}</Typography>
-
-            <Radio
-              checked={this.state.selectedValue === "c"}
-              onChange={this.handleChange}
-              value="c"
-              name="radio-button-demo"
-              inputProps={{ "aria-label": "A" }}
-            />
-          </div>
-
-          <div className="item">
-            <FacebookIcon/>
-            <Typography>Facebook</Typography>
-            <Typography>{Filtros.CountFacebook(this.props.opinions_by_cronology)}</Typography>
-
-            <Radio
-              checked={this.state.selectedValue === "d"}
-              onChange={this.handleChange}
-              value="d"
-              name="radio-button-demo"
-              inputProps={{ "aria-label": "A" }}
-            />
-          </div>
-
-          <div className="item">
-            <FontAwesomeIcon icon={faTripadvisor} size="2x" />
-            <Typography>Tripadvisor</Typography>
-            <Typography>{Filtros.CountTripadvisor(this.props.opinions_by_cronology)}</Typography>
-
-            <Radio
-              checked={this.state.selectedValue === "e"}
-              onChange={this.handleChange}
-              value="e"
-              name="radio-button-demo"
-              inputProps={{ "aria-label": "A" }}
-            />
-          </div>
-
-          <div className="item">
-            <FontAwesomeIcon icon={faYelp} size="2x" />
-            <Typography>Yelp</Typography>
-            <Typography>{Filtros.CountYelp(this.props.opinions_by_cronology)}</Typography>
-
-            <Radio
-              checked={this.state.selectedValue === "f"}
-              onChange={this.handleChange}
-              value="f"
-              name="radio-button-demo"
-              inputProps={{ "aria-label": "A" }}
-            />
-          </div>
-
-          <div className="item">
-            <FontAwesomeIcon icon={faGoogle} size="2x" />
-            <Typography>Google Reviews</Typography>
-            <Typography>{Filtros.CountGooglereviews(this.props.opinions_by_cronology)}</Typography>
-
-            <Radio
-              checked={this.state.selectedValue === "g"}
-              onChange={this.handleChange}
-              value="g"
-              name="radio-button-demo"
-              inputProps={{ "aria-label": "g" }}
-            />
-          </div>
-
-          <div className="item">
-            <FontAwesomeIcon icon={faGlobe} size="2x" />
-            <Typography>Web</Typography>
-            <Typography>{Filtros.CountWeb(this.props.opinions_by_cronology)}</Typography>
-
-            <Radio
-              checked={this.state.selectedValue === "h"}
-              onChange={this.handleChange}
-              value="h"
-              name="radio-button-demo"
-              inputProps={{ "aria-label": "A" }}
-            />
-          </div>
-
-
+          <Radio
+            checked={selectedValue === TYPE_PLATFORM.WEB}
+            onChange={handleChange}
+            value={TYPE_PLATFORM.WEB}
+            name="radio-button-demo"
+            inputProps={{ "aria-label": "A" }}
+          />
         </div>
 
 
-        {/* <div className="item-classificador-2">
+      </div>
+
+
+      {/* <div className="item-classificador-2">
                 <div>
                     <FormControl className="filtroordemcomentarios">
                      <InputLabel htmlFor="outlined-age-native-simple">Filtro</InputLabel>
@@ -243,45 +179,12 @@ class Comentarios extends React.Component {
                             </div>
             </div>  */}
 
-        <div className="barra_abas">
-
-          <Abas></Abas>
-        </div>
-
+      <div className="barra_abas">
+        <Abas selectedValue={selectedValue} list={list} />
       </div>
-    )
-  }
+
+    </div>
+  )
 }
 
-function mapActionCreatorsToProps(dispatch) {
-  return {
-    FiltrarComentarios(plataforma, aba_value) {
-      //action creator
-      const action = FiltrarComentarios(plataforma, aba_value)
-      dispatch(action)
-    },
-
-    OrdenarComentarios(tipo_ordenacao) {
-      //action creator
-      const action = OrdenarComentarios(tipo_ordenacao)
-      dispatch(action)
-    },
-    AlterarPlataforma(tipo_plataforma, tipo_aba) {
-      //action creator
-      const action = AlterarPlataforma(tipo_plataforma, tipo_aba)
-      dispatch(action)
-    }
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    opinions_by_teor: state.opinions_by_teor,
-    opinions_by_cronology: state.opinions_by_cronology,
-    aba_value: state.aba_value,
-    plataforma_value: state.plataforma_value
-
-  }
-}
-
-export default connect(mapStateToProps, mapActionCreatorsToProps)(Comentarios)
+export default Comentarios

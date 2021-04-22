@@ -6,11 +6,13 @@ import Badge from "@material-ui/core/Badge"
 
 function FontesComentadas(props) {
 
+  console.log({props})
+
   return (
     <div className="PrincipaisPerfis">
 
       <div className="name">
-        <Typography className="plataforma">{props.item.plataforma}</Typography>
+        <Typography className="plataforma">{props.title}</Typography>
       </div>
 
       <div className="coluna_dados">
@@ -19,7 +21,7 @@ function FontesComentadas(props) {
         </Badge>
         <Badge color="secondary">
           <div>
-            <Typography className="number">{props.item.negative_opinions}</Typography>
+            <Typography className="number">{props.negative}</Typography>
           </div>
 
           <div>
@@ -36,7 +38,7 @@ function FontesComentadas(props) {
         </Badge>
         <Badge color="secondary">
           <div>
-            <Typography className="number">{props.item.positive_opinions}</Typography>
+            <Typography className="number">{props.positive}</Typography>
           </div>
           <div>
             <Typography className="teor"> Positivos</Typography>

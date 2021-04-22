@@ -1,0 +1,48 @@
+.cardComments {
+  background-color: white;
+  border-bottom: 2px solid #EAEAEA;
+}
+
+.itemTop {
+  /*background-color: red;*/
+  display: flex;
+  height: 80px;
+}
+
+.itemBottom {
+  display: flex;
+  height: 20px;
+  padding-left: 20px;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.part1 {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.title {
+  margin-left: 10px;
+  line-height: 30px;
+  margin-top: -5px;
+}
+
+
+.part2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.avatar {
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+}

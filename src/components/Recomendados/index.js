@@ -7,7 +7,6 @@ import Tab from "@material-ui/core/Tab"
 import Box from "@material-ui/core/Box"
 import AutoSizer from "react-virtualized-auto-sizer"
 import List from "@material-ui/core/List"
-import { connect } from "react-redux"
 import ComponentPrincipaisPerfis from './PrincipaisPerfis'
 import ComponentPlataformasComentadas from './FontesComentadas'
 
@@ -61,15 +60,6 @@ class Recomendados extends React.Component {
     }
   }
 
-  componentDidUpdate() {
-
-    // if(JSON.stringify(this.state.PrincipaisPerfis) != JSON.stringify(Filtros.author_filter_count(this.props.opinions_by_cronology)))
-    //   this.setState({PrincipaisPerfis: Filtros.author_filter_count(this.props.opinions_by_cronology)})
-
-    // if(JSON.stringify(this.state.PrincipaisPlataformas) != JSON.stringify(Filtros.plataforma_filter_count(this.props.opinions_by_cronology)))
-    //   this.setState({PrincipaisPlataformas: Filtros.plataforma_filter_count(this.props.opinions_by_cronology)})
-
-  }
 
   handleChange = (event, newValue) => {
     this.setState({ value: newValue })
@@ -116,7 +106,7 @@ class Recomendados extends React.Component {
                   <List
                     className="List"
                     height={height}
-                    itemCount={this.props.PrincipaisPerfis.length}
+                    itemCount={10}
                     itemSize={35}
                     width={width}
                   >
@@ -140,7 +130,7 @@ class Recomendados extends React.Component {
                   <List
                     className="List"
                     height={height}
-                    itemCount={this.props.PrincipaisPlataformas.length}
+                    itemCount={10}
                     itemSize={35}
                     width={width}
                   >
@@ -161,12 +151,5 @@ class Recomendados extends React.Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    PrincipaisPerfis: state.PrincipaisPerfis,
-    PrincipaisPlataformas: state.PrincipaisPlataformas,
-    opinions_by_cronology: state.opinions_by_cronology
-  }
-}
 
-export default connect(mapStateToProps)(Recomendados)
+export default Recomendados

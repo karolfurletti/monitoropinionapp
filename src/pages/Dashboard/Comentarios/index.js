@@ -1,63 +1,43 @@
-import React from 'react'
-import './index.css'
-import Drawer from '../../../components/Drawer'
-import Filter from '../../../components/FilterTecnical'
-import Grid from '@material-ui/core/Grid'
-import Comentarios from '../../../components/PageComentarios/Comentarios'
-import FiltroCaracteristica from '../../../components/FiltroCaracteristica'
-import LoadingComponent from '../../../components/LoadingComponent'
-import moment from 'moment'
-import { FiltroMaster } from '../../../store/actions/opinions'
-import { connect } from 'react-redux'
+import React, { useState } from "react"
+import "./index.css"
+import Drawer from "../../../components/Drawer"
+import Filter from "../../../components/FilterTecnical"
+import Grid from "@material-ui/core/Grid"
+import Comentarios from "../../../components/PageComentarios/Comentarios"
+import FiltroCaracteristica from "../../../components/FiltroCaracteristica"
+import LoadingComponent from "../../../components/LoadingComponent"
+import { TYPE_CARACTERISTICA } from "../../../utils/const"
+import { useSelector } from "react-redux"
+import { filterFeature } from "../../../helper/analise"
 
-class Analise extends React.Component {
-  componentDidMount() {
-    this.props.FiltroMaster(
-      '1234',
-      moment().subtract('weeks', 40),
-      moment(),
-      'geral'
-    )
+
+const ComentariosPage = (props) => {
+
+  const [feature, setFeature] = useState(TYPE_CARACTERISTICA.GERAL)
+  const { generalModel } = useSelector((state) => state);
+
+  const getFeature = (feature) => {
+    setFeature(feature)
   }
 
-  render() {
-    return (
-      <Drawer history={this.props.history}  NavTitle="Analise" option={3}>
-        <LoadingComponent />
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <Filter titulo="Comentários" />
-          </Grid>
-          <Grid item xs={12}>
-            <FiltroCaracteristica />
-          </Grid>
-          <Grid item xs={12}>
-            <Comentarios />
-          </Grid>
+  return (
+    <Drawer history={props.history} NavTitle="Analise" option={3}>
+      <LoadingComponent />
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          <Filter titulo="Comentários" />
         </Grid>
-      </Drawer>
-    )
-  }
-}
-function mapActionCreatorsToProps(dispatch) {
-  return {
-    FiltroMaster(estabelecimentoId, intervalInit, intervalEnd, category) {
-      // action creator
-      const action = FiltroMaster(
-        estabelecimentoId,
-        intervalInit,
-        intervalEnd,
-        category
-      )
-      dispatch(action)
-    }
-  }
+        <Grid item xs={12}>
+          <FiltroCaracteristica getFeature={getFeature} />
+        </Grid>
+        <Grid item xs={12}>
+          <Comentarios list={filterFeature(generalModel.list, feature)} />
+        </Grid>
+      </Grid>
+    </Drawer>
+  )
 }
 
-function mapStateToProps(state) {
-  return {
-    opinions_by_cronology: state.opinions_by_cronology
-  }
-}
+export default ComentariosPage
 
-export default connect(mapStateToProps, mapActionCreatorsToProps)(Analise)
+

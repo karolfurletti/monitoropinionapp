@@ -1,118 +1,90 @@
-import React, {PureComponent} from 'react'
-import Typography from '@material-ui/core/Typography';
-import Badge from '@material-ui/core/Badge';
-import Divider from '@material-ui/core/Divider';
-import './index.css'
-import {connect} from 'react-redux'
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend } from 'recharts';
-const margin = { top: 5, right:5, bottom: 5, left: 5 }
+import React, { PureComponent } from "react"
+import Typography from "@material-ui/core/Typography"
+import Badge from "@material-ui/core/Badge"
+import Divider from "@material-ui/core/Divider"
+import "./index.css"
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend } from "recharts"
 
+const margin = {
+  top: 5,
+  right: 5,
+  bottom: 5,
+  left: 5
+}
 
 class LChart extends PureComponent {
 
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
-      data: this.props.ChartOpinions === undefined ? this.props.ChartOpinions : [],
+      data: [],
       opacity: {
         uv: 1,
-        pv: 1,
-      },
-    };
-  }
-  // AtualizarLineChart(opinions_by_cronology, estado_button_filter ){
-  //
-  //   this.setState({
-  //     data: this.props.ChartOpinions,
-  //   });
-  // }
-
-  componentDidMount(){
-
-      // this.AtualizarLineChart(this.props.opinions_by_cronology, this.props.estado_button_filter)
-
-  }
-
-
-  componentDidUpdate(nextProps, nextState){
-    if(nextProps.opinions_by_cronology !== this.props.opinions_by_cronology){
-      //this.AtualizarLineChart(this.props.opinions_by_cronology, this.props.estado_button_filter)
+        pv: 1
+      }
     }
   }
 
-    handleMouseEnter = (o) => {
-      const { dataKey } = o;
-      const { opacity } = this.state;
+  componentDidMount() {
+  }
 
-      this.setState({
-        opacity: { ...opacity, [dataKey]: 0.5 },
-      });
-    }
+  handleMouseEnter = (o) => {
+    const { dataKey } = o
+    const { opacity } = this.state
 
-    handleMouseLeave = (o) => {
-      const { dataKey } = o;
-      const { opacity } = this.state;
+    this.setState({
+      opacity: {
+        ...opacity,
+        [dataKey]: 0.5
+      }
+    })
+  }
 
-      this.setState({
-        opacity: { ...opacity, [dataKey]: 1 },
-      });
-    }
+  handleMouseLeave = (o) => {
+    const { dataKey } = o
+    const { opacity } = this.state
 
+    this.setState({
+      opacity: {
+        ...opacity,
+        [dataKey]: 1
+      }
+    })
+  }
 
-
-    render() {
-        const { opacity } = this.state;
-
-
-        return (
-            <div className="card-linechart-inicio">
-                <div className="legenda">
-                    <Badge color="secondary">
-                        <Typography className="tituloCard">Gráfico de Opiniões</Typography>
-                    </Badge>
-                </div>
-                <Divider />
-
-            <ResponsiveContainer width="99%" height={250} className="responsiveGraph" strokeWidth={1}>
-                <LineChart data={this.props.ChartOpinions} className="LineChart" margin={margin} >
-                    <CartesianGrid strokeDasharray="0 0" />
-                    <XAxis dataKey="name" strokeWidth={0}/>
-                    <YAxis strokeWidth={1}/>
-                    <Tooltip />
-
-                    <Line name="Positivos" type="monotone" dataKey="pv" strokeOpacity={opacity.uv} strokeWidth={1} stroke="#2ca9d2" dot={false} isAnimationActive={false}/>
-                    <Line name="Negativos" type="monotone" dataKey="uv" strokeOpacity={opacity.pv} strokeWidth={1} stroke="#cc1f1f" isAnimationActive={false} dot={false}/>
-                    <Legend onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} />
-                    {/* <Line name="Hashtags" type="monotone" dataKey="amt" strokeOpacity={opacity.amt} strokeWidth={2} stroke="#8884d8" /> */}
-                </LineChart>
-            </ResponsiveContainer>
-            </div>
-        )
-
-    }
-}
+  render() {
+    const { opacity } = this.state
+    const {list} = this.props
 
 
-function mapActionCreatorsToProps(dispatch){
-  // return{
-  //   AtualizarLineChart(opinions_by_cronology, estado_botao_filtro_principal){
-  //         //action creator
-  //         const action = AtualizarLineChart(opinions_by_cronology, estado_botao_filtro_principal)
-  //         dispatch(action)
-  //     }
-  // }
-}
+    return (
+      <div className="card-linechart-inicio">
+        <div className="legenda">
+          <Badge color="secondary">
+            <Typography className="tituloCard">Gráfico de Opiniões</Typography>
+          </Badge>
+        </div>
+        <Divider />
 
-function mapStateToProps(state){
-  return{
-    opinions_by_cronology: state.opinions_by_cronology,
-    ChartOpinions: state.ChartOpinions,
-    estado_select_filtro_principal: state.estado_select_filtro_principal,
-    estado_button_filter: state.estado_button_filter,
-    interval_init: state.interval_init,
-    interval_fim: state.interval_fim
+        <ResponsiveContainer width="99%" height={250} className="responsiveGraph" strokeWidth={1}>
+          <LineChart data={list} className="LineChart" margin={margin}>
+            <CartesianGrid strokeDasharray="0 0" />
+            <XAxis dataKey="name" strokeWidth={0} />
+            <YAxis strokeWidth={1} />
+            <Tooltip />
+
+            <Line name="Positivos" type="monotone" dataKey="pv" strokeOpacity={opacity.uv} strokeWidth={1}
+                  stroke="#2ca9d2" dot={false} isAnimationActive={false} />
+            <Line name="Negativos" type="monotone" dataKey="uv" strokeOpacity={opacity.pv} strokeWidth={1}
+                  stroke="#cc1f1f" isAnimationActive={false} dot={false} />
+            <Legend onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} />
+            {/* <Line name="Hashtags" type="monotone" dataKey="amt" strokeOpacity={opacity.amt} strokeWidth={2} stroke="#8884d8" /> */}
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
+    )
+
   }
 }
 
-
-export default connect(mapStateToProps, mapActionCreatorsToProps)(LChart)
+export default LChart
