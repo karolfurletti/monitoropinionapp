@@ -21,7 +21,7 @@ const Comentarios = (props) => {
   const [selectedValue, setSelectedValue] = useState(TYPE_PLATFORM.GERAL)
 
   const handleChange = (event) => {
-    setSelectedValue(event.target.value)
+    setSelectedValue(parseInt(event.target.value))
   }
 
   return (

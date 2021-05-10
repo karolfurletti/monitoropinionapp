@@ -1212,7 +1212,6 @@ export default class Filtros {
 
   FormatToChartFree_Comparacao(opinions_by_cronology, opinions_by_cronology_concorrente, interval_init, interval_fim) {
 
-    console.log("tendi")
     console.log(opinions_by_cronology_concorrente)
     let splited_obj = ""
     let splited_obj2 = ""

@@ -5,11 +5,14 @@ import Grid from "@material-ui/core/Grid"
 import SearchConcorrentes from "../../../components/Comparacao/SearchConcorrentes"
 
 const Analise = (props) => {
+
+  const { list } = props
+
   return (
     <Drawer history={props.history} NavTitle="Comparacao" option={6}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <SearchConcorrentes history={props.history} />
+          <SearchConcorrentes list={list} history={props.history} />
         </Grid>
       </Grid>
     </Drawer>

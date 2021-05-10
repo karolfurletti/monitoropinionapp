@@ -1,21 +1,21 @@
 export const TYPE_PLATFORM = {
-  GERAL: "Todos",
-  FACEBOOK: "facebook",
-  INSTRAGRAM: "instagram",
-  GOOGLE: "googlereviews",
-  TRIPADVISOR: "tripadvisor",
-  TWITTER: "twitter",
-  WEB: "web",
-  YELP: "yelp"
+  GERAL: 0,
+  FACEBOOK: 2,
+  INSTRAGRAM: 3,
+  GOOGLE: 6,
+  TRIPADVISOR: 1,
+  TWITTER: 5,
+  WEB: 7,
+  YELP: 4
 }
 
 export const TYPE_CARACTERISTICA = {
-  GERAL: "geral",
-  COMIDA: "comida",
-  BEBIDA: "bebida",
-  SERVICO: "servico",
-  PRECO: "preco",
-  AMBIENTE: "ambiente",
-  LOCALIZACAO: "localizacao",
-  OUTROS: "outros"
+  GERAL: "Geral",
+  COMIDA: "Comida",
+  BEBIDA: "Bebida",
+  SERVICO: "Serviço",
+  PRECO: "Preço",
+  AMBIENTE: "Ambiente",
+  LOCALIZACAO: "Localização",
+  OUTROS: "Outros"
 }

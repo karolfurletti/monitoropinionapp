@@ -63,7 +63,7 @@ const LChart = (props) => {
           <XAxis dataKey="name" strokeWidth={1} />
           <YAxis strokeWidth={2} />
           <Tooltip />
-          <Legend onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />
+          <Legend  />
           <Line name="Essencia do Sabor" type="monotone" dataKey="pv" strokeOpacity={1} strokeWidth={1}
                 stroke="#2ca9d2" activeDot={{ r: 8 }} />
           <Line name="Burguer King" type="monotone" dataKey="uv" strokeOpacity={1} strokeWidth={1}

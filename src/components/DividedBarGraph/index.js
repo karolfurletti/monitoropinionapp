@@ -26,44 +26,44 @@ const DividedBarGraph = (props) => {
           data={[
             {
               name: "Comida",
-              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.COMIDA, 'positive'),
-              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.COMIDA, 'negative'),
+              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.COMIDA, 'positivo'),
+              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.COMIDA, 'negativo'),
               amt: 1
             },
             {
               name: "Bebida",
-              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.BEBIDA, 'positive'),
-              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.BEBIDA, 'negative'),
+              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.BEBIDA, 'positivo'),
+              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.BEBIDA, 'negativo'),
               amt: 1
             },
             {
               name: "Serviço",
-              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.SERVICO, 'positive'),
-              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.SERVICO, 'negative'),
+              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.SERVICO, 'positivo'),
+              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.SERVICO, 'negativo'),
               amt: 1
             },
             {
               name: "Preço",
-              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.PRECO, 'positive'),
-              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.PRECO, 'negative'),
+              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.PRECO, 'positivo'),
+              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.PRECO, 'negativo'),
               amt: 1
             },
             {
               name: "Amb.",
-              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.AMBIENTE, 'positive'),
-              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.AMBIENTE, 'negative'),
+              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.AMBIENTE, 'positivo'),
+              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.AMBIENTE, 'negativo'),
               amt: 1
             },
             {
               name: "Loc.",
-              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.LOCALIZACAO, 'positive'),
-              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.LOCALIZACAO, 'negative'),
+              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.LOCALIZACAO, 'positivo'),
+              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.LOCALIZACAO, 'negativo'),
               amt: 1
             },
             {
               name: "Outros",
-              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.OUTROS, 'positive'),
-              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.OUTROS, 'negative'),
+              Positivos: countCategoryOpinion(list, TYPE_CARACTERISTICA.OUTROS, 'positivo'),
+              Negativos: countCategoryOpinion(list, TYPE_CARACTERISTICA.OUTROS, 'negativo'),
               amt: 1
             }]}
           barGap={1}

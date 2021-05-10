@@ -60,49 +60,49 @@ const DetalhesFontes = (props) => {
             <ComponentPlataformasComentadas
               negative={countComments(list, TYPE_PLATFORM.FACEBOOK, "negative")}
               positive={countComments(list, TYPE_PLATFORM.FACEBOOK, "positive")}
-              title={TYPE_PLATFORM.FACEBOOK} />
+              title={'Facebook'} />
           </ListItem>
 
           <ListItem button>
             <ComponentPlataformasComentadas
               negative={countComments(list, TYPE_PLATFORM.WEB, "negative")}
               positive={countComments(list, TYPE_PLATFORM.WEB, "positive")}
-              title={TYPE_PLATFORM.WEB} />
+              title={'Web'} />
           </ListItem>
 
           <ListItem button>
             <ComponentPlataformasComentadas
               negative={countComments(list, TYPE_PLATFORM.GOOGLE, "negative")}
               positive={countComments(list, TYPE_PLATFORM.GOOGLE, "positive")}
-              title={TYPE_PLATFORM.GOOGLE} />
+              title={'Google Reviews'} />
           </ListItem>
 
           <ListItem button>
             <ComponentPlataformasComentadas
               negative={countComments(list, TYPE_PLATFORM.TWITTER, "negative")}
               positive={countComments(list, TYPE_PLATFORM.TWITTER, "positive")}
-              title={TYPE_PLATFORM.TWITTER} />
+              title={'Twitter'} />
           </ListItem>
 
           <ListItem button>
             <ComponentPlataformasComentadas
               negative={countComments(list, TYPE_PLATFORM.YELP, "negative")}
               positive={countComments(list, TYPE_PLATFORM.YELP, "positive")}
-              title={TYPE_PLATFORM.YELP} />
+              title={'Yelp'} />
           </ListItem>
 
           <ListItem button>
             <ComponentPlataformasComentadas
               negative={countComments(list, TYPE_PLATFORM.INSTRAGRAM, "negative")}
               positive={countComments(list, TYPE_PLATFORM.INSTRAGRAM, "positive")}
-              title={TYPE_PLATFORM.INSTRAGRAM} />
+              title={'Intragram'} />
           </ListItem>
 
           <ListItem button>
             <ComponentPlataformasComentadas
               negative={countComments(list, TYPE_PLATFORM.TRIPADVISOR, "negative")}
               positive={countComments(list, TYPE_PLATFORM.TRIPADVISOR, "positive")}
-              title={TYPE_PLATFORM.TRIPADVISOR} />
+              title={'Tripadvisor'} />
           </ListItem>
 
         </List>

@@ -34,7 +34,7 @@ const Fontes = (props) => {
         </div>
         <div className="item">
           <Badge color="secondary">
-            <Typography className="numero2">{countComments(list, TYPE_PLATFORM.GERAL, 'positive')}</Typography>
+            <Typography className="numero2">{countComments(list, TYPE_PLATFORM.GERAL, 'positivo')}</Typography>
           </Badge>
           <Badge color="secondary">
             <Typography className="titulo">Positivas</Typography>
@@ -42,7 +42,7 @@ const Fontes = (props) => {
         </div>
         <div className="item">
           <Badge color="secondary">
-            <Typography className="numero3">{countComments(list, TYPE_PLATFORM.GERAL, 'negative')}</Typography>
+            <Typography className="numero3">{countComments(list, TYPE_PLATFORM.GERAL, 'negativo')}</Typography>
           </Badge>
           <Badge color="secondary">
             <Typography className="titulo">Negativas</Typography>
@@ -73,7 +73,7 @@ const Fontes = (props) => {
           </Badge>
           <Badge color="secondary">
             <Typography
-              className="titulo">{countPercentageGraph(list, TYPE_PLATFORM.GERAL, 'negative')}%
+              className="titulo">{countPercentageGraph(list, TYPE_PLATFORM.GERAL, 'positivo')}%
               Positivos</Typography>
           </Badge>
         </div>
@@ -83,7 +83,7 @@ const Fontes = (props) => {
           </Badge>
           <Badge color="secondary">
             <Typography
-              className="titulo">{countPercentageGraph(list, TYPE_PLATFORM.GERAL, 'positive')}%
+              className="titulo">{countPercentageGraph(list, TYPE_PLATFORM.GERAL, 'negativo')}%
               Negativos</Typography>
           </Badge>
         </div>

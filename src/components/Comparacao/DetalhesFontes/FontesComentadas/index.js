@@ -6,8 +6,6 @@ import Badge from "@material-ui/core/Badge"
 
 function FontesComentadas(props) {
 
-  console.log({props})
-
   return (
     <div className="PrincipaisPerfis">
 

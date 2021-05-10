@@ -17,12 +17,11 @@ import { TYPE_PLATFORM } from "../../../utils/const"
 
 const Comentarios = (props) => {
 
-
   const {list} = props
   const [selectedValue, setSelectedValue] = useState(TYPE_PLATFORM.GERAL)
 
   const handleChange = (event) => {
-    setSelectedValue(event.target.value)
+    setSelectedValue(parseInt(event.target.value))
   }
 
   return (

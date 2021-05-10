@@ -11,11 +11,11 @@ const PieChartPercent = (props) => {
   const { list } = props
   const data = [{
     name: "Negativos",
-    value: countComments(list, TYPE_PLATFORM.GERAL, "negative")
+    value: countComments(list, TYPE_PLATFORM.GERAL, "negativo")
   },
     {
       name: "Positivos",
-      value: countComments(list, TYPE_PLATFORM.GERAL, "positive")
+      value: countComments(list, TYPE_PLATFORM.GERAL, "positivo")
     }]
 
   return (

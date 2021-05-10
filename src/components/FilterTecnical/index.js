@@ -18,6 +18,7 @@ import {
 
 const Filter = (props) => {
 
+  const { filterDate } = props
   const [intervalInit, setIntervalInit] = useState(moment().subtract("weeks", 1))
   const [intervalFim, setIntervalFim] = useState(moment())
   const [open, setOpen] = useState(false)
@@ -28,6 +29,7 @@ const Filter = (props) => {
 
   const handleClose = () => {
     setOpen(false)
+    filterDate(intervalInit, intervalFim)
   }
 
   const handleChangeInicio = date => {

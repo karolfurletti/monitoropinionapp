@@ -104,7 +104,7 @@ const SimpleTabs = (props) => {
         <div className="tab-component-page-comentarios">
           {/* <CircularProgress disableShrink= variant="indeterminate"/> */}
           <List component="nav" aria-label="main mailbox folders">
-            {showComments(list, selectedValue, "negative", ordenar).map((item, index) => {
+            {showComments(list, selectedValue, "negativo", ordenar).map((item, index) => {
               return (
                 <ListItem key={index} button>
                   <ComentarioNegativo item={item} />
@@ -120,7 +120,7 @@ const SimpleTabs = (props) => {
         {/* <CircularProgress disableShrink={this.state.CircularProgressValue} variant="indeterminate"/> */}
         <div className="tab-component-page-comentarios">
           <List component="nav" aria-label="main mailbox folders">
-            {showComments(list, selectedValue, "positive", ordenar).map((item, index) => {
+            {showComments(list, selectedValue, "positivo", ordenar).map((item, index) => {
               return (
                 <ListItem key={index} button>
                   <ComentarioPositivo item={item} />

@@ -12,7 +12,7 @@ import { serviceApi } from "../../../Services/api"
 import { useCookies } from "react-cookie"
 import CircularProgress from "@material-ui/core/CircularProgress"
 import Backdrop from "@material-ui/core/Backdrop"
-
+import {  useDispatch } from "react-redux"
 import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles((theme) => ({
@@ -32,6 +32,7 @@ const Login = (props) => {
   // eslint-disable-next-line no-unused-vars
   const [cookies, setCookie] = useCookies(["email"])
   const [loading, setLoading] = useState(false)
+  const dispatch = useDispatch()
 
   useEffect(() => {
     if (props.history.location.toast) {
@@ -57,8 +58,10 @@ const Login = (props) => {
     serviceApi.post("/login", formData).then(response => {
       const {
         type,
-        message
+        message,
+        user
       } = response.data
+      dispatch.loginModel.setDadosUser(user[0])
       if (type === "success") {
         setCookie("email", email, { path: "/" })
         return props.history.push("/dashboard")

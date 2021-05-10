@@ -10,6 +10,17 @@ import FormControl from "@material-ui/core/FormControl"
 import CommentsComponet from "../comentario_negativo"
 import "./index.css"
 import { showComments } from "../../../../helper/analise"
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+  },
+  selectEmpty: {
+    marginTop: theme.spacing(2),
+  },
+}));
 
 function TabPanel(props) {
   const {
@@ -50,13 +61,14 @@ function a11yProps(index) {
 }
 
 const SimpleTabs = (props) => {
+  const classes = useStyles();
 
   const {
     list,
     selectedValue
   } = props
-  const [value, setValue] = useState(1)
-  const [ordenar, setOrdenar] = useState("ASC")
+  const [value, setValue] = useState(0)
+  const [ordenar, setOrdenar] = useState()
 
   const handleChangeSelect = (event) => {
     setOrdenar(event.target.value)
@@ -75,20 +87,15 @@ const SimpleTabs = (props) => {
           <Tab label="Positivos" {...a11yProps(1)} className="tab-2" />
 
           <div className="filtro_data">
-            <FormControl className="filtroordemcomentarios">
-              <InputLabel htmlFor="outlined-age-native-simple">Filtro</InputLabel>
+            {/*<FormControl className="filtroordemcomentarios">*/}
+            <FormControl className={classes.formControl}>
+              <InputLabel id="demo-simple-select-label">Filtro</InputLabel>
               <Select
-                defaultValue={"asc"}
                 labelId="demo-simple-select-label"
                 value={ordenar}
-                autoWidth={true}
                 onChange={handleChangeSelect}
-                inputProps={{
-                  name: "Recentes Primeiro",
-                  id: "outlined-age-native-simple"
-                }}
               >
-                <MenuItem selected={true} value="ASC">Recente Primeiro</MenuItem>
+                <MenuItem value="ASC">Recentes</MenuItem>
                 <MenuItem value="DESC">Antigos</MenuItem>
 
               </Select>
@@ -100,7 +107,7 @@ const SimpleTabs = (props) => {
 
       <TabPanel value={value} index={0}>
         <div className="tab-component">
-          {showComments(list, selectedValue, "negative", ordenar).map((item, i) =>
+          {showComments(list, selectedValue, "negativo", ordenar).map((item, i) =>
             <CommentsComponet key={i} item={item} />)
           }
         </div>
@@ -108,7 +115,7 @@ const SimpleTabs = (props) => {
 
       <TabPanel value={value} index={1}>
         <div className="tab-component">
-          {showComments(list, selectedValue, "positive", ordenar).map((item, i) =>
+          {showComments(list, selectedValue, "positivo", ordenar).map((item, i) =>
             <CommentsComponet key={i} item={item} />)
           }
         </div>

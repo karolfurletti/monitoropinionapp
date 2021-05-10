@@ -18,17 +18,17 @@ const CommentsComponet = (props) => {
 
           <div className={styles.title}>
             <div>Atendimento</div>
-            <div>{item.plataforma}</div>
+            <div>{item.nomeFonte}</div>
           </div>
 
         </div>
         <div className={styles.part2}>
-          {dateFormat(item.data)}
+          {dateFormat(item.dataPublicacao)}
         </div>
       </div>
 
       <div className={styles.itemBottom}>
-        {item.descricao}
+        {item.comentario}
       </div>
 
     </div>

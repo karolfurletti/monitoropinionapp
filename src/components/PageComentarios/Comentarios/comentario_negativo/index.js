@@ -89,7 +89,7 @@ export default function ComentarioNegativo (props) {
                     <CalendarTodayIcon />
                   </Badge>
                   <Badge color="secondary">
-                    <Typography>{moment(props.item.data).format("DD/MM/YYYY")}</Typography>
+                    <Typography>{moment(props.item.dataPublicacao).format("DD/MM/YYYY")}</Typography>
                   </Badge>
                 </div>
 
@@ -111,7 +111,7 @@ export default function ComentarioNegativo (props) {
           </div>
 
           <div className="icon-url">
-            <div><LinkIcon className="Second-Icon"></LinkIcon></div>
+            <div><LinkIcon className="Second-Icon"/></div>
             <div className="fontnegativo">{props.item.plataforma}</div>
           </div>
         </div>

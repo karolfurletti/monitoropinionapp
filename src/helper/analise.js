@@ -8,13 +8,13 @@ moment.locale("pt-br")
 
 export const countComments = (list, platform, type = null) => {
   const newList = list.filter(el =>
-    (platform !== TYPE_PLATFORM.GERAL ? el.plataforma === platform : true)
-    && (type ? el.teor === type : true)).length
+    (platform !== TYPE_PLATFORM.GERAL ? el.IDFonte === platform : true)
+    && (type ? el.polaridade === type : true)).length
   return newList
 }
 
 const filterCommentsForDate = (list, date, type) => {
-  return list.filter(el => el.data === date && el.teor === type).length
+  return list.filter(el => el.dataPublicacao === date && el.polaridade === type).length
 }
 
 export const listGraph = (list) => {
@@ -22,13 +22,13 @@ export const listGraph = (list) => {
   let newList = []
   for (let i = 0; i < list.length; i++) {
 
-    const month = moment(list[i].data).format("MMM")
-    const day = moment(list[i].data).format("DD")
+    const month = moment(list[i].dataPublicacao).format("MMM")
+    const day = moment(list[i].dataPublicacao).format("DD")
 
     newList.push({
       name: day + "." + month,
-      uv: filterCommentsForDate(list, list[i].data, "negative"),
-      pv: filterCommentsForDate(list, list[i].data, "positive")
+      uv: filterCommentsForDate(list, list[i].dataPublicacao, "negativo"),
+      pv: filterCommentsForDate(list, list[i].dataPublicacao, "positivo")
     })
   }
   return newList
@@ -56,15 +56,15 @@ export const countPercentageGraph = (list, platform, type) => {
 
 export const countMediaCommunication = (list) => {
 
-  const sociaNetworks = list.filter(el => el.plataforma === TYPE_PLATFORM.FACEBOOK
-    || el.plataforma === TYPE_PLATFORM.INSTRAGRAM
-    || el.plataforma === TYPE_PLATFORM.TWITTER).length
+  const sociaNetworks = list.filter(el => el.IDFonte === TYPE_PLATFORM.FACEBOOK
+    || el.IDFonte === TYPE_PLATFORM.INSTRAGRAM
+    || el.IDFonte === TYPE_PLATFORM.TWITTER).length
 
-  const web = list.filter(el => el.plataforma === TYPE_PLATFORM.WEB).length
+  const web = list.filter(el => el.IDFonte === TYPE_PLATFORM.WEB).length
 
-  const specializedWebsites = list.filter(el => el.plataforma === TYPE_PLATFORM.GOOGLE
-    || el.plataforma === TYPE_PLATFORM.YELP
-    || el.plataforma === TYPE_PLATFORM.TRIPADVISOR).length
+  const specializedWebsites = list.filter(el => el.IDFonte === TYPE_PLATFORM.GOOGLE
+    || el.IDFonte === TYPE_PLATFORM.YELP
+    || el.IDFonte === TYPE_PLATFORM.TRIPADVISOR).length
 
   return {
     sociaNetworks,
@@ -75,88 +75,79 @@ export const countMediaCommunication = (list) => {
 }
 
 export const showComments = (list, platform, type, order) => {
-
-  const newList = list.filter(el => (platform !== TYPE_PLATFORM.GERAL ? el.plataforma === platform : true)
-    && (type ? el.teor === type : true))
-  const listOrder = order === "ASC" ? newList.sort((a, b) => a.data - b.data) : newList.sort((a, b) => (a.data > b.data ? -1 : 1))
+  const newList = list.filter(el => (platform !== TYPE_PLATFORM.GERAL ? el.IDFonte === platform : true)
+    && (type ? el.polaridade === type : true))
+  const listOrder = order === "ASC" ? newList.sort((a, b) => a.dataPublicacao - b.dataPublicacao) : newList.sort((a, b) => (a.dataPublicacao > b.dataPublicacao ? -1 : 1))
   return listOrder.slice(0, 4)
 }
 
 export const filterFeature = (list, feature) => {
-  const array = []
-  for (let i = 0; i < list.length; i++) {
-    for (let key in list[i].opinions) {
-      if (list[i].opinions[key].category === feature) {
-        array.push(list[i])
-      }
-    }
-  }
-  return array
+  return list.filter(el => el.nomeCategoria === feature)
 }
 
 export const countPlatform = (list) => {
 
-  const countFacebookPositive = countComments(list, TYPE_PLATFORM.FACEBOOK, "positive")
-  const countFacebookNegative = countComments(list, TYPE_PLATFORM.FACEBOOK, "negative")
+  const countFacebookPositive = countComments(list, TYPE_PLATFORM.FACEBOOK, "positivo")
+  const countFacebookNegative = countComments(list, TYPE_PLATFORM.FACEBOOK, "negativo")
 
-  const countWebPositive = countComments(list, TYPE_PLATFORM.WEB, "positive")
-  const countWebNegative = countComments(list, TYPE_PLATFORM.WEB, "negative")
+  const countWebPositive = countComments(list, TYPE_PLATFORM.WEB, "positivo")
+  const countWebNegative = countComments(list, TYPE_PLATFORM.WEB, "negativo")
 
-  const countYelpPositive = countComments(list, TYPE_PLATFORM.YELP, "positive")
-  const countYelpNegative = countComments(list, TYPE_PLATFORM.YELP, "negative")
+  const countYelpPositive = countComments(list, TYPE_PLATFORM.YELP, "positivo")
+  const countYelpNegative = countComments(list, TYPE_PLATFORM.YELP, "negativo")
 
-  const countGooglePositive = countComments(list, TYPE_PLATFORM.GOOGLE, "positive")
-  const countGoogleNegative = countComments(list, TYPE_PLATFORM.GOOGLE, "negative")
+  const countGooglePositive = countComments(list, TYPE_PLATFORM.GOOGLE, "positivo")
+  const countGoogleNegative = countComments(list, TYPE_PLATFORM.GOOGLE, "negativo")
 
-  const countTripadvisorPositive = countComments(list, TYPE_PLATFORM.TRIPADVISOR, "positive")
-  const countTripadvisorNegative = countComments(list, TYPE_PLATFORM.TRIPADVISOR, "negative")
+  const countTripadvisorPositive = countComments(list, TYPE_PLATFORM.TRIPADVISOR, "positivo")
+  const countTripadvisorNegative = countComments(list, TYPE_PLATFORM.TRIPADVISOR, "negativo")
 
-  const countInstagramPositive = countComments(list, TYPE_PLATFORM.INSTRAGRAM, "positive")
-  const countInstagramNegative = countComments(list, TYPE_PLATFORM.INSTRAGRAM, "negative")
+  const countInstagramPositive = countComments(list, TYPE_PLATFORM.INSTRAGRAM, "positivo")
+  const countInstagramNegative = countComments(list, TYPE_PLATFORM.INSTRAGRAM, "negativo")
 
-  const countTwitterPositive = countComments(list, TYPE_PLATFORM.TWITTER, "positive")
-  const countTwitterNegative = countComments(list, TYPE_PLATFORM.TWITTER, "negative")
+  const countTwitterPositive = countComments(list, TYPE_PLATFORM.TWITTER, "positivo")
+  const countTwitterNegative = countComments(list, TYPE_PLATFORM.TWITTER, "negativo")
 
   const dados = [
     {
-      plataform: TYPE_PLATFORM.FACEBOOK,
+      plataform: "Facebook",
       total: countFacebookPositive + countFacebookNegative,
       positive: countFacebookPositive,
       negative: countFacebookNegative
     },
     {
-      plataform: TYPE_PLATFORM.GOOGLE,
+      plataform: "Google Reviews",
       total: countGooglePositive + countGoogleNegative,
       positive: countGooglePositive,
       negative: countGoogleNegative
     },
     {
-      plataform: TYPE_PLATFORM.INSTRAGRAM,
+      plataform: "Instagram",
       total: countInstagramPositive + countInstagramNegative,
       positive: countInstagramPositive,
       negative: countInstagramNegative
     },
     {
-      plataform: TYPE_PLATFORM.TRIPADVISOR,
+      plataform: "Tripadvisor",
       total: countTripadvisorPositive + countTripadvisorNegative,
       positive: countTripadvisorPositive,
       negative: countTripadvisorNegative
     },
     {
-      plataform: TYPE_PLATFORM.TWITTER,
+      plataform: "Twitter",
       total: countTwitterPositive + countTwitterNegative,
       positive: countTwitterPositive,
       negative: countTwitterNegative
     },
     {
-      plataform: TYPE_PLATFORM.WEB,
+      plataform: "Web",
       total: countWebPositive + countWebNegative,
       positive: countWebPositive,
       negative: countWebNegative
     },
 
     {
-      plataform: TYPE_PLATFORM.YELP,
+      plataform: "Yelp",
       total: countYelpPositive + countYelpNegative,
       positive: countYelpPositive,
       negative: countYelpNegative
@@ -166,14 +157,9 @@ export const countPlatform = (list) => {
 }
 
 export const countCategoryOpinion = (list, feature, type) => {
-  let count = 0
-  for (let i = 0; i < list.length; i++) {
-    for (let key in list[i].opinions) {
-      const item = list[i].opinions[key]
-      if (item.category === feature && item.teor === type) {
-        count++
-      }
-    }
-  }
-  return count
+  return list.filter(el => el.nomeCategoria === feature && el.polaridade === type).length
+}
+
+export const groupComments = (list) => {
+  return list.filter((v, i, a) => a.findIndex(t => (t.IDComentario === v.IDComentario)) === i)
 }
