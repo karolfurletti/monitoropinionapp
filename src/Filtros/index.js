@@ -1188,7 +1188,6 @@ export default class Filtros {
         dia = ""
       }
 
-      console.log()
 
       if (index === splited_obj.length - 1) {
         data.push({

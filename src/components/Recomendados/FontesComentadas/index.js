@@ -10,7 +10,7 @@ function FontesComentadas(props) {
     <div className="PrincipaisPlataformas">
 
       <div className="name">
-        <Typography className="plataforma">{props.item.plataforma}</Typography>
+        <Typography className="plataforma">{props.item.name}</Typography>
       </div>
 
       <div className="coluna_dados">
@@ -23,7 +23,7 @@ function FontesComentadas(props) {
             <Typography className="teor">Negativos</Typography>
           </div>
           <div>
-            <Typography className="number">{props.item.negative_opinions}</Typography>
+            <Typography className="number">{props.item.negative}</Typography>
           </div>
 
 
@@ -42,7 +42,7 @@ function FontesComentadas(props) {
             <Typography className="teor"> Positivos</Typography>
           </div>
           <div>
-            <Typography className="number">{props.item.positive_opinions}</Typography>
+            <Typography className="number">{props.item.positive}</Typography>
           </div>
 
         </Badge>

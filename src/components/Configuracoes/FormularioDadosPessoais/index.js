@@ -1,14 +1,12 @@
 import React from "react"
-import { connect } from "react-redux"
 import TextField from "@material-ui/core/TextField"
 import Button from "@material-ui/core/Button"
 import MaskedInput from "react-text-mask"
 import NumberFormat from "react-number-format"
 import PropTypes from "prop-types"
-
 import InputMasked from "../InputMasked"
-
 import "./index.css"
+import { useSelector } from "react-redux"
 
 function TextMaskCustom(props) {
   const {
@@ -65,100 +63,65 @@ NumberFormatCustom.propTypes = {
   onChange: PropTypes.func.isRequired
 }
 
-class FormularioMinhaConta extends React.Component {
+const FormularioMinhaConta = () => {
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      values: {
-        textmask: "(1  )    -    ",
-        numberformat: "1320"
-      }
-    }
-  }
+  const { loginModel } = useSelector((state) => state)
+  const user = loginModel.user
 
-  handleChange = (event) => {
-    this.setState({
-      ...this.values,
-      [event.target.name]: event.target.value
-    })
-  }
+  return (
+    <form noValidate autoComplete="off">
+      <div className="FormularioDadosPessoais">
+        <div className="input" id="first">
+          <TextField required id="standard-required" label="Nome" defaultValue={user.name} />
+        </div>
 
-  componentDidMount() {
-    //this.AtualizarLineChart(this.props.opinions_by_cronology, this.props.estado_button_filter, "7dias")
-  }
+        <div className="input">
+          <TextField required id="standard-required" label="Sobrenome" defaultValue={user.name} />
+        </div>
 
-  componentDidUpdate(nextProps, nextState) {
-    // if(nextProps.opinions_by_cronology !== this.props.opinions_by_cronology){
-    //    this.AtualizarLineChart(this.props.opinions_by_cronology, this.props.estado_button_filter)
-    // }
-  }
+        <div className="input">
+          <TextField required id="standard-required" label="Email" defaultValue={user.email} />
+        </div>
 
-  render() {
-    return (
-      <form noValidate autoComplete="off">
-        <div className="FormularioDadosPessoais">
-          <div className="input" id="first">
-            <TextField required id="standard-required" label="Nome" defaultValue="José Thomaz" />
-          </div>
-
+        <div className="input-double">
           <div className="input">
-            <TextField required id="standard-required" label="Sobrenome" defaultValue="Matos Aguiar" />
-          </div>
-
-          <div className="input">
-            <TextField required id="standard-required" label="Email" defaultValue="Matos Aguiar" />
-          </div>
-
-          <div className="input-double">
-            <div className="input">
-              <TextField
-                id="standard-password-input"
-                label="Senha"
-                type="password"
-                autoComplete="current-password"
-                required
-              />
-            </div>
-            <div className="input">
-              <TextField
-                id="standard-password-input"
-                label="Confirme a Senha"
-                type="password"
-                autoComplete="current-password"
-                required
-              />
-            </div>
+            <TextField
+              id="standard-password-input"
+              label="Senha"
+              type="password"
+              autoComplete="current-password"
+              required
+            />
           </div>
           <div className="input">
-
-
-            <InputMasked />
-
-
+            <TextField
+              id="standard-password-input"
+              label="Confirme a Senha"
+              type="password"
+              autoComplete="current-password"
+              required
+            />
           </div>
+        </div>
+        <div className="input">
 
-          <div className="footer">
-            <Button variant="contained" color="primary" className="">
-              Salvar
-            </Button>
-          </div>
+
+          <InputMasked />
 
 
         </div>
 
-      </form>
-    )
+        <div className="footer">
+          <Button variant="contained" color="primary" className="">
+            Salvar
+          </Button>
+        </div>
 
-  }
+
+      </div>
+
+    </form>
+  )
 }
 
-function mapActionCreatorsToProps(dispatch) {
-  return {}
-}
-
-function mapStateToProps(state) {
-  return {}
-}
-
-export default connect(mapStateToProps, mapActionCreatorsToProps)(FormularioMinhaConta)
+export default FormularioMinhaConta

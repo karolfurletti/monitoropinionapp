@@ -30,6 +30,7 @@ import { Grid } from "@material-ui/core"
 import { Link } from "react-router-dom"
 import "./index.css"
 import { useCookies } from "react-cookie"
+import { useSelector } from "react-redux"
 
 const drawerWidth = 240
 
@@ -100,6 +101,7 @@ export default function MiniDrawer(props) {
   const [cookies, setCookie, removeCookie] = useCookies(["email"])
   const [anchorEl, setAnchorEl] = React.useState(null)
   const selectedIndex = props.option
+  const { loginModel } = useSelector((state) => state)
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget)
@@ -127,7 +129,7 @@ export default function MiniDrawer(props) {
 
   const logout = () => {
     removeCookie("email")
-    props.history.push('/')
+    props.history.push("/")
   }
 
   return (
@@ -175,12 +177,17 @@ export default function MiniDrawer(props) {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
               >
-                <MenuItem className="menu-item-draw-titulo">Essencia do Sabor</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/minhaconta" className="menu-item-draw">Minha conta</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/dadospessoais" className="menu-item-draw">Dados pessoais</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Pagamentos e faturas</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Notificações</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Indique um amigo</MenuItem>
+                <MenuItem className="menu-item-draw-titulo">{loginModel.user.nomeRestaurante}</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/minhaconta" className="menu-item-draw">Minha
+                  conta</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/dadospessoais"
+                          className="menu-item-draw">Dados pessoais</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Pagamentos
+                  e faturas</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes"
+                          className="menu-item-draw">Notificações</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/dashboard/fontes" className="menu-item-draw">Indique
+                  um amigo</MenuItem>
                 <MenuItem onClick={logout} className="menu-item-draw">Logout</MenuItem>
 
               </Menu>

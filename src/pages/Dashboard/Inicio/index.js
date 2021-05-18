@@ -81,7 +81,7 @@ const Index = (props) => {
           <Fontes list={list} />
         </Grid>
         <Grid item xs={6} sm={12} md={6}>
-          <Recomendados />
+          <Recomendados list={list} />
         </Grid>
         <Grid item xs={6} sm={12} md={6}>
           <Fontes2 list={list} />

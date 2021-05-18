@@ -5,10 +5,9 @@ import AppBar from "@material-ui/core/AppBar"
 import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
 import Box from "@material-ui/core/Box"
-import AutoSizer from "react-virtualized-auto-sizer"
-import List from "@material-ui/core/List"
-import ComponentPrincipaisPerfis from './PrincipaisPerfis'
-import ComponentPlataformasComentadas from './FontesComentadas'
+import ComponentPrincipaisPerfis from "./PrincipaisPerfis"
+import ComponentPlataformasComentadas from "./FontesComentadas"
+import { countPerfil } from "../../helper/analise"
 
 
 function TabPanel(props) {
@@ -60,28 +59,9 @@ class Recomendados extends React.Component {
     }
   }
 
-
   handleChange = (event, newValue) => {
     this.setState({ value: newValue })
   }
-
-  Row = ({
-    index,
-    style
-  }) => (
-    <div style={style}>
-      <ComponentPrincipaisPerfis item={this.props.PrincipaisPerfis[index]} />
-    </div>
-  )
-
-  Row2 = ({
-    index,
-    style
-  }) => (
-    <div style={style}>
-      <ComponentPlataformasComentadas item={this.props.PrincipaisPlataformas[index]} />
-    </div>
-  )
 
   render() {
 
@@ -95,61 +75,25 @@ class Recomendados extends React.Component {
             </Tabs>
           </AppBar>
           <TabPanel value={this.state.value} index={0}>
-
             <div className="tab-content">
-
-              <AutoSizer>
-                {({
-                  height,
-                  width
-                }) => (
-                  <List
-                    className="List"
-                    height={height}
-                    itemCount={10}
-                    itemSize={35}
-                    width={width}
-                  >
-                    {this.Row}
-                  </List>
-                )}
-              </AutoSizer>
-
+              {countPerfil(this.props.list, "IDUsuarioFK", "nome", true).map((item, i) =>
+                <ComponentPrincipaisPerfis key={i} item={item} />)
+              }
             </div>
-
-
           </TabPanel>
+
           <TabPanel value={this.state.value} index={1}>
             <div className="tab-content">
-
-              <AutoSizer>
-                {({
-                  height,
-                  width
-                }) => (
-                  <List
-                    className="List"
-                    height={height}
-                    itemCount={10}
-                    itemSize={35}
-                    width={width}
-                  >
-                    {this.Row2}
-                  </List>
-                )}
-              </AutoSizer>
-
+              {countPerfil(this.props.list, "IDTipoFonteFK", "nomeFonte", false).map((item, i) =>
+                <ComponentPlataformasComentadas key={i} item={item} />)
+              }
             </div>
-
           </TabPanel>
-
         </div>
-
 
       </div>
     )
   }
 }
-
 
 export default Recomendados

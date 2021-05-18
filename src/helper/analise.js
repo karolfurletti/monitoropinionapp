@@ -1,10 +1,6 @@
 import moment from "moment"
 import { TYPE_PLATFORM } from "../utils/const"
-
-moment.locale("pt-br")
-
-// const week = moment().subtract("weeks", 30).format("YYYY-MM-DD")
-// const today = moment().format("YYYY-MM-DD")
+import "moment/locale/pt-br"
 
 export const countComments = (list, platform, type = null) => {
   const newList = list.filter(el =>
@@ -13,25 +9,47 @@ export const countComments = (list, platform, type = null) => {
   return newList
 }
 
-const filterCommentsForDate = (list, date, type) => {
-  return list.filter(el => el.dataPublicacao === date && el.polaridade === type).length
+const filterCommentsForDate = (list, type) => {
+  return list.filter(el => el.polaridade === type).length
 }
 
 export const listGraph = (list) => {
 
-  let newList = []
-  for (let i = 0; i < list.length; i++) {
+  let groups = list.reduce(function(r, o) {
+    const m = o.dataPublicacao.split(("-"))[1];
+    (r[m]) ? r[m].data.push(o) : r[m] = {
+      name: moment(o.dataPublicacao).format("MMM"),
+      data: [o]
+    }
+    return r
+  }, {})
 
-    const month = moment(list[i].dataPublicacao).format("MMM")
-    const day = moment(list[i].dataPublicacao).format("DD")
-
-    newList.push({
-      name: day + "." + month,
-      uv: filterCommentsForDate(list, list[i].dataPublicacao, "negativo"),
-      pv: filterCommentsForDate(list, list[i].dataPublicacao, "positivo")
+  let listfinal = []
+  Object.keys(groups)
+    .sort()
+    .forEach(function(v, i) {
+      listfinal.push({
+        name: groups[v].name,
+        uv: filterCommentsForDate(groups[v].data, "negativo"),
+        pv: filterCommentsForDate(groups[v].data, "positivo")
+      })
     })
-  }
-  return newList
+
+  // let newList = []
+  // for (let i = 0; i < list.length; i++) {
+  //
+  //   const month = moment(list[i].dataPublicacao).format("MMM")
+  //   const day = moment(list[i].dataPublicacao).format("DD")
+  //
+  //   newList.push({
+  //     // name: day + "." + month,
+  //     name: month.toUpperCase(),
+  //     uv: filterCommentsForDate(list, list[i].dataPublicacao, "negativo"),
+  //     pv: filterCommentsForDate(list, list[i].dataPublicacao, "positivo")
+  //   })
+  // }
+
+  return listfinal
 }
 
 export const countPercentage = (list, platform, type) => {
@@ -163,3 +181,31 @@ export const countCategoryOpinion = (list, feature, type) => {
 export const groupComments = (list) => {
   return list.filter((v, i, a) => a.findIndex(t => (t.IDComentario === v.IDComentario)) === i)
 }
+
+export const countPerfil = (list, id, name, slice) => {
+
+  // IDTipoFonteFK
+  // nomeFonte
+
+  // IDUsuarioFK
+  // nome
+
+  let newList = []
+  for (let i = 0; i < list.length; i++) {
+    newList.push({
+      name: list[i][name],
+      negative: list.filter(el => el[id] === list[i][id] && el.polaridade === "negativo").length,
+      positive: list.filter(el => el[id] === list[i][id] && el.polaridade === "positivo").length,
+      total: list.filter(el => el[id] === list[i][id]).length
+    })
+  }
+
+  const listOrder = Object.values(newList).sort((a, b) => {
+    if (a.total > b.total) return -1
+    return a.total > b.total ? 1 : 0
+  })
+
+  const listGroup = listOrder.filter((v, i, a) => a.findIndex(t => (t.name === v.name)) === i)
+  return slice ? listGroup.slice(0, 10) : listGroup
+}
+

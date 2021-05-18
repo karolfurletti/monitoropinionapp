@@ -14,6 +14,8 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 import Abas from "./tabs"
 import { countComments } from "../../../helper/analise"
 import { TYPE_PLATFORM } from "../../../utils/const"
+import Badge from "@material-ui/core/Badge"
+import Divider from "@material-ui/core/Divider"
 
 const Comentarios = (props) => {
 
@@ -26,7 +28,12 @@ const Comentarios = (props) => {
 
   return (
     <div className="card-comentarios">
-
+      <div style={{backgroundColor:'white'}} className="legenda">
+        <Badge color="secondary">
+          <Typography className="tituloCard">Contagem de Comentários</Typography>
+        </Badge>
+      </div>
+      <Divider />
       <div className="item-classificador">
         <div className="item">
           <AllInclusiveIcon />

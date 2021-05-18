@@ -44,16 +44,6 @@ export default function ComentarioNegativo (props) {
 
   const classes = useStyles()
 
-  // if (props.item.plataforma === "facebook") {
-  //   iconMain = <FacebookIcon className="Main-Icon"></FacebookIcon>
-  // } else if (props.item.plataforma === "twitter") {
-  //   iconMain = <TwitterIcon className="Main-Icon"></TwitterIcon>
-  // } else if (props.item.plataforma === "instagram") {
-  //   iconMain = <InstagramIcon className="Main-Icon"></InstagramIcon>
-  // } else {
-  //   iconMain = <FacebookIcon className="Main-Icon"></FacebookIcon>
-  // }
-
   if (props.item.rating >= 0) {
     rating = <Rating name="read-only" value={props.item.rating} readOnly />
   } else {
@@ -67,7 +57,7 @@ export default function ComentarioNegativo (props) {
       <div className="row-itens">
 
         <div className={classes.root}>
-          <Avatar src={"/Assets/UserProfile/" + props.item.HashImg + ".jpg"} className="avatar" />
+          <Avatar src={props.item.foto} className="avatar" />
         </div>
         {/* <div>
                     {iconMain}

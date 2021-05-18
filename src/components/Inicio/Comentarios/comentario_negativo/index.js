@@ -14,7 +14,7 @@ const CommentsComponet = (props) => {
       <div className={styles.itemTop}>
         <div className={styles.part1}>
 
-          <img className={styles.avatar} src={avatar} alt="" />
+          <img className={styles.avatar} src={item.foto} alt="" />
 
           <div className={styles.title}>
             <div>Atendimento</div>

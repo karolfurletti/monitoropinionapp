@@ -22,7 +22,7 @@ const Fonte2 = (props) => {
     <div className="Fontes2Card" id="PercentForEachPlataforma">
       <div className="legenda">
         <Badge color="secondary">
-          <Typography className="tituloCard">Porcentagens</Typography>
+          <Typography className="tituloCard">Porcentagens de Comentários</Typography>
         </Badge>
       </div>
       <Divider />

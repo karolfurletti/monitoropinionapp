@@ -110,7 +110,7 @@ const ComparacaoPage = (props) => {
               </Grid>
 
               <Grid item xs={6}>
-                <Fontes list={filterFeature(list, feature)} title="RESTAURANTE LOGADO" variante="main" />
+                <Fontes list={filterFeature(list, feature)} title={loginModel.user.nomeRestaurante} variante="main" />
               </Grid>
 
               <Grid item xs={6}>

@@ -40,20 +40,10 @@ export default function ComentarioPositivo(props) {
       [event.target.name]: event.target.checked
     })
   }
-  // let iconMain = <FacebookIcon />
-  let rating = ""
 
+  let rating = ""
   const classes = useStyles()
 
-  // if (props.item.plataforma === "facebook") {
-  //   iconMain = <FacebookIcon className="Main-Icon" />
-  // } else if (props.item.plataforma === "twitter") {
-  //   iconMain = <TwitterIcon className="Main-Icon" />
-  // } else if (props.item.plataforma === "instagram") {
-  //   iconMain = <InstagramIcon className="Main-Icon" />
-  // } else {
-  //   iconMain = <FacebookIcon className="Main-Icon" />
-  // }
 
   if (props.item.rating >= 0) {
     rating = <Rating name="read-only" value={props.item.rating} readOnly />
@@ -68,7 +58,7 @@ export default function ComentarioPositivo(props) {
       <div className="row-itens">
 
         <div className={classes.root}>
-          <Avatar src={"/Assets/UserProfile/" + props.item.HashImg + ".jpg"} className="avatar" />
+          <Avatar src={props.item.foto} className="avatar" />
         </div>
         {/* <div>
                     {iconMain}

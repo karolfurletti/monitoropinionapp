@@ -67,16 +67,16 @@ class LChart extends PureComponent {
         <Divider />
 
         <ResponsiveContainer width="99%" height={250} className="responsiveGraph" strokeWidth={1}>
-          <LineChart data={list} className="LineChart" margin={margin}>
+           <LineChart  data={list} className="LineChart" margin={margin}>
             <CartesianGrid strokeDasharray="0 0" />
-            <XAxis dataKey="name" strokeWidth={0} />
-            <YAxis strokeWidth={1} />
+            <XAxis tick={{fontSize: 40}} dataKey="name" strokeWidth={1} />
+            <YAxis tickCount={10} width={50} strokeWidth={1} />
             <Tooltip />
 
-            <Line name="Positivos" type="monotone" dataKey="pv" strokeOpacity={opacity.uv} strokeWidth={1}
-                  stroke="#2ca9d2" dot={false} isAnimationActive={false} />
-            <Line name="Negativos" type="monotone" dataKey="uv" strokeOpacity={opacity.pv} strokeWidth={1}
-                  stroke="#cc1f1f" isAnimationActive={false} dot={false} />
+            <Line name="Positivos" type="monotone" dataKey="pv" strokeOpacity={opacity.uv} strokeWidth={2}
+                  stroke="#2ca9d2" dot={false} isAnimationActive={true} />
+            <Line name="Negativos" type="monotone" dataKey="uv" strokeOpacity={opacity.pv} strokeWidth={2}
+                  stroke="#cc1f1f" isAnimationActive={true} dot={false} />
             <Legend onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} />
             {/* <Line name="Hashtags" type="monotone" dataKey="amt" strokeOpacity={opacity.amt} strokeWidth={2} stroke="#8884d8" /> */}
           </LineChart>
