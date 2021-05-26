@@ -1,7 +1,6 @@
 import React from "react"
 import "./index.module.css"
 import styles from "./index.module.css"
-import avatar from "../../../../Assets/UserProfile/avatar.jpg"
 import { dateFormat } from "../../../../utils/formatUtils"
 
 const CommentsComponet = (props) => {
@@ -17,7 +16,7 @@ const CommentsComponet = (props) => {
           <img className={styles.avatar} src={item.foto} alt="" />
 
           <div className={styles.title}>
-            <div>Atendimento</div>
+            <div>{item.nome}</div>
             <div>{item.nomeFonte}</div>
           </div>
 

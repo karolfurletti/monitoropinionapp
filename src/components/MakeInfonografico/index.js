@@ -13,7 +13,7 @@ import { countMediaCommunication, listGraph } from "../../helper/analise"
 
 const MakeInfonografico = (props) => {
 
-  const { list } = props
+  const { list, name } = props
 
   return (
     <div>
@@ -48,7 +48,7 @@ const MakeInfonografico = (props) => {
                   <img alt="" className="logo-img" src="/Assets/Estabelecimento/EssenciaDoSabor.jpg" />
                 </div>
                 <div className="container-tituloo">
-                  <Typography className="title">Essência do Sabor</Typography>
+                  <Typography className="title">{name}</Typography>
                 </div>
               </div>
             </div>
@@ -60,17 +60,19 @@ const MakeInfonografico = (props) => {
                 <CountOpinions list={list} />
               </Grid>
 
+              <Grid item xs={8}>
+                <DividedBarGraph list={list} />
+                {/*<LineChart list={listGraph(list)} />*/}
+              </Grid>
+
+              {/*<Grid item xs={4}>*/}
+              {/*  <DividedBarGraph list={list} />*/}
+              {/*</Grid>*/}
+
+
               <Grid item xs={4}>
                 <LineChart list={listGraph(list)} />
-              </Grid>
-
-              <Grid item xs={4}>
-                <DividedBarGraph list={list} />
-              </Grid>
-
-
-              <Grid item xs={4}>
-                <DetalhesFontes list={list} />
+                {/*<DetalhesFontes list={list} />*/}
               </Grid>
 
 
