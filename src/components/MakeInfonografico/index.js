@@ -5,7 +5,6 @@ import Grid from "@material-ui/core/Grid"
 import Logo from "../../Assets/logocolorida.png"
 import Typography from "@material-ui/core/Typography"
 import CountOpinions from "../CountOpinions"
-import DetalhesFontes from "../../components/DetalhesFontes"
 import DividedBarGraph from "../../components/DividedBarGraph"
 import FontesPercent from "../Fontes2/SmallVersion"
 import PieChartFontsPercent from "../../components/PieChartFontsPercent"
@@ -13,7 +12,7 @@ import { countMediaCommunication, listGraph } from "../../helper/analise"
 
 const MakeInfonografico = (props) => {
 
-  const { list, name } = props
+  const { list, name, logomarca } = props
 
   return (
     <div>
@@ -45,7 +44,7 @@ const MakeInfonografico = (props) => {
 
               <div className="LogoEstabelecimento-Space">
                 <div className="container-img">
-                  <img alt="" className="logo-img" src="/Assets/Estabelecimento/EssenciaDoSabor.jpg" />
+                  <img alt="" className="logo-img" src={logomarca} />
                 </div>
                 <div className="container-tituloo">
                   <Typography className="title">{name}</Typography>

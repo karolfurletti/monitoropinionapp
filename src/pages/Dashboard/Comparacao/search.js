@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { useHistory } from "react-router-dom"
 import SearchComponent from "./searchcomponent"
 import { serviceApi } from "../../../Services/api"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 
 export default function Search() {
 
@@ -11,6 +11,7 @@ export default function Search() {
   const { loginModel } = useSelector((state) => state)
   const [list, setList] = useState()
   const idRestaurante = loginModel.user.id_restaurante
+  const dispatch = useDispatch()
 
   useEffect(() => {
     listComparation()
@@ -24,6 +25,7 @@ export default function Search() {
       const { list } = response.data
       setList(list)
       setLoading(false)
+      dispatch.generalModel.setListComparation(list)
     }).catch(err => {
       console.log(err)
     })

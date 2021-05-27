@@ -6,12 +6,19 @@ import { useSelector } from "react-redux"
 
 const Index = () => {
 
-  const { generalModel, loginModel } = useSelector((state) => state)
+  const {
+    generalModel,
+    loginModel
+  } = useSelector((state) => state)
+  const {
+    nomeRestaurante,
+    logomarca
+  } = loginModel.user
 
   return (
     <div>
       <LoadingComponent />
-      <MakeInfonografico name={loginModel.user.nomeRestaurante} list={generalModel.list} />
+      <MakeInfonografico logomarca={logomarca} name={nomeRestaurante} list={generalModel.list} />
     </div>
   )
 }

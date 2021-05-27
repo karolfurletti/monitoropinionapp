@@ -18,20 +18,29 @@ export const listGraph = (list) => {
   let groups = list.reduce(function(r, o) {
     const m = o.dataPublicacao.split(("-"))[1];
     (r[m]) ? r[m].data.push(o) : r[m] = {
-      name: moment(o.dataPublicacao).format("MMM"),
-      data: [o]
+      name: moment(o.dataPublicacao).format("MMM") + '/' + moment(o.dataPublicacao).format("YY"),
+      data: [o],
+      dateShow:o.dataPublicacao
     }
     return r
   }, {})
 
+
+  const orderList = Object.values(groups).sort(function(a, b) {
+    const c = new Date(a.dateShow);
+    const d = new Date(b.dateShow);
+    return c-d;
+  });
+
+
   let listfinal = []
-  Object.keys(groups)
+  Object.keys(orderList)
     .sort()
     .forEach(function(v, i) {
       listfinal.push({
-        name: groups[v].name,
-        uv: filterCommentsForDate(groups[v].data, "negativo"),
-        pv: filterCommentsForDate(groups[v].data, "positivo")
+        name: orderList[v].name,
+        uv: filterCommentsForDate(orderList[v].data, "negativo"),
+        pv: filterCommentsForDate(orderList[v].data, "positivo")
       })
     })
 

@@ -58,50 +58,50 @@ const DetalhesFontes = (props) => {
         <List component="nav" aria-label="main mailbox folders">
           <ListItem button>
             <ComponentPlataformasComentadas
-              negative={countComments(list, TYPE_PLATFORM.FACEBOOK, "negative")}
-              positive={countComments(list, TYPE_PLATFORM.FACEBOOK, "positive")}
+              negative={countComments(list, TYPE_PLATFORM.FACEBOOK, "negativo")}
+              positive={countComments(list, TYPE_PLATFORM.FACEBOOK, "positivo")}
               title={'Facebook'} />
           </ListItem>
 
           <ListItem button>
             <ComponentPlataformasComentadas
-              negative={countComments(list, TYPE_PLATFORM.WEB, "negative")}
-              positive={countComments(list, TYPE_PLATFORM.WEB, "positive")}
+              negative={countComments(list, TYPE_PLATFORM.WEB, "negativo")}
+              positive={countComments(list, TYPE_PLATFORM.WEB, "positivo")}
               title={'Web'} />
           </ListItem>
 
           <ListItem button>
             <ComponentPlataformasComentadas
-              negative={countComments(list, TYPE_PLATFORM.GOOGLE, "negative")}
-              positive={countComments(list, TYPE_PLATFORM.GOOGLE, "positive")}
+              negative={countComments(list, TYPE_PLATFORM.GOOGLE, "negativo")}
+              positive={countComments(list, TYPE_PLATFORM.GOOGLE, "positivo")}
               title={'Google Reviews'} />
           </ListItem>
 
           <ListItem button>
             <ComponentPlataformasComentadas
-              negative={countComments(list, TYPE_PLATFORM.TWITTER, "negative")}
-              positive={countComments(list, TYPE_PLATFORM.TWITTER, "positive")}
+              negative={countComments(list, TYPE_PLATFORM.TWITTER, "negativo")}
+              positive={countComments(list, TYPE_PLATFORM.TWITTER, "positivo")}
               title={'Twitter'} />
           </ListItem>
 
           <ListItem button>
             <ComponentPlataformasComentadas
-              negative={countComments(list, TYPE_PLATFORM.YELP, "negative")}
-              positive={countComments(list, TYPE_PLATFORM.YELP, "positive")}
+              negative={countComments(list, TYPE_PLATFORM.YELP, "negativo")}
+              positive={countComments(list, TYPE_PLATFORM.YELP, "positivo")}
               title={'Yelp'} />
           </ListItem>
 
           <ListItem button>
             <ComponentPlataformasComentadas
-              negative={countComments(list, TYPE_PLATFORM.INSTRAGRAM, "negative")}
-              positive={countComments(list, TYPE_PLATFORM.INSTRAGRAM, "positive")}
+              negative={countComments(list, TYPE_PLATFORM.INSTRAGRAM, "negativo")}
+              positive={countComments(list, TYPE_PLATFORM.INSTRAGRAM, "positivo")}
               title={'Intragram'} />
           </ListItem>
 
           <ListItem button>
             <ComponentPlataformasComentadas
-              negative={countComments(list, TYPE_PLATFORM.TRIPADVISOR, "negative")}
-              positive={countComments(list, TYPE_PLATFORM.TRIPADVISOR, "positive")}
+              negative={countComments(list, TYPE_PLATFORM.TRIPADVISOR, "negativo")}
+              positive={countComments(list, TYPE_PLATFORM.TRIPADVISOR, "positivo")}
               title={'Tripadvisor'} />
           </ListItem>
 

@@ -30,6 +30,7 @@ const ComparacaoPage = (props) => {
   const [list, setList] = useState(generalModel.list)
   const [loading, setLoading] = useState(false)
   const idRestaurante = loginModel.user.id_restaurante
+  const item = generalModel.listComparation.filter(el => el.IDRestaurante === parseInt(id[3]))
 
   useEffect(() => {
     getListComparation()
@@ -114,7 +115,7 @@ const ComparacaoPage = (props) => {
               </Grid>
 
               <Grid item xs={6}>
-                <Fontes list={filterFeature(listComparation, feature)} title={"Burguer King"} />
+                <Fontes list={filterFeature(listComparation, feature)} title={item[0].nomeRestaurante} />
               </Grid>
 
               <Grid item xs={6}>
