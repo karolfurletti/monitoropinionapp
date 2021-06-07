@@ -15,8 +15,9 @@ import Loading from "../../../components/loading/loading"
 const ComentariosPage = (props) => {
 
   const [feature, setFeature] = useState(TYPE_CARACTERISTICA.GERAL)
-  const { generalModel } = useSelector((state) => state)
+  const { generalModel, loginModel } = useSelector((state) => state)
   const listComments = groupComments(generalModel.list)
+  const idRestaurante = loginModel.user.id_restaurante
   const [list, setList] = useState(listComments)
   const [loading, setLoading] = useState(false)
 
@@ -32,7 +33,8 @@ const ComentariosPage = (props) => {
     const options = {
       params: {
         start,
-        end
+        end,
+        idRestaurante
       }
     }
     serviceApi.get("/getDados", options).then(response => {

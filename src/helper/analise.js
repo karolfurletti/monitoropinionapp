@@ -15,16 +15,16 @@ const filterCommentsForDate = (list, type) => {
 
 export const listGraph = (list) => {
 
+
   let groups = list.reduce(function(r, o) {
     const m = o.dataPublicacao.split(("-"))[1];
     (r[m]) ? r[m].data.push(o) : r[m] = {
-      name: moment(o.dataPublicacao).format("MMM") + '/' + moment(o.dataPublicacao).format("YY"),
+      name: moment(o.dataPublicacao).add(1, 'days').format("MMM") + '/' + moment(o.dataPublicacao).add(1, 'days').format("YY"),
       data: [o],
       dateShow:o.dataPublicacao
     }
     return r
   }, {})
-
 
   const orderList = Object.values(groups).sort(function(a, b) {
     const c = new Date(a.dateShow);
@@ -43,6 +43,7 @@ export const listGraph = (list) => {
         pv: filterCommentsForDate(orderList[v].data, "positivo")
       })
     })
+
 
   // let newList = []
   // for (let i = 0; i < list.length; i++) {
@@ -78,7 +79,7 @@ export const countPercentageGraph = (list, platform, type) => {
   } else {
     newValue = parseInt(result * 100)
   }
-  return Math.round(newValue)
+  return  isNaN(Math.round(newValue)) ? 0 : Math.round(newValue)
 }
 
 export const countMediaCommunication = (list) => {

@@ -9,10 +9,14 @@ import DividedBarGraph from "../../components/DividedBarGraph"
 import FontesPercent from "../Fontes2/SmallVersion"
 import PieChartFontsPercent from "../../components/PieChartFontsPercent"
 import { countMediaCommunication, listGraph } from "../../helper/analise"
+import moment from "moment"
 
 const MakeInfonografico = (props) => {
 
   const { list, name, logomarca } = props
+
+  const week = moment().subtract("years", 1).format("YYYY-MM-DD")
+  const today = moment().format("YYYY-MM-DD")
 
   return (
     <div>
@@ -27,8 +31,9 @@ const MakeInfonografico = (props) => {
 
             <div className="Head-Space">
 
+
               <div className="Logo-Space">
-                <div className="container-img">
+                             <div className="container-img">
                   <img alt="" className="logo-img" src={Logo} />
                 </div>
                 <div className="container-titulo">
@@ -43,6 +48,7 @@ const MakeInfonografico = (props) => {
                   </div>  */}
 
               <div className="LogoEstabelecimento-Space">
+                Período: {moment(week).format("DD/MM/YYYY")} até {moment(today).format("DD/MM/YYYY")}
                 <div className="container-img">
                   <img alt="" className="logo-img" src={logomarca} />
                 </div>

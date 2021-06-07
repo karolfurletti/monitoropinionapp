@@ -107,7 +107,7 @@ const ComparacaoPage = (props) => {
               </Grid>
 
               <Grid item xs={12}>
-                <LineChart list={listGraph(filterFeature(list, feature))} />
+                <LineChart name={loginModel.user.nomeRestaurante} nameComparation={item[0].nomeRestaurante} list={listGraph(filterFeature(list, feature))} />
               </Grid>
 
               <Grid item xs={6}>

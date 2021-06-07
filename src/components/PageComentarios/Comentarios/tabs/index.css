@@ -27,3 +27,7 @@
     height: 50px;
 
 }
+
+.MuiSelect-select.MuiSelect-select{
+  padding-top: 28px;
+}

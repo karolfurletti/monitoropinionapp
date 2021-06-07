@@ -2,9 +2,9 @@
     background-color: white !important;
 
     border-radius: 10px;
-  
 
-    
+
+
     width: 100%;
 
     overflow: hidden;
@@ -12,14 +12,14 @@
     color: #7954a3 !important;
     height: 80px;
 
-    
+
 }
 .filtro_caracteristica{
     margin-top: 5px;
     text-align: center;
-    
+
   margin: 0 auto;
-  
+
     font-size: 10px !important;
 }
 .filtro_caracteristica item{
@@ -45,7 +45,7 @@
 }
 
 .filtro_caracteristica .item-classificador .item .MuiTypography-root{
-font-size: 9px !important;
+font-size: 11px !important;
 color:#616161 !important;
 }
 

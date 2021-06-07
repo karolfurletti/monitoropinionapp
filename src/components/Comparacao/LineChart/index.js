@@ -58,18 +58,50 @@ const LChart = (props) => {
         </ButtonGroup>
       </div>
       <ResponsiveContainer width="99%" height={250} className="responsiveGraph" strokeWidth={1}>
-        <LineChart data={list} className="LineChart" margin={margin}>
-          <CartesianGrid strokeDasharray="20 20" />
-          <XAxis dataKey="name" strokeWidth={1} />
-          <YAxis strokeWidth={2} />
+
+
+        <LineChart
+          width={500}
+          height={300}
+          data={list}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis allowDecimals={false}  />
           <Tooltip />
-          <Legend  />
-          <Line name="Essencia do Sabor" type="monotone" dataKey="pv" strokeOpacity={1} strokeWidth={1}
-                stroke="#2ca9d2" activeDot={{ r: 8 }} />
-          <Line name="Burguer King" type="monotone" dataKey="uv" strokeOpacity={1} strokeWidth={1}
-                stroke="#f99500" />
-          {/* <Line name="Hashtags" type="monotone" dataKey="amt" strokeOpacity={opacity.amt} strokeWidth={2} stroke="#8884d8" /> */}
+          <Legend />
+          <Line
+            type="monotone"
+            dataKey="pv"
+            stroke="#2ca9d2"
+            name={props.name}
+            strokeWidth={2}
+            dot={false}
+          />
+          <Line dot={false} strokeWidth={2} type="monotone" name={props.nameComparation} dataKey="uv" stroke="#f99500" />
         </LineChart>
+
+
+        {/*<LineChart data={list} className="LineChart" margin={margin}>*/}
+        {/*  <CartesianGrid strokeDasharray="20 20" />*/}
+        {/*  <XAxis dataKey="name" strokeWidth={1} />*/}
+        {/*  <YAxis strokeWidth={2} />*/}
+        {/*  <Tooltip />*/}
+        {/*  <Legend  />*/}
+        {/*  <Line name={props.name} type="monotone" dataKey="pv" strokeOpacity={1} strokeWidth={1}*/}
+        {/*        stroke="#2ca9d2" activeDot={{ r: 8 }} />*/}
+        {/*  <Line name={props.nameComparation} type="monotone" dataKey="uv" strokeOpacity={1} strokeWidth={1}*/}
+        {/*        stroke="#f99500" />*/}
+        {/*  /!* <Line name="Hashtags" type="monotone" dataKey="amt" strokeOpacity={opacity.amt} strokeWidth={2} stroke="#8884d8" /> *!/*/}
+        {/*</LineChart>*/}
+
+
       </ResponsiveContainer>
     </div>
   )

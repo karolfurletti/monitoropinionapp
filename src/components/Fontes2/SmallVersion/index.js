@@ -78,6 +78,8 @@ const Fonte2 = (props) => {
           <div className="ProfitFont2">{countPercentage(list, TYPE_PLATFORM.GOOGLE)}%</div>
         </div>
 
+        <Divider />
+
         <div className="ItemFont2">
 
           <div className="IconNameFont2">

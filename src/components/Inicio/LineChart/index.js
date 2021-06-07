@@ -56,6 +56,8 @@ class LChart extends PureComponent {
     const { opacity } = this.state
     const {list} = this.props
 
+    console.log({list})
+
 
     return (
       <div className="card-linechart-inicio">
@@ -67,19 +69,48 @@ class LChart extends PureComponent {
         <Divider />
 
         <ResponsiveContainer width="99%" height={250} className="responsiveGraph" strokeWidth={1}>
-           <LineChart  data={list} className="LineChart" margin={margin}>
-            <CartesianGrid strokeDasharray="0 0" />
-            <XAxis tick={{fontSize: 40}} dataKey="name" strokeWidth={1} />
-            <YAxis tickCount={10} width={50} strokeWidth={1} />
-            <Tooltip />
 
-            <Line name="Positivos" type="monotone" dataKey="pv" strokeOpacity={opacity.uv} strokeWidth={2}
-                  stroke="#2ca9d2" dot={false} isAnimationActive={true} />
-            <Line name="Negativos" type="monotone" dataKey="uv" strokeOpacity={opacity.pv} strokeWidth={2}
-                  stroke="#cc1f1f" isAnimationActive={true} dot={false} />
-            <Legend onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} />
-            {/* <Line name="Hashtags" type="monotone" dataKey="amt" strokeOpacity={opacity.amt} strokeWidth={2} stroke="#8884d8" /> */}
+          <LineChart
+            width={500}
+            height={300}
+            data={list}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis allowDecimals={false}  />
+            <Tooltip />
+            <Legend />
+            <Line
+              type="monotone"
+              dataKey="pv"
+              stroke="#2ca9d2"
+              name={'Positivos'}
+              strokeWidth={2}
+              dot={false}
+            />
+            <Line dot={false} strokeWidth={2} type="monotone" name={'Negativos'} dataKey="uv" stroke="#cc1f1f" />
           </LineChart>
+
+
+          {/* <LineChart  data={list} className="LineChart" margin={margin}>*/}
+          {/*  <CartesianGrid strokeDasharray="0 0" />*/}
+          {/*  <XAxis tick={{fontSize: 40}} dataKey="name" strokeWidth={1} />*/}
+          {/*  <YAxis tickCount={10} width={50} strokeWidth={1} />*/}
+          {/*  <Tooltip />*/}
+
+          {/*  <Line name="Positivos" type="monotone" dataKey="uv" strokeOpacity={opacity.uv} strokeWidth={2}*/}
+          {/*        stroke="#2ca9d2" dot={false} isAnimationActive={true} />*/}
+          {/*  <Line activeDot={{ r: 8 }} name="Negativos" type="monotone" dataKey="pv" strokeOpacity={opacity.pv} strokeWidth={2}*/}
+          {/*        stroke="#cc1f1f" isAnimationActive={true} dot={false} />*/}
+          {/*  <Legend onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} />*/}
+          {/*  /!* <Line name="Hashtags" type="monotone" dataKey="amt" strokeOpacity={opacity.amt} strokeWidth={2} stroke="#8884d8" /> *!/*/}
+          {/*</LineChart>*/}
         </ResponsiveContainer>
       </div>
     )

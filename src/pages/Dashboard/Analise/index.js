@@ -18,10 +18,11 @@ import Loading from "../../../components/loading/loading"
 
 const Analise = (props) => {
 
-  const { generalModel } = useSelector((state) => state)
+  const { generalModel, loginModel } = useSelector((state) => state)
   const [feature, setFeature] = useState(TYPE_CARACTERISTICA.GERAL)
   const [list, setList] = useState(generalModel.list)
   const [loading, setLoading] = useState(false)
+  const idRestaurante = loginModel.user.id_restaurante
   const getFeature = (feature) => {
     setFeature(feature)
   }
@@ -33,7 +34,8 @@ const Analise = (props) => {
     const options = {
       params: {
         start,
-        end
+        end,
+        idRestaurante
       }
     }
     serviceApi.get("/getDados", options).then(response => {

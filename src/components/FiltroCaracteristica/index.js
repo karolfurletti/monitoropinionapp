@@ -25,7 +25,7 @@ const FiltroCaracteristica = (props) => {
           <div className="item-classificador">
             <div className="item">
 
-              <Typography>Geral</Typography>
+              <Typography style={{fontSize: 20}}>Geral</Typography>
 
               <Radio
                 checked={selectedValue === TYPE_CARACTERISTICA.GERAL}
@@ -37,7 +37,7 @@ const FiltroCaracteristica = (props) => {
             </div>
 
             <div className="item">
-              <Typography>Comida</Typography>
+              <Typography >Comida</Typography>
               <Radio
                 checked={selectedValue === TYPE_CARACTERISTICA.COMIDA}
                 onChange={handleChange}

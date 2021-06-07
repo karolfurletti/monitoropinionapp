@@ -16,9 +16,10 @@ import { serviceApi } from "../../../Services/api"
 
 const FontesPage = (props) => {
 
-  const { generalModel } = useSelector((state) => state)
+  const { generalModel, loginModel } = useSelector((state) => state)
   const [list, setList] = useState(generalModel.list)
   const [loading, setLoading] = useState(false)
+  const idRestaurante = loginModel.user.id_restaurante
 
   const filterDate = (dataStart, dateEnd) => {
     setLoading(true)
@@ -27,7 +28,8 @@ const FontesPage = (props) => {
     const options = {
       params: {
         start,
-        end
+        end,
+      idRestaurante
       }
     }
     serviceApi.get("/getDados", options).then(response => {
@@ -44,7 +46,7 @@ const FontesPage = (props) => {
       <Loading open={loading} />
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Filter filterDate={filterDate} />
+          <Filter  titulo="Fontes" filterDate={filterDate} />
         </Grid>
         {/* <Grid item xs={12}>
                 <WaveChart></WaveChart>
