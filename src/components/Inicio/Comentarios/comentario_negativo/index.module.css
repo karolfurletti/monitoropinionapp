@@ -11,10 +11,12 @@
 
 .itemBottom {
   display: flex;
-  height: 20px;
+  /*height: 20px;*/
   padding-left: 20px;
   white-space: pre-wrap;
   overflow: hidden;
+  font-weight: 500;
+  padding-bottom: 10px;
   text-overflow: ellipsis;
 }
 

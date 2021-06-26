@@ -9,7 +9,7 @@ import { countComments } from "../../helper/analise"
 
 const CountOpinions = (props) => {
 
-  const { list } = props
+  const { list, isCount } = props
 
   return (
     <div>
@@ -50,7 +50,10 @@ const CountOpinions = (props) => {
         </div>
         <Divider />
       </div>
-      <OpinionsByCategoryPie list={list} />
+
+      {!isCount && (
+        <OpinionsByCategoryPie list={list} />
+      )}
     </div>
   )
 }

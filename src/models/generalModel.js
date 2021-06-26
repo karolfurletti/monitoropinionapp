@@ -1,7 +1,9 @@
 export const generalModel = {
   state: {
     list: [],
-    listComparation:[]
+    listComparation: [],
+    listRelatorio: [],
+    dataRelatorio: {}
   },
   reducers: {
     setList: (state, list) => {
@@ -16,6 +18,20 @@ export const generalModel = {
         ...state,
         listComparation: list
       }
+    },
+
+    setRelatorio: (state, list) => {
+      return {
+        ...state,
+        listRelatorio: list
+      }
+    },
+
+    setDataRel: (state, object) => {
+      return {
+        ...state,
+        dataRelatorio: object
+      }
     }
   },
   effects: dispatch => ({
@@ -24,6 +40,14 @@ export const generalModel = {
       },
       setListComparation: list => {
         dispatch.generalModel.setComparation(list)
+      },
+
+      setListRelatorio: list => {
+        dispatch.generalModel.setRelatorio(list)
+      },
+
+      setDataRelatorio: object => {
+        dispatch.generalModel.setDataRel(object)
       }
     }
   )

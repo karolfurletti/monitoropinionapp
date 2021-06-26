@@ -116,24 +116,24 @@ export default function ComentarioNegativo (props) {
 
       <div className="options">
 
-        <div className="checkboxaddrelatorio">
+        {/*<div className="checkboxaddrelatorio">*/}
 
 
-          <FormGroup row>
+        {/*  <FormGroup row>*/}
 
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={state.checkedB}
-                  onChange={handleChange}
-                  name="checkedB"
-                  color="primary"
-                />
-              }
-              label="Adicionar ao Relatório"
-            />
-          </FormGroup>
-        </div>
+        {/*    <FormControlLabel*/}
+        {/*      control={*/}
+        {/*        <Checkbox*/}
+        {/*          checked={state.checkedB}*/}
+        {/*          onChange={handleChange}*/}
+        {/*          name="checkedB"*/}
+        {/*          color="primary"*/}
+        {/*        />*/}
+        {/*      }*/}
+        {/*      label="Adicionar ao Relatório"*/}
+        {/*    />*/}
+        {/*  </FormGroup>*/}
+        {/*</div>*/}
 
 
         {/* <div>

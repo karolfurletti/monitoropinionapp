@@ -3,7 +3,12 @@ import { TYPE_PLATFORM } from "../utils/const"
 import "moment/locale/pt-br"
 
 export const countComments = (list, platform, type = null) => {
-  const newList = list.filter(el =>
+
+
+  const listFinal = typeof list === 'object' ? Object.values(list) : list
+
+
+  const newList = listFinal.filter(el =>
     (platform !== TYPE_PLATFORM.GERAL ? el.IDFonte === platform : true)
     && (type ? el.polaridade === type : true)).length
   return newList

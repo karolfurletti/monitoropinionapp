@@ -117,21 +117,21 @@ export default function ComentarioPositivo(props) {
       </div>
 
       <div className="options">
-        <div className="checkboxaddrelatorio">
-          <FormGroup row>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={state.checkedB}
-                  onChange={handleChange}
-                  name="checkedB"
-                  color="primary"
-                />
-              }
-              label="Adicionar ao Relatório"
-            />
-          </FormGroup>
-        </div>
+        {/*<div className="checkboxaddrelatorio">*/}
+        {/*  <FormGroup row>*/}
+        {/*    <FormControlLabel*/}
+        {/*      control={*/}
+        {/*        <Checkbox*/}
+        {/*          checked={state.checkedB}*/}
+        {/*          onChange={handleChange}*/}
+        {/*          name="checkedB"*/}
+        {/*          color="primary"*/}
+        {/*        />*/}
+        {/*      }*/}
+        {/*      label="Adicionar ao Relatório"*/}
+        {/*    />*/}
+        {/*  </FormGroup>*/}
+        {/*</div>*/}
 
         {/*
                 <div>

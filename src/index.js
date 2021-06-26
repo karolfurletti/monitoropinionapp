@@ -6,7 +6,6 @@ import { Provider } from "react-redux"
 import { CookiesProvider } from "react-cookie"
 import { PersistGate } from "redux-persist/es/integration/react";
 import store, { persistor } from './models/configStore';
-
 ReactDOM.render(
   <Provider store={store}>
     <PersistGate persistor={persistor}>

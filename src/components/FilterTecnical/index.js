@@ -19,7 +19,7 @@ import {
 const Filter = (props) => {
 
   const { filterDate } = props
-  const [intervalInit, setIntervalInit] = useState(moment().subtract("weeks", 1))
+  const [intervalInit, setIntervalInit] = useState(moment().subtract("years", 1))
   const [intervalFim, setIntervalFim] = useState(moment())
   const [open, setOpen] = useState(false)
 
