@@ -78,6 +78,7 @@ const PieChartFontsPercent = (props) => {
           ]}
           cx={200}
           cy={100}
+          isAnimationActive={false}
           labelLine={false}
           label={renderCustomizedLabel}
           outerRadius={80}

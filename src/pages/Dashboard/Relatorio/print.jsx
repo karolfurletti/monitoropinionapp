@@ -43,17 +43,16 @@ class ComponentToPrint extends Component {
 
     return (
       <div className={styles.content}>
-        <div className={styles.page}>
+        <div style={{ height: 1121}} className={styles.page}>
           <div className={styles.page1}>
             <span>RELATÓRIO</span>
-            <span>MENSAL</span>
             <span className={styles.name}>{nameRestaurante}</span>
           </div>
         </div>
 
 
         {dataRelatorio.state.checked1 && (
-          <div className={styles.page}>
+          <div style={{ height: 1135}} className={styles.page}>
             <Header dataRelatorio={dataRelatorio} name={nameRestaurante} />
             <div className={styles.titleRelatorio}>
               Comentários por categoria
@@ -66,7 +65,7 @@ class ComponentToPrint extends Component {
 
 
         {dataRelatorio.state.checked2 && (
-          <div className={styles.page}>
+          <div style={{ height: 1130}} className={styles.page}>
             <Header dataRelatorio={dataRelatorio} name={nameRestaurante} />
             <div className={styles.titleRelatorio}>
               Comentários Negativos
@@ -97,7 +96,7 @@ class ComponentToPrint extends Component {
         )}
 
         {dataRelatorio.state.checked3 && (
-          <div className={styles.page}>
+          <div style={{ height: 1132}} className={styles.page}>
             <Header dataRelatorio={dataRelatorio} name={nameRestaurante} />
             <div className={styles.titleRelatorio}>
               Comentários Positivos
@@ -129,7 +128,7 @@ class ComponentToPrint extends Component {
 
 
         {dataRelatorio.state.checked4 && (
-          <div className={styles.page}>
+          <div style={{ height: 1132}} className={styles.page}>
             <Header dataRelatorio={dataRelatorio} name={nameRestaurante} />
             <div className={styles.titleRelatorio}>
               Sites mais comentados
@@ -145,7 +144,7 @@ class ComponentToPrint extends Component {
 
 
         {dataRelatorio.state.checked5 && (
-          <div className={styles.page}>
+          <div style={{height: 1132}} className={styles.page}>
             <Header dataRelatorio={dataRelatorio} name={nameRestaurante} />
             <div className={styles.titleRelatorio}>
               Principais Perfis
@@ -163,12 +162,12 @@ class ComponentToPrint extends Component {
         {dataRelatorio.state.checked6 && (
           <div className={styles.page}>
             <Header dataRelatorio={dataRelatorio} name={nameRestaurante} />
-            <div className={styles.titleRelatorio}>
+            <div style={{paddingTop: 20}} className={styles.titleRelatorio}>
               Fontes
             </div>
             <LineChart list={listGraph(this.props.list)} />
             <PieChartFontsPercent list={countMediaCommunication(this.props.list)} />
-            <OpinionsByCategoryPie list={this.props.list} />
+            <OpinionsByCategoryPie height={320} list={this.props.list} />
           </div>
         )}
       </div>

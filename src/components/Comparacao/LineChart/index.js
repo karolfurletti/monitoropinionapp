@@ -3,6 +3,9 @@ import ButtonGroup from "@material-ui/core/ButtonGroup"
 import Button from "@material-ui/core/Button"
 import "./index.css"
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend } from "recharts"
+import Badge from "@material-ui/core/Badge"
+import Typography from "@material-ui/core/Typography"
+import Divider from "@material-ui/core/Divider"
 
 const margin = {
   top: 5,
@@ -14,31 +17,15 @@ const margin = {
 const LChart = (props) => {
 
   const [position, setPosition] = useState(0)
+  const {
+    list,
+    listComparation
+  } = props
 
-  const { list } = props
-  const handleMouseEnter = (o) => {
-    const { dataKey } = o
-    const { opacity } = this.state
+  // console.log({listComparation})
+  // console.log({list})
 
-    this.setState({
-      opacity: {
-        ...opacity,
-        [dataKey]: 0.5
-      }
-    })
-  }
-
-  const handleMouseLeave = (o) => {
-    const { dataKey } = o
-    const { opacity } = this.state
-
-    this.setState({
-      opacity: {
-        ...opacity,
-        [dataKey]: 1
-      }
-    })
-  }
+  const newList = list.filter(el => el.uv)
 
   const handleClick = (value) => {
     if (value === "negative") {
@@ -50,59 +37,93 @@ const LChart = (props) => {
 
   return (
     <div className="card-linechart-comparacao">
-      <div className="filtros-line-chart">
-        <ButtonGroup disableElevation variant="contained" color="primary">
-          <Button className="buttonnegative" onClick={() => handleClick("negative")}>Negativos</Button>
-          <Button className="buttonpositive" onClick={() => handleClick("positive")}>Positivos</Button>
 
-        </ButtonGroup>
+
+      <div>
+        <div className="legenda">
+          <Badge color="secondary">
+            <Typography className="tituloCard">{props.name}</Typography>
+          </Badge>
+        </div>
+        <Divider />
+        <ResponsiveContainer width="99%" height={250} className="responsiveGraph" strokeWidth={1}>
+
+          <LineChart
+            width={500}
+            height={300}
+            data={list}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis allowDecimals={false} />
+            <Tooltip />
+            <Legend />
+            <Line
+              isAnimationActive={false}
+              type="monotone"
+              dataKey="pv"
+              stroke="#2ca9d2"
+              name={"Positivos"}
+              strokeWidth={2}
+              dot={false}
+            />
+            <Line isAnimationActive={false} dot={false} strokeWidth={2} type="monotone" name={"Negativos"} dataKey="uv"
+                  stroke="#cc1f1f" />
+          </LineChart>
+
+
+        </ResponsiveContainer>
       </div>
-      <ResponsiveContainer width="99%" height={250} className="responsiveGraph" strokeWidth={1}>
+      <div>
+
+        <div className="legenda">
+          <Badge color="secondary">
+            <Typography className="tituloCard">{props.nameComparation}</Typography>
+          </Badge>
+        </div>
+        <Divider />
+        <ResponsiveContainer width="99%" height={250} className="responsiveGraph" strokeWidth={1}>
+
+          <LineChart
+            width={500}
+            height={300}
+            data={listComparation}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis allowDecimals={false} />
+            <Tooltip />
+            <Legend />
+            <Line
+              isAnimationActive={false}
+              type="monotone"
+              dataKey="pv"
+              stroke="#2ca9d2"
+              name={"Positivos"}
+              strokeWidth={2}
+              dot={false}
+            />
+            <Line isAnimationActive={false} dot={false} strokeWidth={2} type="monotone" name={"Negativos"} dataKey="uv"
+                  stroke="#cc1f1f" />
+          </LineChart>
 
 
-        <LineChart
-          width={500}
-          height={300}
-          data={list}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis allowDecimals={false}  />
-          <Tooltip />
-          <Legend />
-          <Line
-            type="monotone"
-            dataKey="pv"
-            stroke="#2ca9d2"
-            name={props.name}
-            strokeWidth={2}
-            dot={false}
-          />
-          <Line dot={false} strokeWidth={2} type="monotone" name={props.nameComparation} dataKey="uv" stroke="#f99500" />
-        </LineChart>
 
+        </ResponsiveContainer>
+      </div>
 
-        {/*<LineChart data={list} className="LineChart" margin={margin}>*/}
-        {/*  <CartesianGrid strokeDasharray="20 20" />*/}
-        {/*  <XAxis dataKey="name" strokeWidth={1} />*/}
-        {/*  <YAxis strokeWidth={2} />*/}
-        {/*  <Tooltip />*/}
-        {/*  <Legend  />*/}
-        {/*  <Line name={props.name} type="monotone" dataKey="pv" strokeOpacity={1} strokeWidth={1}*/}
-        {/*        stroke="#2ca9d2" activeDot={{ r: 8 }} />*/}
-        {/*  <Line name={props.nameComparation} type="monotone" dataKey="uv" strokeOpacity={1} strokeWidth={1}*/}
-        {/*        stroke="#f99500" />*/}
-        {/*  /!* <Line name="Hashtags" type="monotone" dataKey="amt" strokeOpacity={opacity.amt} strokeWidth={2} stroke="#8884d8" /> *!/*/}
-        {/*</LineChart>*/}
-
-
-      </ResponsiveContainer>
     </div>
   )
 

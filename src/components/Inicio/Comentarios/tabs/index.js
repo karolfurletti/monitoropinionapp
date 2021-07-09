@@ -79,7 +79,7 @@ const SimpleTabs = (props) => {
   }
 
   return (
-    <div>
+    <div style={{backgroundColor:"white"}}>
       <AppBar position="static">
         <Tabs value={value} onChange={handleChange} aria-label="simple tabs example"
               className="tab_att">

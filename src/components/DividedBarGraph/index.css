@@ -1,6 +1,6 @@
 .card-DividerBarGraph{
     min-width:350px !important;
-    
+
     width: 100%;
     height: 400px;
     padding-top: 10px;
@@ -12,10 +12,10 @@
 }
 
 .recharts-legend-item-text{
-    font-size: 7pt;
+    font-size: 15px;
     font-weight: bolder;
     fill: grey !important;
-    
+
 }
 
 .card-DividerBarGraph .recharts-default-legend{

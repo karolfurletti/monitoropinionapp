@@ -37,6 +37,8 @@ const PagePrincipalRelatorio = (props) => {
   const {
     loginModel
   } = useSelector((state) => state)
+  const [dataStart, setDataStart] = useState(null)
+  const [dateEnd, setDataEnd] = useState(null)
   const [loading, setLoading] = useState(false)
   const idRestaurante = loginModel.user.id_restaurante
   const dispatch = useDispatch()
@@ -72,9 +74,14 @@ const PagePrincipalRelatorio = (props) => {
   }
 
   const filterDate = (dataStart, dateEnd) => {
+    setDataStart(moment(dataStart).format("YYYY-MM-DD"))
+    setDataEnd(moment(dateEnd).format("YYYY-MM-DD"))
+  }
+
+  const generationReport = () => {
     setLoading(true)
-    const start = moment(dataStart).format("YYYY-MM-DD")
-    const end = moment(dateEnd).format("YYYY-MM-DD")
+    const start = dataStart
+    const end = dateEnd
     const options = {
       params: {
         start,
@@ -91,7 +98,9 @@ const PagePrincipalRelatorio = (props) => {
         state
       })
       setLoading(false)
-      props.history.push("relatorioPrint")
+
+      window.open("relatorioPrint", "_blank");
+      // props.history.push("relatorioPrint")
 
     }).catch(err => {
       console.log(err)
@@ -292,6 +301,11 @@ const PagePrincipalRelatorio = (props) => {
                     />
                   </div>
                 </Grid>
+              </div>
+
+
+              <div className={styles.generationReport}>
+                <div onClick={() => generationReport()} className={styles.btnGeneration}>Gerar Relatório</div>
               </div>
 
 

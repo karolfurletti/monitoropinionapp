@@ -1,46 +1,53 @@
-.LineChart{
-    background-color: white;
+.LineChart {
+  background-color: white;
 }
 
-.card-linechart-comparacao{
-    background-color: white;
-    width: 100% !important;
-    padding-top: 10px;
-    color: rgb(56, 56, 56);
-    border-radius: 10px;
-    padding: 5px;
+.card-linechart-comparacao {
+  background-color: white;
+  width: 100% !important;
+  padding-top: 10px;
+  color: rgb(56, 56, 56);
+  border-radius: 10px;
+  padding: 5px;
 }
 
-.legenda{
-    padding: 5px;
-}
-.cardIcon{
-    color: #7954a3;
-}
-.responsiveGraph{
-    margin-top: 0px;
+.legenda {
+  padding: 5px;
 }
 
-.recharts-text{
-    font-size: 16px;
-    fill: mediumaquamarine;
-    font-weight: bolder;
+.cardIcon {
+  color: #7954a3;
 }
-.recharts-legend-item-text{
-    font-size: 17px;
+
+.responsiveGraph {
+  margin-top: 0px;
 }
-.tituloCard{
-    font-size: 20px !important;
-    padding: 5px;
+
+.recharts-text {
+  font-size: 16px;
+  fill: mediumaquamarine;
+  font-weight: bolder;
 }
-.filtros-line-chart{
-    width: 100%;
-    height: 80px;
-  
+
+.recharts-legend-item-text {
+  font-size: 17px;
 }
-.buttonpositive{
-    background-color: #379a51 !important;
+
+.tituloCard {
+  font-size: 20px !important;
+  padding: 5px;
 }
-.buttonnegative{
-    background-color: #d85656 !important;
+
+.filtros-line-chart {
+  width: 100%;
+  height: 80px;
+
+}
+
+.buttonpositive {
+  background-color: #379a51 !important;
+}
+
+.buttonnegative {
+  background-color: #d85656 !important;
 }

@@ -13,6 +13,7 @@
   border-color: black;
   border-style: solid;
   border-width: 1px;
+  margin-top: 10px;
 }
 
 
@@ -125,6 +126,21 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
+  margin-top: 5px;
   padding: 10px;
   font-family: 'Allerta', sans-serif;
+}
+
+.generationReport{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnGeneration{
+  background-color: #744D9C;
+  color: white;
+  padding: 10px;
+  margin-top: 60px;
+  cursor: pointer;
 }

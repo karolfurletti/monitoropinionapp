@@ -87,6 +87,7 @@ class LChart extends PureComponent {
             <Tooltip />
             <Legend />
             <Line
+              isAnimationActive={false}
               type="monotone"
               dataKey="pv"
               stroke="#2ca9d2"
@@ -94,7 +95,7 @@ class LChart extends PureComponent {
               strokeWidth={2}
               dot={false}
             />
-            <Line dot={false} strokeWidth={2} type="monotone" name={'Negativos'} dataKey="uv" stroke="#cc1f1f" />
+            <Line isAnimationActive={false} dot={false} strokeWidth={2} type="monotone" name={'Negativos'} dataKey="uv" stroke="#cc1f1f" />
           </LineChart>
 
 

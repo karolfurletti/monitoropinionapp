@@ -82,8 +82,8 @@ const DividedBarGraph = (props) => {
             left: 40,
             bottom: 0
           }}></Legend>/>
-          <Bar dataKey="Positivos" fill="#01a561" />
-          <Bar dataKey="Negativos" fill="#ff6767" />
+          <Bar isAnimationActive={false} dataKey="Positivos" fill="#01a561" />
+          <Bar isAnimationActive={false} dataKey="Negativos" fill="#ff6767" />
         </BarChart>
       </ResponsiveContainer>
     </div>

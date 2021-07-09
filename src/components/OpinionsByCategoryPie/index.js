@@ -9,10 +9,10 @@ import { countPlatform } from "../../helper/analise"
 
 const OpinionsByCategoryPie = (props) => {
 
-  const { list } = props
+  const { list, height } = props
 
   return (
-    <div className="CardOpinionsByCategoryPie">
+    <div style={{height: height ? height: 350}} className="CardOpinionsByCategoryPie">
       <div className="legenda">
         <Badge color="secondary">
           <Typography className="tituloCard">Plataformas</Typography>

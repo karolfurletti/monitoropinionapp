@@ -85,6 +85,7 @@ const ComparacaoPage = (props) => {
     }))
   }
 
+
   return (
     <Drawer history={props.history} NavTitle="Comparacao" option={6}>
       <Loading open={loading} />
@@ -107,7 +108,12 @@ const ComparacaoPage = (props) => {
               </Grid>
 
               <Grid item xs={12}>
-                <LineChart name={loginModel.user.nomeRestaurante} nameComparation={item[0].nomeRestaurante} list={listGraph(filterFeature(list, feature))} />
+                <LineChart
+                  name={loginModel.user.nomeRestaurante}
+                  nameComparation={item[0].nomeRestaurante}
+                  list={listGraph(filterFeature(list, feature))}
+                  listComparation={listGraph(filterFeature(listComparation, feature))}
+                />
               </Grid>
 
               <Grid item xs={6}>

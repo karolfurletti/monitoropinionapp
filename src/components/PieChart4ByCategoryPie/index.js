@@ -17,7 +17,7 @@ const PieChartPercent = (props) => {
   }
 
   return (
-    <PieChart width={80} height={80} onMouseEnter={onPieEnter} className="pie2">
+    <PieChart  width={80} height={80} onMouseEnter={onPieEnter} className="pie2">
       <text x={40} y={40} textAnchor="middle" dominantBaseline="middle" className="LabelInsidePie"
             style={{ fill: "#312020" }}>
         {item.total}
@@ -35,8 +35,10 @@ const PieChartPercent = (props) => {
             }
           ]
         }
+
         cx={35}
         cy={35}
+        isAnimationActive={false}
         innerRadius={34}
         outerRadius={40}
         paddingAngle={2}
