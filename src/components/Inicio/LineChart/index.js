@@ -5,12 +5,6 @@ import Divider from "@material-ui/core/Divider"
 import "./index.css"
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend } from "recharts"
 
-const margin = {
-  top: 5,
-  right: 5,
-  bottom: 5,
-  left: 5
-}
 
 class LChart extends PureComponent {
 
@@ -53,11 +47,7 @@ class LChart extends PureComponent {
   }
 
   render() {
-    const { opacity } = this.state
     const {list} = this.props
-
-    console.log({list})
-
 
     return (
       <div className="card-linechart-inicio">

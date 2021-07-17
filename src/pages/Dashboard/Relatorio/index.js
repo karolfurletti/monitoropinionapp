@@ -37,8 +37,14 @@ const PagePrincipalRelatorio = (props) => {
   const {
     loginModel
   } = useSelector((state) => state)
-  const [dataStart, setDataStart] = useState(null)
-  const [dateEnd, setDataEnd] = useState(null)
+
+
+
+  const formatStart = moment().subtract("years", 1)
+  const formatEnd = moment()
+
+  const [dataStart, setDataStart] = useState(moment(formatStart).format("YYYY-MM-DD"))
+  const [dateEnd, setDataEnd] = useState(moment(formatEnd).format("YYYY-MM-DD"))
   const [loading, setLoading] = useState(false)
   const idRestaurante = loginModel.user.id_restaurante
   const dispatch = useDispatch()

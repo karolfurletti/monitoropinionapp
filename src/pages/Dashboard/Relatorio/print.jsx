@@ -177,10 +177,6 @@ class ComponentToPrint extends Component {
 
 class Relatorio extends React.Component {
 
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     const {
       listRelatorio,
