@@ -39,7 +39,7 @@
     "react-number-format": "^4.4.3",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^1.1.5",
     "react-text-mask": "^5.4.3",
     "react-to-print": "^2.12.6",
     "react-virtualized": "^9.22.2",
@@ -53,7 +53,7 @@
   "scripts": {
     "start": "node server",
     "dev": "react-scripts start",
-    "postinstall": "yarn run build",
+    "postinstall": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
