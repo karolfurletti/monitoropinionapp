@@ -9,7 +9,7 @@ import FacebookIcon from "@material-ui/icons/Facebook"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faYelp } from "@fortawesome/free-brands-svg-icons"
 import { faGoogle } from "@fortawesome/free-brands-svg-icons"
-import { faTripadvisor } from "@fortawesome/free-brands-svg-icons"
+// import { faTripadvisor } from "@fortawesome/free-brands-svg-icons"
 import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 import { countPercentage } from "../../../helper/analise"
 import { TYPE_PLATFORM } from "../../../utils/const"
@@ -86,7 +86,7 @@ const Fonte2 = (props) => {
         <div className="ItemFont2">
 
           <div className="IconNameFont2">
-            <div className="iconFont2"><FontAwesomeIcon className="icon2" icon={faTripadvisor} size="2x" /></div>
+            <div className="iconFont2"><FontAwesomeIcon className="icon2" icon={faGlobe} size="2x" /></div>
             <div className="NameItemFont2">Tripadvisor</div>
           </div>
           <div className="ProfitFont2">{countPercentage(list, TYPE_PLATFORM.TRIPADVISOR)}%</div>

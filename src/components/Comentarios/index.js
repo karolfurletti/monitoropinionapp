@@ -13,7 +13,7 @@ import InstagramIcon from "@material-ui/icons/Instagram"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faYelp } from "@fortawesome/free-brands-svg-icons"
 import { faGoogle } from "@fortawesome/free-brands-svg-icons"
-import { faTripadvisor } from "@fortawesome/free-brands-svg-icons"
+// import { faTripadvisor } from "@fortawesome/free-brands-svg-icons"
 import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 import Abas from "./tabs"
 import { FiltrarComentarios } from "../../store/actions/opinions"
@@ -151,7 +151,7 @@ class Comentarios extends React.Component {
           </div>
 
           <div className="item">
-            <FontAwesomeIcon icon={faTripadvisor} size="2x" />
+            <FontAwesomeIcon icon={faYelp} size="2x" />
             <Typography>Tripadvisor</Typography>
             <Typography>{Filtros.CountTripadvisor(this.props.opinions_by_cronology)}</Typography>
 

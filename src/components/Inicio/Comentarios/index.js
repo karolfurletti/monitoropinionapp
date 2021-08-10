@@ -9,7 +9,7 @@ import FacebookIcon from "@material-ui/icons/Facebook"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faYelp } from "@fortawesome/free-brands-svg-icons"
 import { faGoogle } from "@fortawesome/free-brands-svg-icons"
-import { faTripadvisor } from "@fortawesome/free-brands-svg-icons"
+// import { faTripadvisor } from "@fortawesome/free-brands-svg-icons"
 import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 import Abas from "./tabs"
 import { countComments } from "../../../helper/analise"
@@ -92,7 +92,7 @@ const Comentarios = (props) => {
         </div>
 
         <div className="item">
-          <FontAwesomeIcon icon={faTripadvisor} size="2x" />
+          <FontAwesomeIcon icon={faYelp} size="2x" />
           <Typography>Tripadvisor</Typography>
           <Typography>{countComments(list, TYPE_PLATFORM.TRIPADVISOR)}</Typography>
 
