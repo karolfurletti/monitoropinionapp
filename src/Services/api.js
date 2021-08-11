@@ -1,8 +1,8 @@
 import axios from "axios"
 
-const REACT_APP_IP_API = 'http://api.monitoropinion.com'
+const REACT_APP_IP_API = 'https://monitoropinionapi-rfhk7.ondigitalocean.app'
 const api = axios.create({
-  baseURL: "http://api.monitoropinion.com"
+  baseURL: "https://monitoropinionapi-rfhk7.ondigitalocean.app"
 })
 
 export const configHeaders = (token) => {
